@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(102, 34, 204, 1) 0%, rgba(247, 86, 124, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+    font-family: 'Poppins';
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.div-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.title {
+    color: #f5f5f5;
+    font-family: 'Poppins';
+    text-transform: capitalize;
+}
+
+#app .btn-StartReset {
+    padding: 10px;
+    color: #f5f5f5;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 2px solid #F7567C;
+    border-radius: 7px;
+    background-color: #6622CC;
+    box-shadow: -5px 5px 0 #F7567C;
+    user-select: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#app .btn-StartReset:hover {
+    border-color: #6622CC;
+    background-color: #F7567C;
+    color: #6622CC;
+    box-shadow: -5px 5px 0 #6622CC;
+}
+
+#app .btn-StartReset:active {
+    border-color: #6622CC;
+    background-color: #F7567C;
+    color: #6622CC;
+    transform: translateX(-5px) translateY(5px);
+    box-shadow: none;
+}
+
+#app .images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+#app .images .cardTurned, #app .images .cardNotTurned {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: calc(100%/9);
+    max-height: 9em;
+}
+.cardNotTurned *{
+    visibility: hidden;
+}
+#app .images .cardTurned .img-card, #app .images .cardNotTurned .img-card {
+    width: 100%;
+    border-radius: 15px;
+    border: 4px solid #f5f5f5;
+}
