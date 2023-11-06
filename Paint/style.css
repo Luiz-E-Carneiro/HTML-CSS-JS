@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: sans-serif
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: burlywood;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div-canvas-style {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background-color: white;
+    cursor: crosshair;
+}
+
+.text_canvas_style {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_canvas_style h2 {
+    font-family: 'Farsan', cursive;
+    font-size: 3.6rem;
+    color: aliceblue;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 3px black;
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+.text_canvas_style h2 .material-symbols-outlined {
+    font-size: 4rem;
+}
+
+.conteiner-style {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.conteiner-style>div:nth-child(1) {
+    height: 14%;
+}
+
+.content-imgs {
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.conteiner-style>div:nth-child(3) {
+    max-height: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#draws {
+    margin: 0 auto;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5em;
+    overflow-x: auto;
+}
+
+#draws img {
+    width: 5em;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+/* Cor de fundo das barras de rolagem */
+::-webkit-scrollbar-track {
+    background: rgb(231, 231, 231);
+    border-radius: 10px;
+}
+
+/* Estilizando o polegar das barras de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #f48f2b;
+    border-radius: 6px;
+    opacity: 0.7;
+}
+
+/* Alterando a cor do polegar ao passar o mouse por cima */
+::-webkit-scrollbar-thumb:hover {
+    background: #f48f2be5;
+}
+
+.conteiner-style>div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70%;
+}
+
+.content-style {
+    display: flex;
+    width: 100%;
+}
+
+.left-btns-style {
+    flex: 1;
+}
+
+.left-btns-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.left-btns-style>div:nth-child(2n-1) {
+    flex: 1;
+}
+
+.color-space-style {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.color-space-style h3 {
+    padding: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.message-color-picker-style {
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.message-color-picker-style:hover {
+
+    letter-spacing: 2px;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+#selectColor {
+    margin: 0 auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6rem;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#selectColor::-webkit-color-swatch {
+    border-radius: 15px;
+    border: none;
+}
+
+#selectColor::-moz-color-swatch {
+    border-radius: 15px;
+    border: none;
+}
+
+
+.diameters-areas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#diameterPencil,
+#diameterEraser {
+    width: calc(50px/1.5);
+    height: calc(50px/1.5);
+    border-radius: 50%;
+}
+
+#diameterPencil {
+    background-color: black;
+}
+
+#diameterEraser {
+    background-color: white;
+
+}
+
+.btns-area-style {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btns-area-style>div {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+}
+
+.btn-area-style {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-Act {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: black;
+    width: 7em;
+    letter-spacing: 1px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    height: 2.4em;
+    font-size: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.btn-Act:hover, .btnNotDisabled:hover{
+    background-color: white;
+    width: 6em;
+    height: 2.8em;
+    letter-spacing: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+}
+
+.btnAniDisabled {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid white;
+    border-radius: 8px;
+    color: black;
+    width: 7em;
+    letter-spacing: 2px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    height: 2.4em;
+    font-size: 1rem;
+}
+
+.btnNotDisabled {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: black;
+    width: 7em;
+    letter-spacing: 2px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    height: 2.4em;
+    font-size: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.select-pencil-eraser-style {
+    width: 100%;
+    flex: 2;
+    position: relative;
+}
+
+.select-pencil-eraser-style img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: -40%;
+    transition: .2s ease-in;
+    height: 30%;
+}
+
+.imgP {
+    bottom: 20%;
+}
+
+.imgE {
+    top: 20%;
+    transform: rotate(180deg);
+}
+
+.imgE:hover,
+.imgP:hover {
+    position: absolute;
+    left: -20%;
+}
+
+.right-btns-style {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-btns-style div>h4 {
+    font-size: 1.4rem;
+}
+
+.right-btns-style div h3 {
+    font-size: 1.3rem;
+}
+
+.right-btns-style>div {
+    padding: 1em 1em 1.3em 1em;
+}
+
+.right-btns-style>div:first-of-type {
+    flex: 1;
+}
+
+.right-btns-style>div {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.slidecontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 1em;
+    background: white;
+    border-radius: 10px;
+    outline: none;
+    opacity: 0.7;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.29);
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2em;
+    height: 2em;
+    border-radius: 30%;
+    background-color: black;
+    background: #f48f2b;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.right-btns-style div h3 {
+    font-size: 1.8rem;
+}
+
+/*Modal File----------------------------*/
+
+.backModalFile {
+    position: absolute;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.modal {
+    width: 20em;
+    height: 20em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px white;
+}
+
+.modal h2 {
+    font-size: 2rem;
+}
+
+.modal input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.divBtns {
+    width: 100%;
+    max-height: 10em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.divBtns button {
+    flex: 1;
+    width: 80%;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+
+    transition: .2s ease-in-out;
+}
+
+.divBtns button:hover {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+}
+
+.divBtns button:first-of-type {
+    background-color: #2e2;
+}
+
+.divBtns button:nth-of-type(2) {
+    background-color: #f48f2b;
+}
+
+.divBtns button:last-of-type {
+    background-color: rgba(255, 0, 0, 0.95);
+}
+
+.divImgAct {
+    max-width: 7em;
+    display: flex;
+    justify-content: space-around;
+    gap: 3px;
+}
+
+.divImgAct>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3px;
+}
+
+.divImgAct>div>.material-symbols-outlined {
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-weight: 300;
+}
+
+.divImgAct>div>.material-symbols-outlined:first-of-type {
+    background-color: #f48f2be5;
+}
+
+.divImgAct>div>.material-symbols-outlined:last-of-type {
+    background-color: rgba(255, 0, 0, 0.8)
+}
+
+.divDraw {
+    max-width: 60%;
+}
+
+.divDraw img {
+    width: 100%;
+}
+
+.backModalAnimation {
+    position: absolute;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    padding: 20px;
+}
+
+.divSpans {
+    width: 100%;
+    max-height: 1.2em;
+    font-size: 2rem;
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.divSpans>span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    gap: 10px;
+    font-family: 'Farsan', cursive;
+    font-size: 3rem;
+}
+
+.backModalAnimation img {
+    max-width: 55%;
+    width: 55%;
+}
+
+.divActions {
+    width: 30%;
+    flex: 0.5;
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 7px white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .backModalAnimation > *{
+    border: 1px solid red;
+} */
+.divActions button {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out
+}
+
+/* .divActions button:nth-of-type(1){
+    background-color: ;
+}
+.divActions button:nth-of-type(){
+
+}
+.divActions button:nth-of-type(){
+
+} */
+
+.divActions button:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+.btnRightDraws {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    left: -30px;
+}
+
+.rightDraws {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    right: 0;
+}
