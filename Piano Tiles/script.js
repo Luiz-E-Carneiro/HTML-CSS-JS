@@ -61,7 +61,7 @@ const keyDown = () => {
                 k.ky.style.top = `${k.down}px`;
                 if (!k.click && k.down === 500) {
                     clearInterval(moviment);
-                    lose = true;
+                    playGameOver()
                 }
                 if (keys[keys.length - 1].down === 0) {
                     keyDown();
@@ -78,7 +78,7 @@ for (let line of lines) {
         keys.forEach(k => {
             if (k.down >= 400 && k.down <= 500) {
                 this.style.backgroundColor = 'rgba(0,0,0,0.5)';
-                
+
             }
         });
     });
@@ -127,8 +127,15 @@ const verificationKey = (num) => {
     });
     if (!rightClick && gameStarted) {
         paths[num].style.backgroundColor = 'rgba(0,0,0,0.5)';
-        lose = true;
-        const audioToPlay = new Audio('assets/re.wav');  // Escolha qualquer áudio para reproduzir em caso de erro
-        audioToPlay.play();
+        playGameOver()
     }
 };
+
+const playGameOver = () => {
+    lose = true;
+    // Choose any audio you want when lose
+    const audios = [new Audio('assets/fa.wav'), new Audio('assets/la.wav'), new Audio('assets/mi.wav'), new Audio('assets/re.wav'), new Audio('assets/sol.wav'),];
+    audios.forEach(audio => {
+        audio.play()
+    });
+}
