@@ -37,7 +37,7 @@ h2{
 
 .board{
     width: 20em;
-    height: 30em;
+    height: 25em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,22 +45,25 @@ h2{
 
 .line {
     width: 100%;
-    height: calc(100%/6 - 10px);
+    height: calc(100%/6 - 4px);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .cell {
-    width: calc(100%/5 - 10px);
+    width: calc(100%/5 - 3px);
     height: 100%;
     background-color: #1a1423be;
-    border-bottom: 5px solid #1a1423be;
     border-radius: 7px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.borderBottom{
+    border-bottom: 5px solid #1a1423be;
 }
 
 .inputLetter{
@@ -75,6 +78,6 @@ h2{
     font-weight: 900;
 }
 .doneLetter{
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.5);
     font-size: calc(15px + 2vw);
 }
