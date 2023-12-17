@@ -57,7 +57,7 @@ makeCells = (line) => {
         line.appendChild(cell)
         lineDivs.push(cell)
         if(!firstTime){
-            cell.classList.add('borderBottom')
+            cell.classList.add('borderedCell')
             firstTime = true
         }
     }
@@ -76,15 +76,14 @@ const makeInput = (line, key) => {
 
     for (let i = 0; i < line.length; i++) {
         if(line[i].innerHTML != "" && i != line.length - 1){
-            line[i + 1].classList.add('borderBottom')
+            line[i].classList.remove('borderedCell')
+            line[i].classList.add('animateDiv')
+            line[i + 1].classList.add('borderedCell')
+            console.log(line);    
+        } else if(div === line[line.length - 1]){
+            line[i].classList.add('animateDiv')
         }
     }
-
-    line.forEach(div => {
-        if(div.innerHTML != ""){
-            
-        }
-    });
 
     currentCell++
     currentInputs.push(inpt)
@@ -98,7 +97,10 @@ const deleteLastLetter = (line) => {
             last.remove();
             currentInputs.splice(currentInputs.length - 1, 1);
             if(currentDivs.length != 5){
-                line[currentDivs.length].classList.remove('borderBottom')
+                line[currentDivs.length].classList.remove('borderedCell')
+                line[currentDivs.length - 1].classList.remove('animateDiv')
+                line[currentDivs.length - 1].classList.add('borderedCell')
+                console.log(line);
             }
             currentDivs.pop()
         }
@@ -118,9 +120,12 @@ const verificationWord = () => {
         }
         else {
             if(currentLine < 6){
+                var lastLine = arrayDivs[currentLine - 1]
+                lastLine[lastLine.length - 1].classList.remove('borderedCell') 
+
                 currentLine++
                 var newLine = arrayDivs[currentLine - 1]
-                newLine[0].classList.add('borderBottom')
+                newLine[0].classList.add('borderedCell')
             }
                 
         }
