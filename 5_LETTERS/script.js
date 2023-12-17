@@ -1,4 +1,4 @@
-// API Word: https://random-word-api.herokuapp.com/home
+// API I've used Word: https://random-word-api.herokuapp.com/home
 
 var alphabet = [];
 for (var i = 65; i <= 90; i++) {
@@ -11,16 +11,22 @@ var currentLine = 1
 var currentCell = 1
 var times = 0
 var win = false
+var firstTime = false
 
+var especificWords = []
 var arrayDivs = []
 var currentInputs = []
 var currentDivs = []
+var objLetters = []
 var currentWord
 
-async function getWord(numberOfTimes) { // You can expand the game, make the player guess 2 or more word at the same time
-    const resposta = await fetch(`https://random-word-api.herokuapp.com/word?number=${numberOfTimes}&length=2`)
-    const words = await resposta.json();
-    currentWord.push(words)
+var alphabet = [];
+for (var i = 65; i <= 90; i++) {
+    alphabet.push(String.fromCharCode(i));
+}
+
+function stringToArray(string) {
+    return string.split('');
 }
 
 const makeBoard = () => {
@@ -50,13 +56,12 @@ makeCells = (line) => {
         cell.classList.add('cell')
         line.appendChild(cell)
         lineDivs.push(cell)
+        if(!firstTime){
+            cell.classList.add('borderBottom')
+            firstTime = true
+        }
     }
     arrayDivs.push(lineDivs)
-}
-
-var alphabet = [];
-for (var i = 65; i <= 90; i++) {
-    alphabet.push(String.fromCharCode(i));
 }
 
 const makeInput = (line, key) => {
@@ -69,17 +74,32 @@ const makeInput = (line, key) => {
     div.appendChild(inpt)
     currentDivs.push(div)
 
+    for (let i = 0; i < line.length; i++) {
+        if(line[i].innerHTML != "" && i != line.length - 1){
+            line[i + 1].classList.add('borderBottom')
+        }
+    }
+
+    line.forEach(div => {
+        if(div.innerHTML != ""){
+            
+        }
+    });
+
     currentCell++
     currentInputs.push(inpt)
 }
 
-const deleteLastLetter = () => {
+const deleteLastLetter = (line) => {
     if (currentInputs.length > 0) {
         if (currentCell > 0) {
             currentCell--
             var last = currentInputs[currentInputs.length - 1];
             last.remove();
             currentInputs.splice(currentInputs.length - 1, 1);
+            if(currentDivs.length != 5){
+                line[currentDivs.length].classList.remove('borderBottom')
+            }
             currentDivs.pop()
         }
     }
@@ -97,7 +117,12 @@ const verificationWord = () => {
             win = true
         }
         else {
-            currentLine++
+            if(currentLine < 6){
+                currentLine++
+                var newLine = arrayDivs[currentLine - 1]
+                newLine[0].classList.add('borderBottom')
+            }
+                
         }
         writeTheWord(values)
         currentInputs = []
@@ -113,24 +138,76 @@ const writeTheWord = (arrayWord) => {
     currentInputs.forEach(inpt => {
         inpt.remove()
     });
+
+    var countType = countLetters(arrayWord)
+    var arrayCurrentWord = stringToArray(currentWord)
+    var countCurrentWord = countLetters(arrayCurrentWord)
+
+    for (let i = 0; i < countType.length; i++) {
+        for (let ii = 0; ii < countCurrentWord.length; ii++) {
+            if (countType[i].letter === countCurrentWord[ii].letter) {
+                if (countType[i].amount > countCurrentWord[ii].amount) {
+                    countType[i].paint = countCurrentWord[ii].amount
+                }
+            }
+        }
+    }
+    for (let i = 0; i < arrayWord.length; i++) {
+        if(arrayWord[i] === arrayCurrentWord[i]){
+         countType.forEach(element => {
+             if(element.letter === arrayCurrentWord[i]){
+                 element.paint--
+            }
+         });
+        }
+     }
     for (let i = 0; i < currentDivs.length; i++) {
         var span = document.createElement('span')
         span.innerText = arrayWord[i]
         span.classList.add('doneLetter')
         currentDivs[i].appendChild(span)
 
-        putColor(currentDivs[i], arrayWord[i], currentWord[i] )
+        putColor(currentDivs[i], arrayWord[i], currentWord[i], countType)
     }
     times++
+    if(times === 6) gameOver() 
 }
 
-const putColor = (currentDiv, currentLetter, letterWord) => {
-    if(currentLetter === letterWord){
-        currentDiv.style.backgroundColor = "#6ABD45"
+const putColor = (currentDiv, currentLetter, letterWord, countType) => {
+
+    if (currentWord.includes(currentLetter)) {
+        if (currentLetter === letterWord) {
+            currentDiv.style.backgroundColor = "#6ABD45"
+        } else {
+            for (let i = 0; i < countType.length; i++) {
+                if (countType[i].letter == currentLetter) {
+                    if (countType[i].paint > 0) {
+                        countType[i].paint--
+                        currentDiv.style.backgroundColor = "#FF6F61"
+                    }
+                }
+            }
+        }
     }
-    else if(currentWord.includes(currentLetter)){
-        currentDiv.style.backgroundColor = "#FF6F61"
-    }
+}
+
+
+const countLetters = (arrayWord) => {
+    const count = {};
+    arrayWord.forEach(e => {
+        if (count[e]) {
+            count[e]++;
+        } else {
+            count[e] = 1;
+        }
+    });
+    const arrayObjLetters = Object.keys(count).map(letter => ({
+        letter: letter,
+        amount: count[letter],
+        paint: count[letter]
+    }));
+
+    return arrayObjLetters;
 }
 
 const verific5Letters = (word) => {
@@ -141,6 +218,11 @@ const verificCorrect = (word) => {
     return word === currentWord
 }
 
+const gameOver = () => {
+    if(!win){
+        alert(`You lost, the right word was: "${currentWord}"! Good luck next time! Au revoir! `)
+    }
+}
 
 
 document.addEventListener('keydown', function (e) {
@@ -160,7 +242,7 @@ document.addEventListener('keydown', function (e) {
             verificationWord()
         }
     } else {
-        console.log("It's done! Reload to play again!");
+        alert("It's done! Reload to play again!")
     }
 });
 
@@ -169,26 +251,22 @@ async function getWord(amount, length) { // You can expand the game by changing 
     const resposta = await fetch(`https://random-word-api.herokuapp.com/word?number=${amount}&length=${length}`)
     const word = await resposta.json();
     currentWord = word[0].toUpperCase()
-    //console.log(currentWord);
+    console.log(currentWord);
 }
 
 makeBoard()
 getWord(1, 5)
 
 /*
-// I'm thinking about use the code below to verify the words the player is typing, so i just saved the code to use in the future
+// I'm thinking about use the code below to verify the words the player is typing, so I just saved the code to use in the future
 async function getAllWords() { 
     const resposta = await fetch(`https://random-word-api.herokuapp.com/all`)
     const words = await resposta.json();
     console.log(words);
-    if(words.includes('shape')){
-        console.log("OK ESTÁ AÍ ");
-    }else{
-        console.log('se mata, quase morri');
-    }
+
     words.forEach(w=> {
         if(w.length === 5){
-            //get especific words
+            especificWords.push(w)
         }
     });
 }
