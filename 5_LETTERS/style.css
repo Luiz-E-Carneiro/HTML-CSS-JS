@@ -80,8 +80,28 @@ img {
     align-items: center;
 }
 
-.borderBottom {
-    border-bottom: 5px solid #1a1423be;
+.borderedCell {
+    background-color: #1a142395;
+    border-top: 3px solid var(--dark_purple);
+    border-left: 3px solid var(--dark_purple) ;
+    border-right: 3px solid var(--dark_purple) ;
+    border-bottom: 10px solid var(--dark_purple);
+}
+
+.animateDiv{
+    animation: jumpAndScale 0.5s ease-out;
+}
+
+@keyframes jumpAndScale {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-10px) scale(1.1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
 }
 
 .inputLetter {
