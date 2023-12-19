@@ -10,7 +10,7 @@ var times = 0
 var win = false
 var firstTime = false
 
-var especificWords = []
+var possibleWords = []
 var arrayDivs = []
 var currentInputs = []
 var currentDivs = []
@@ -24,6 +24,20 @@ async function getWord(amount, length) {
     currentWord = word[0].toUpperCase()
     console.log(currentWord)
 }
+
+
+// Fuction to verify if the player's words are real words (in the API)
+async function getAllWords() {
+    const resposta = await fetch(`https://random-word-api.herokuapp.com/word?number=8885&length=5`)
+    var words = await resposta.json();
+    words.forEach(element => {
+        element = element.toUpperCase();
+        possibleWords.push(element);
+    });
+    console.log(possibleWords);
+    console.log('ready');
+}
+
 
 // Function to convert string to array
 function stringToArray(string) {
@@ -57,9 +71,8 @@ const makeInput = (line, key) => {
             line[i + 1].classList.add('borderedCell')
         } else if (div === line[line.length - 1]) {
             div.classList.add('animateDiv')
-            
+
         }
-        console.log( line[line.length - 1]);
     }
 
     currentCell++
@@ -78,7 +91,7 @@ const deleteLastLetter = (line) => {
                 line[currentDivs.length].classList.remove('borderedCell')
                 line[currentDivs.length - 1].classList.remove('animateDiv')
                 line[currentDivs.length - 1].classList.add('borderedCell')
-            }else{
+            } else {
                 line[currentDivs.length - 1].classList.remove('animateDiv')
             }
             currentDivs.pop()
@@ -94,7 +107,7 @@ const verificationWord = () => {
     })
     var word = values.join('')
 
-    if (verific5Letters(word)) {
+    if (verificWordAndLength(word)) {
         if (verificCorrect(word)) {
             win = true
             modal(win, currentWord)
@@ -117,8 +130,18 @@ const verificationWord = () => {
 }
 
 // Function to verify if the word has 5 letters
-const verific5Letters = (word) => {
-    return word.length === 5
+const verificWordAndLength = (word) => {
+    var okay = false
+    var correctLength = word.length
+    var includesWord = possibleWords.includes(word)
+
+    if (correctLength === 5 && includesWord) {
+        okay = true
+    } else {
+        if (word.length != 5) makeAlerts('WrongLength')
+        else if (!includesWord) makeAlerts('NotIncludes')
+    }
+    return okay
 }
 
 // Function to verify if the guessed word is correct
@@ -209,30 +232,6 @@ const countLetters = (arrayWord) => {
     return arrayObjLetters
 }
 
-// Function to handle the end of the game
-const gameOver = () => {
-    modal(win, currentWord)
-}
-
-// Fuction to reset the game
-
-const resetGame = () => {
-    currentLine = 1
-    currentCell = 1
-    times = 0
-    win = false
-    firstTime = false
-
-    especificWords = []
-    arrayDivs = []
-    currentInputs = []
-    currentDivs = []
-    objLetters = []
-    makeBoard()
-    changeColor()
-    getWord(1, 5)
-}
-
 // Event listener for keyboard input - Main
 document.addEventListener('keydown', function (e) {
     var key = e.key.toUpperCase()
@@ -259,3 +258,4 @@ document.addEventListener('keydown', function (e) {
 makeBoard()
 changeColor()
 getWord(1, 5)
+getAllWords()
