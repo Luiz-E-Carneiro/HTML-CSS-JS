@@ -22,7 +22,6 @@ async function getWord(amount, length) {
     const resposta = await fetch(`https://random-word-api.herokuapp.com/word?number=${amount}&length=${length}`)
     const word = await resposta.json()
     currentWord = word[0].toUpperCase()
-    console.log(currentWord)
 }
 
 
@@ -34,8 +33,6 @@ async function getAllWords() {
         element = element.toUpperCase();
         possibleWords.push(element);
     });
-    console.log(possibleWords);
-    console.log('ready');
 }
 
 
