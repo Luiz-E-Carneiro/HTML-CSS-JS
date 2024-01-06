@@ -4,13 +4,16 @@
     --bright_blue: rgb(0, 180, 216);
     --light_blue: rgb(144, 224, 239);
     --super_light_blue: rgb(202, 240, 248);
+    --rounded:'Concert One', sans-serif;
+    --paragraph: 'New Tegomin', 'sans-serif';
+    --pixed: 'Pixelify Sans', sans-serif;
+
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Concert One', sans-serif;
     user-select: none;
 }
 
@@ -23,7 +26,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: rgb(0, 180, 216);
-    background: linear-gradient(0deg, rgba(0, 180, 216, 1) 0%, rgba(0, 119, 182, 1) 100%);
+    background: linear-gradient(0deg,  rgba(0, 119, 182, 1) 0%, rgba(0, 180, 216, 1) 100%);
 }
 
 header {
@@ -33,6 +36,8 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    font-family: var(--pixed);
+    letter-spacing: 5px;
 }
 
 header img {
@@ -67,7 +72,8 @@ main {
 }
 
 .keyDiv,
-.keyEnter {
+.keyBackSpace,
+.keyPunctuation {
     width: 7%;
     height: 2.5em;
     background-color: rgba(144, 224, 239, .6);
@@ -77,10 +83,13 @@ main {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-family: var(--rounded);
 }
-
-.keyEnter {
-    width: 14%;
+.keyBackSpace {
+    width: 10%;
+}
+.keyPunctuation{
+    width: 4%;
 }
 
 /*TEXT AREA*/
@@ -89,12 +98,34 @@ main {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .spanText {
-    font-size: 1.5em;
-    text-align: justify;
-    line-height: 1.6em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5em 0;
+}
+
+.word{
+    display: flex;
+    gap: .2em
+}
+
+.spanLetter{
     color: var(--light_blue);
+    font-size: 1.4rem;
+    font-family: var(--paragraph);
+    font-weight: bold;
+}
+
+/*GAME ACTIONS*/
+
+.selectedLetter{
+    border-bottom: 3px solid var(--super_light_blue);    
+}
+
+.correctLetter{
+    color: var(--blue_MAIN);
 }
