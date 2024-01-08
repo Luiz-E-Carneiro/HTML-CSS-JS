@@ -4,7 +4,8 @@
     --bright_blue: rgb(0, 180, 216);
     --light_blue: rgb(144, 224, 239);
     --super_light_blue: rgb(202, 240, 248);
-    --rounded:'Concert One', sans-serif;
+    --grey: rgb(102, 128, 158);
+    --rounded: 'Concert One', sans-serif;
     --paragraph: 'New Tegomin', 'sans-serif';
     --pixed: 'Pixelify Sans', sans-serif;
 
@@ -26,7 +27,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: rgb(0, 180, 216);
-    background: linear-gradient(0deg,  rgba(0, 119, 182, 1) 0%, rgba(0, 180, 216, 1) 100%);
+    background: linear-gradient(0deg, rgba(0, 119, 182, 1) 0%, rgba(0, 180, 216, 1) 100%);
 }
 
 header {
@@ -73,7 +74,9 @@ main {
 
 .keyDiv,
 .keyBackSpace,
-.keyPunctuation {
+.keyPunctuation,
+.cliked,
+.keySpace {
     width: 7%;
     height: 2.5em;
     background-color: rgba(144, 224, 239, .6);
@@ -85,11 +88,21 @@ main {
     cursor: pointer;
     font-family: var(--rounded);
 }
+
 .keyBackSpace {
     width: 10%;
 }
-.keyPunctuation{
+
+.keyPunctuation {
     width: 4%;
+}
+
+.keySpace {
+    width: 40%;
+}
+
+.clicked {
+    background-color: var(--grey);
 }
 
 /*TEXT AREA*/
@@ -108,12 +121,12 @@ main {
     gap: .5em 0;
 }
 
-.word{
+.word {
     display: flex;
     gap: .2em
 }
 
-.spanLetter{
+.spanLetter {
     color: var(--light_blue);
     font-size: 1.4rem;
     font-family: var(--paragraph);
@@ -122,10 +135,15 @@ main {
 
 /*GAME ACTIONS*/
 
-.selectedLetter{
-    border-bottom: 3px solid var(--super_light_blue);    
+.selectedLetter {
+    border-bottom: 2px solid var(--super_light_blue);
 }
 
-.correctLetter{
+.correctLetter {
     color: var(--blue_MAIN);
+}
+
+.wrongLetter {
+    color: red;
+    text-decoration: line-through;
 }
