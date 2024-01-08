@@ -37,7 +37,7 @@ const getText = async () => {
     const data = await res.json()
 
     var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 5; i++) {
         var rand = Math.floor(Math.random() * numbers.length)
         numbers.splice(rand, 1)
         text = text + " " + data[rand].text
@@ -81,6 +81,3 @@ const ready = (array) => {
 }
 createKeyboard()
 getText()
-
-
-
