@@ -36,9 +36,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: .5em;
     font-family: var(--pixed);
     letter-spacing: 5px;
+    padding-top: 20px;
 }
 
 header img {
@@ -131,6 +132,11 @@ main {
     font-size: 1.4rem;
     font-family: var(--paragraph);
     font-weight: bold;
+    transition: .3s cubic-bezier(0, 0, 0, 1.0);
+}
+
+.spanLetter:hover{
+    color:var(--dark_blue) ;
 }
 
 /*GAME ACTIONS*/
@@ -146,4 +152,15 @@ main {
 .wrongLetter {
     color: red;
     text-decoration: line-through;
+}
+
+/*  TIMER   */
+
+.timer{
+    font-size: 1.2rem;
+    font-family: var(--pixed);
+    background-color: var(--light_blue);
+    padding: 2px;
+    border-radius: 5px;
+    text-shadow: 0 0 4px var(--bright_blue);
 }
