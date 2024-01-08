@@ -1,4 +1,7 @@
-var finishSound = new Audio('./assets/sounds/finish.mp3');
+var finishSound = new Audio('./assets/sounds/finish.mp3')
+var started = false
+let counting
+
 var alphabet = [
     'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '-',
     'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ç',
@@ -18,6 +21,9 @@ const passLetter = () => {
     allLetters[index - 1].classList.remove('selectedLetter');
     allLetters[index - 1].classList.add('correctLetter');
     if (index <= allLetters.length - 1) allLetters[index].classList.add('selectedLetter');
+    if (index === allLetters.length) {
+        finishGame()
+    }
 };
 
 const wrongLetter = () => {
@@ -70,6 +76,7 @@ const verificLetter = (key) => {
     if (allLetters[index].innerHTML == `&nbsp;` && key === " ") {
         index++;
         passLetter();
+        timer()
     } else {
         if (upperCase) keyTyped = keyTyped.toUpperCase();
         if (cureentLetterText === keyTyped) {
@@ -78,5 +85,32 @@ const verificLetter = (key) => {
         } else {
             wrongLetter();
         }
+        timer()
+    }
+}
+
+const finishGame = () => {
+    timer(true)
+    finishSound.play()
+}
+const timer = (stop = false) => {
+    if (!started && !stop) {
+        started = true
+        var timerElement = document.getElementById('timer')
+        var minutes = 0
+        var seconds = 0
+
+        counting = setInterval(() => {
+            if (seconds === 59) {
+                minutes++
+                seconds = 0
+            } else {
+                seconds++
+            }
+            timerElement.innerText = `${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`
+        }, 1000)
+    }
+    if (stop) {
+        clearInterval(counting)
     }
 };
