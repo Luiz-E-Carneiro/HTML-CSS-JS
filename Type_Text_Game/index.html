@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/iconsHeader.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=New+Tegomin&family=Pixelify+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=New+Tegomin&family=Pixelify+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
-    <title>Type Text</title>
+    <title>Type Text Game</title>
 </head>
 <body>
     <header>
-        <h1>Type</h1>
-        <img src="./assets/img/iconsHeader.png" alt="iconText">
+        <img src="assets/img/keyT.webp" alt="">
+        <h1>ype</h1>
+        <img src="assets/img/keyT.webp" alt="">
         <h1>ext</h1>
+        <img src="assets/img/keyG.png" alt="">
+        <h1>ame</h1>
     </header>
     <main>
+        <div class="actions-spot">
+            <div class="timer" id="timer">00:00</div>
+            <button class="btn-reset" id="restetBtn">Reset</button>
+        </div>
         <div class="area-text" id="textArea"></div>
         <div class="area-keyboard" id="areaKeyboard"></div>
     </main>
-
-    <script src="game.js"></script>
-    <script src="script.js"></script>
+    <script src="./JS/game.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 </html>
