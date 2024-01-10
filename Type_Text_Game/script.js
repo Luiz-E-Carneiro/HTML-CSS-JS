@@ -1,36 +1,3 @@
-const createKeyboard = () => {
-    const keysArea = document.getElementById('areaKeyboard')
-    var keyboard = [
-        ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
-        ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ç'],
-        [',', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ".", 'Backspace'],
-        ['Space']
-    ]
-
-    keyboard.forEach(array => {
-        let lineKeys = document.createElement('div')
-        lineKeys.classList.add('lineKeyboard')
-        array.forEach(k => {
-            let key = document.createElement('button')
-            key.classList.add('keyDiv')
-            if (k.length === 1) {
-                key.innerText = k
-                if (k === '.' || k === ',') key.classList.add('keyPunctuation')
-            }
-            else if (k === 'Backspace') {
-                key.innerHTML = `<span class="material-symbols-outlined">backspace</span>`
-                key.classList.toggle('keyBackSpace')
-            } else {
-                key.classList.toggle('keySpace')
-            }
-
-            lineKeys.appendChild(key)
-        });
-        keysArea.appendChild(lineKeys)
-    });
-
-}
-
 const getText = async () => {
     var text = ""
     const res = await fetch("https://type.fit/api/quotes")
@@ -79,5 +46,51 @@ const ready = (array) => {
     }
     startGame()
 }
-createKeyboard()
+
+var btn = document.getElementById('restetBtn')
+btn.addEventListener('click', function () {
+    timer(true)
+    getText()
+    const textArea = document.getElementById('textArea')
+    textArea.innerHTML = ""
+    index = 0
+    started = false
+})
 getText()
+
+
+// This is the code to create a keyboard to let a smarphone play as well, but I won't implement it for the moment
+// const createKeyboard = () => {
+//     const keysArea = document.getElementById('areaKeyboard')
+//     var keyboard = [
+//         ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
+//         ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ç'],
+//         [',', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ".", 'Backspace'],
+//         ['Space']
+//     ]
+
+//     keyboard.forEach(array => {
+//         let lineKeys = document.createElement('div')
+//         lineKeys.classList.add('lineKeyboard')
+//         array.forEach(k => {
+//             let key = document.createElement('button')
+//             key.classList.add('keyDiv')
+//             if (k.length === 1) {
+//                 key.innerText = k
+//                 if (k === '.' || k === ',') key.classList.add('keyPunctuation')
+//             }
+//             else if (k === 'Backspace') {
+//                 key.innerHTML = `<span class="material-symbols-outlined">backspace</span>`
+//                 key.classList.toggle('keyBackSpace')
+//             } else {
+//                 key.classList.toggle('keySpace')
+//             }
+
+//             lineKeys.appendChild(key)
+//         });
+//         keysArea.appendChild(lineKeys)
+//     });
+
+// }
+
+// createKeyboard()
