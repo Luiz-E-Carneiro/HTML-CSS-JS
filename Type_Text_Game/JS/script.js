@@ -23,7 +23,7 @@ const ready = (array) => {
     const textArea = document.getElementById('textArea')
 
     var spanParagraph = document.createElement('span')
-    spanParagraph.classList.add('spanText')                     //<--CHANGE CLASS NAME
+    spanParagraph.classList.add('spanParagraph')            
 
     var word = document.createElement('span')
     word.classList.add('word')
@@ -55,6 +55,11 @@ btn.addEventListener('click', function () {
     textArea.innerHTML = ""
     index = 0
     started = false
+    wrong = false
+    misses = 0
+    const missesArea = document.getElementById('misses');
+    missesArea.innerText = "00"
+
 })
 getText()
 
