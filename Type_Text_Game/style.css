@@ -64,7 +64,7 @@ main {
     justify-content: space-between;
 }
 
-.spanText {
+.spanParagraph {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -106,12 +106,32 @@ main {
 
 /* Actions Spot */
 .actions-spot {
+    width: 100%;
     display: flex;
-    gap: calc(2em + 20vw);
     align-items: center;
     margin-top: 2em;
 }
 
+.actions-spot > div {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Misses */
+.misses-back * {
+    font-size: 1.5rem;
+    font-family: var(--paragraph);
+}
+
+.misses{
+    background-color: var(--light_blue);
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-family: var(--pixed);
+}
 /*  TIMER   */
 
 .timer {
@@ -126,9 +146,12 @@ main {
 /* Restart Button */
 
 .btn-reset {
-    padding: 10px;
+    padding: 8px;
     color: var(--dark_blue);
+    font-family: var(--paragraph);
+    letter-spacing: 2px;
     font-weight: 600;
+    font-size: 1.1rem;
     text-transform: capitalize;
     border: 2px solid var(--dark_blue);
     border-radius: 7px;
