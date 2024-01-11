@@ -8,7 +8,7 @@ var alphabet = [
     'Z', 'X', 'C', 'V', 'B', 'N', 'M', ',', '.', ' ',
     'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '-',
     'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'ç',
-    'z', 'x', 'c', 'v', 'b', 'n', 'm'
+    'z', 'x', 'c', 'v', 'b', 'n', 'm', "'"
 ];
 
 var allLetters = document.getElementsByClassName('spanLetter');
