@@ -1,0 +1,65 @@
+:root {
+    --black_cell: rgb(136, 94, 63);
+    --white_cell: rgb(200, 172, 116);
+    --path: rgba(168, 145, 99, 0.815);
+}
+
+.x-Axie {
+    display: flex;
+}
+
+.board {
+    background-color: grey;
+    width: 30em;
+    height: 30em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: calc(100%/8);
+    height: calc(100%/8);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    background-color: var(--white_cell);
+}
+
+.black {
+    background-color: var(--black_cell);
+}
+
+.topNumber,
+.bottomLetter {
+    font-family: 'Arial';
+    color: #191919;
+}
+
+.topNumber {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: .7rem;
+}
+
+.bottomLetter {
+    font-size: .6rem;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+.capture-area {
+    background-color: grey;
+    min-width: 3em;
+    max-width: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
