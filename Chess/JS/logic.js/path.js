@@ -1,3 +1,12 @@
+var helpersDots = []
+var possibleMoves = []
+var verificCell
+var lastPiece
+var lastCell
+var lastImg
+let cellsWithPieces = separatePieces(boardObj);
+var pieces = document.getElementsByClassName('piece')
+
 function separatePieces(board) {
     let allCellsPiece = []
     let cellsBlackPieces = [];
@@ -10,85 +19,167 @@ function separatePieces(board) {
     });
     return { allCellsPiece, cellsBlackPieces, cellsWhitePieces };
 }
-let cellsWithPieces = separatePieces(boardObj);
-
-const pieces = document.getElementsByClassName('piece')
 
 for (let p of pieces) {
     p.addEventListener('click', () => addHelpPath(p))
 }
 
-var helperCells = []
-
 const pawnPath = (object) => {
     const { line, column, piece } = object;
+    var color = piece.color
     var x
-    piece.color === 'white' ? x = 1 : x = -1
+    color === 'white' ? x = 1 : x = -1
 
-    let adjacent = boardObj[line - (1 * x)][column]
-    let nextCell = boardObj[line - (2 * x)][column]
+    var moves = []
+    var captures = []
+    let inFront = boardObj[line - (1 * x)][column]
+    let nextFront = boardObj[line - (2 * x)][column]
 
-    if (helperCells.length > 0) {
-        helperCells[1].forEach(div => {
-            div.parentNode.removeChild(div)
-        });
-        if(helperCells[0][0] === adjacent && helperCells[0][1] === nextCell ) {
-            helperCells = []
-        }else{
-            helperCells = []
-            var cellsToPaint = [adjacent, nextCell]
-            helperCells.push(cellsToPaint)
-            paintPath(cellsToPaint)
-        }
+    if (!inFront.piece && nextFront.piece) moves.push(inFront)
+    else moves.push(inFront, nextFront)
+
+    var right = true
+    var left = true
+    if (column === 0 || column === 7) { column === 0 ? left = false : right = false }
+
+    if (!left) {
+        let dgnRight = boardObj[line - (1 * x)][column + 1]
+        if (dgnRight.piece) captures.push(dgnRight)
+    } else if (!right) {
+        let dgnLeft = boardObj[line - (1 * x)][column - 1]
+        if (dgnLeft.piece) captures.push(dgnLeft)
     } else {
-        var cellsToPaint = [adjacent, nextCell]
-        helperCells.push(cellsToPaint)
-        paintPath(cellsToPaint)
+        let dgnLeft = boardObj[line - (1 * x)][column - 1]
+        let dgnRight = boardObj[line - (1 * x)][column + 1]
+        if (boardObj[line - (1 * x)][column + 1].piece) captures.push(dgnRight)
+        if (boardObj[line - (1 * x)][column - 1].piece) captures.push(dgnLeft)
     }
-    console.log(helperCells);
+    possibleMoves.push({ moves: moves, captures: captures })
+    paintPath(moves, captures, piece.color)
+
 }
 
-const paintPath = (cells) => {
-    var arrayHelp = []
-    cells.forEach(c => {
+const paintPath = (moves, captures, color) => {
+    var color = color
+    moves.forEach(c => {
         var help = document.createElement('div')
-        arrayHelp.push(help)
-        c.piece ? help.classList.add('ring') : help.classList.add('ball')
+        helpersDots.push(help)
         c.cell.appendChild(help)
+        if (!c.piece) help.classList.add('ball')
         c.cell.classList.add('path')
-    });
-    helperCells.push(arrayHelp)
+    })
+    if (captures.length > 0) {
+        captures.forEach(c => {
+            var help = document.createElement('div')
+            helpersDots.push(help)
+            if (c.piece.color != color) help.classList.add('ring')
+            c.cell.appendChild(help)
+            c.cell.classList.add('path')
+        });
+    }
+    ableToPlay()
 }
 
+const removeHelpers = () => {
+    console.log(helpersDots);
+    helpersDots.forEach(div => {
+        div.parentNode.removeChild(div)
+    });
+    helpersDots = []
+    possibleMoves = []
+    lastPiece = ''
+    lastCell = ''
+    verificCell = ''
+    console.log(helpersDots);
+}
+
+
+const ableToPlay = () => {
+    possibleMoves[0].moves.forEach(c => {
+        c.cell.addEventListener('click', function () {
+            let piece = document.createElement('img')
+            piece.src = lastPiece.src
+            this.appendChild(piece)
+            
+            let lastLine = lastCell.line
+            let lastColumn = lastCell.column
+            let currLine = c.line
+            let currColumn = c.column
+            console.log(boardObj);
+            console.log(boardObj[lastLine][lastColumn]);
+            boardObj[lastLine][lastColumn].piece = false
+            console.log(boardObj[lastLine][lastColumn]);
+            boardObj[currLine][currColumn].piece = { piece: { name: lastPiece.name, color: lastPiece.color, src: `./../assets/images/${lastPiece.name}${lastPiece.color[0].toUpperCase()}.png` } }
+            lastImg.parentNode.removeChild(lastImg)
+            
+            removeHelpers()
+            cellsWithPieces = separatePieces(boardObj);
+            pieces = document.getElementsByClassName('piece')
+        })
+    });
+    // possibleMoves.captures.forEach(cellPiece => {
+    //     cellPiece.addEventListener('click', function () {
+
+    //     })
+    // })
+}
+
+
+
+const rookPath = () => {
+    const { line, column } = object;
+
+
+
+}
+const knightPath = () => {
+
+}
+const bishopPath = () => {
+
+}
+const queenPath = () => {
+
+}
+const kingPath = () => {
+
+}
 
 const addHelpPath = (p) => {
     var parent = p.parentNode
     cellsWithPieces.allCellsPiece.forEach(c => {
         if (parent === c.cell) {
-            switch (c.piece.name) {
-                case 'pawn':
-                    pawnPath(c)
-                    break;
-                // case 'rook':
-                //     rookPath()
-                //     break;
-                // case 'knight':
-                //     knightPath()
-                //     break;
-                // case 'bishop':
-                //     bishopPath()
-                //     break;
-                // case 'queen':
-                //     queenPath()
-                //     break;
-                // case 'king':
-                //     kingPath()
-                //     break;
-                // default:
-                //     alert('error, try again')
-                //     break;
+            if (parent != verificCell) {
+                lastImg = p
+                verificCell = c.cell
+                lastCell = { ...c }
+                lastPiece = c.piece
+                switch (c.piece.name) {
+                    case 'pawn':
+                        pawnPath(c)
+                        break;
+                    // case 'rook':
+                    //     rookPath()
+                    //     break;
+                    // case 'knight':
+                    //     knightPath()
+                    //     break;
+                    // case 'bishop':
+                    //     bishopPath()
+                    //     break;
+                    // case 'queen':
+                    //     queenPath()
+                    //     break;
+                    // case 'king':
+                    //     kingPath()
+                    //     break;
+                    // default:
+                    //     alert('error, try again')
+                    //     break;
+                }
+            } else {
+                removeHelpers()
             }
         }
     });
 }
-
