@@ -100,7 +100,8 @@ const numbersDiv = document.getElementsByClassName('numbers')
 const letterDiv = document.getElementsByClassName('letters')
 const boardArea = document.getElementById('board')
 
-const createBoard = () => {
+const realoadBoard = () => {
+    boardArea.innerHTML = ''
     var allCells = [];
     for (let i = 0; i < boardObj.length; i++) {
         let color = i % 2 !== 0 ? 'black' : 'white';
@@ -158,10 +159,10 @@ const createLetters = (allCells) => {
 }
 
 const putPieces = () => {
-    for(let i = 0; i < boardObj.length; i++){
+    for (let i = 0; i < boardObj.length; i++) {
         var line = boardObj[i]
         line.forEach(obj => {
-            if(!obj.piece) return
+            if (!obj.piece) return
             let imgPiece = document.createElement('img')
             imgPiece.classList.add('piece')
             imgPiece.src = obj.piece.src
@@ -171,4 +172,4 @@ const putPieces = () => {
     }
 }
 
-createBoard();
+realoadBoard();
