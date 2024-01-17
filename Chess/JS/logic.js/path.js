@@ -1,41 +1,59 @@
 var helpersDots = []
+var possiblePlays = []
+var currentObj = ''
 
 boardObj.forEach(line => {
     line.forEach(obj => {
         let cell = obj.cell
         cell.addEventListener('click', function () {
-            if(!verificCell(obj)){} //celanHelpers() 
+            if (obj.possibleMove) {
+                movePiece(obj)
+                cleanHelpers()
+                letPlayable(true)
+            } else {
+                if (currentObj === obj) {
+                    cleanHelpers()
+                    currentObj = ''
+                }
+                else {
+                    currentObj = {...obj}
+                    verificCell(currentObj)
+
+                }
+            }
         })
     });
 });
 
-const verificCell = (currentObj) => {
-    let { cell, piece } = currentObj
+const verificCell = (divObj) => {
+    cleanHelpers()
+    letPlayable(true)
+    let { cell, piece } = {...divObj} //AQUI N APARECE NADA, ESSE É O ÚNICO PROBLEMA
+    console.log(piece.name);
+    var img = false
 
     let elementosFilhos = cell.children;
     for (let i = 0; i < elementosFilhos.length; i++) {
         if (elementosFilhos[i].tagName.toLowerCase() === 'img') {
-            verificPieceToPath(currentObj, piece)
-            return true
-        }else {
-            return false
+            img = true
         }
     }
-    
+    console.log(img);
+    if (img) verificPieceToPath(divObj, piece)
+
 }
 
-const pawnPath = (currentObj) => {
-    const { line, column, color } = currentObj;
+
+const pawnPath = (divObj) => {
+    const { line, column, piece } = divObj;
+    var color = piece.color
     var x
     color === 'white' ? x = 1 : x = -1
 
     var moves = []
     var captures = []
     let inFront = boardObj[line - (1 * x)][column]
-    let nextFront
-    if (line != 1 && line != 6) {
-        nextFront = boardObj[line - (2 * x)][column]
-    }
+    let nextFront = boardObj[line - (2 * x)][column]
     if (!inFront.piece && nextFront.piece) moves.push(inFront)
     else if (!inFront.piece && !nextFront.piece) moves.push(inFront, nextFront)
     else return
@@ -49,7 +67,9 @@ const pawnPath = (currentObj) => {
     }
     const checkAndPushCapture = (targetColumn) => {
         const diagonalCell = boardObj[line - (1 * x)][targetColumn];
-        if (diagonalCell.piece && diagonalCell.piece.color !== color) {
+        console.log(diagonalCell.piece);
+
+        if (diagonalCell.piece && diagonalCell.piece.color != color) {
             captures.push(diagonalCell);
         }
     };
@@ -81,12 +101,63 @@ const paintPath = (moves, captures) => {
             c.cell.classList.add('path')
         });
     }
+    possiblePlays.push(moves, captures)
+    letPlayable()
 }
 
-const verificPieceToPath = (currentObj, piece) => {
+const cleanHelpers = () => {
+    helpersDots.forEach(div => {
+        div.parentNode.removeChild(div)
+    });
+    helpersDots = []
+}
+
+const letPlayable = (exclue = false) => {
+    possiblePlays.forEach(arrayDivs => {
+        arrayDivs.forEach(c => {
+            let { column, line } = c
+            if (exclue) {
+                delete boardObj[line][column].possibleMove
+            } else {
+                let { column, line } = c
+                boardObj[line][column].possibleMove = true
+            }
+        });
+    });
+}
+
+const movePiece = (newSpot) => {
+    //curentObj -- to get out
+    //NewSpot -- to go
+    var img
+    //DELET IMG
+    let elementosFilhos = currentObj.cell.children;
+    for (let i = 0; i < elementosFilhos.length; i++) {
+        if (elementosFilhos[i].tagName.toLowerCase() === 'img') {
+            img = elementosFilhos[i]
+            elementosFilhos[i].parentNode.removeChild(elementosFilhos[i])
+        }
+    }
+    //DELETE piece from the main OBJ
+    const { column, line } = currentObj
+    const { name, color } = currentObj.piece
+    console.log(name);
+    boardObj[line][column].piece = false
+    // ADD IT TO THE NEW CELL
+    newSpot.cell.appendChild(img)
+    // ADD IN THE MAIN OBJ
+    var newColumn = newSpot.column
+    var newLine = newSpot.line
+    var WB = color === 'white' ? 'W' : 'B'
+    boardObj[newLine][newColumn].piece = { piece: { name: name, color: color, src: `./../assets/images/${name}${WB}.png` } }
+}
+
+const verificPieceToPath = (divObj, piece) => {
+
+    console.log(piece.name);
     switch (piece.name) {
         case 'pawn':
-            pawnPath(currentObj)
+            pawnPath(divObj)
             break;
         case 'rook':
 
