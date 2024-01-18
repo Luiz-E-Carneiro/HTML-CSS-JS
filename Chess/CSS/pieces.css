@@ -20,11 +20,14 @@ img {
 }
 
 .ring {
-    position: relative;
-    width: 90%;
-    height: 90%;
+    position: absolute;
+    width: 95%;
+    height: 95%;
     border: 3px solid rgba(250, 235, 215, 0.7);
     border-radius: 50%;
+    left: 2.5%;
+    bottom: 2.5%;
+    transition: .1s ease-in-out;
 }
 
 .ring::before {
@@ -41,4 +44,21 @@ img {
 
 .path:hover .ring {
     border: 5px solid rgba(250, 235, 215, 0.7);
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+
+.image-container img {
+    width: 100%;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: translate(0, -40%);
 }
