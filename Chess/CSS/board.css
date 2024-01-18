@@ -4,14 +4,15 @@
     --path: rgba(168, 145, 99, 0.815);
 }
 
-.x-Axie {
+.x--Axie {
     display: flex;
+    gap: .5em;
 }
 
 .board {
     background-color: grey;
-    width: 30em;
-    height: 30em;
+    width: 28em;
+    height: 28em;
     display: flex;
     flex-wrap: wrap;
 }
@@ -54,12 +55,14 @@
 }
 
 .capture-area {
-    background-color: grey;
-    min-width: 3em;
-    max-width: 4em;
+    background-color: rgb(87, 80, 77);
+    width: 3em;
+    max-width: 3em;
+    max-height: 28em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+
+    border-radius: 10px;
 }
