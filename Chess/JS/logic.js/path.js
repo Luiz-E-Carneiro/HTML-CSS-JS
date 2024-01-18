@@ -1,3 +1,4 @@
+var player = 'Player1'
 var helpersDots = []
 var possiblePlays = []
 var currentObj = ''
@@ -7,18 +8,20 @@ boardObj.forEach(line => {
         let cell = obj.cell
         cell.addEventListener('click', function () {
             if (obj.possibleMove) {
-                cleanHelpers()
-                letPlayable(true)
                 movePiece(obj)
+                refrash()
+                player === 'Player1' ? player = 'Player2' : player = 'Player1'
             } else {
                 if (currentObj === obj) {
                     currentObj = ''
-                    cleanHelpers()
-                }
-                else {
-                    currentObj = obj
-                    verificCell(currentObj)
-
+                    refrash()
+                } else {
+                    if (verifiPlayerTime(obj.piece.color)) {
+                        currentObj = obj
+                        verificCell(currentObj)
+                    } else {
+                        refrash()
+                    }
                 }
             }
         })
@@ -26,9 +29,8 @@ boardObj.forEach(line => {
 });
 
 const verificCell = (divObj) => {
-    cleanHelpers()
-    letPlayable(true)
-    let { cell, piece } = { ...divObj }
+    refrash()
+    let { cell, piece } = divObj
     var img = false
 
     let elementosFilhos = cell.children;
@@ -76,10 +78,15 @@ const pawnPath = (divObj) => {
 
     var moves = []
     var captures = []
-    let inFront = boardObj[line - (1 * x)][column]
-    let nextFront = boardObj[line - (2 * x)][column]
-    if (!inFront.piece && nextFront.piece) moves.push(inFront)
-    else if (!inFront.piece && !nextFront.piece) moves.push(inFront, nextFront)
+    if (!piece.firstPlay) {
+        let inFront = boardObj[line - (1 * x)][column]
+        let nextFront = boardObj[line - (2 * x)][column]
+        if (!inFront.piece && nextFront.piece) moves.push(inFront)
+        else if (!inFront.piece && !nextFront.piece) moves.push(inFront, nextFront)
+    } else {
+        let inFront = boardObj[line - (1 * x)][column]
+        if (!inFront.piece) moves.push(inFront)
+    }
 
     let getRight = true;
     let getLeft = true;
