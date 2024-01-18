@@ -1,26 +1,26 @@
 var boardObj = [
     // Line 1
     [
-        { piece: { name: 'rook', color: 'black', src: "./../assets/images/rookB.png" } },
-        { piece: { name: 'knight', color: 'black', src: "./../assets/images/knightB.png" } },
-        { piece: { name: 'bishop', color: 'black', src: "./../assets/images/bishopB.png" } },
-        { piece: { name: 'king', color: 'black', src: "./../assets/images/kingB.png" } },
-        { piece: { name: 'queen', color: 'black', src: "./../assets/images/queenB.png" } },
-        { piece: { name: 'bishop', color: 'black', src: "./../assets/images/bishopB.png" } },
-        { piece: { name: 'knight', color: 'black', src: "./../assets/images/knightB.png" } },
-        { piece: { name: 'rook', color: 'black', src: "./../assets/images/rookB.png" } }
+        { piece: { name: 'rook', color: 'black', src: "./../assets/pieces/rookB.png" } },
+        { piece: { name: 'knight', color: 'black', src: "./../assets/pieces/knightB.png" } },
+        { piece: { name: 'bishop', color: 'black', src: "./../assets/pieces/bishopB.png" } },
+        { piece: { name: 'queen', color: 'black', src: "./../assets/pieces/queenB.png" } },
+        { piece: { name: 'king', color: 'black', src: "./../assets/pieces/kingB.png" } },
+        { piece: { name: 'bishop', color: 'black', src: "./../assets/pieces/bishopB.png" } },
+        { piece: { name: 'knight', color: 'black', src: "./../assets/pieces/knightB.png" } },
+        { piece: { name: 'rook', color: 'black', src: "./../assets/pieces/rookB.png" } }
     ],
 
     // Line 2
     [
-        { piece: { name: 'pawn', color: 'black', src: "./../assets/images/pawnB.png" } },
-        { piece: { name: 'pawn', color: 'black', src: "./../assets/images/pawnB.png" } },
-        { piece: { name: 'pawn', color: 'black', src: "./../assets/images/pawnB.png" } },
-        { piece: { name: 'pawn', color: 'black', src: "./../assets/images/pawnB.png" } },
-        { piece: { name: 'pawn', color: 'black', src: "./../assets/images/pawnB.png" } },
-        { piece: { name: 'pawn', color: 'black', src: "./../assets/images/pawnB.png" } },
-        { piece: { name: 'pawn', color: 'black', src: "./../assets/images/pawnB.png" } },
-        { piece: { name: 'pawn', color: 'black', src: "./../assets/images/pawnB.png" } }
+        { piece: { name: 'pawn', color: 'black', firstPlay: false, src: "./../assets/pieces/pawnB.png" } },
+        { piece: { name: 'pawn', color: 'black', firstPlay: false, src: "./../assets/pieces/pawnB.png" } },
+        { piece: { name: 'pawn', color: 'black', firstPlay: false, src: "./../assets/pieces/pawnB.png" } },
+        { piece: { name: 'pawn', color: 'black', firstPlay: false, src: "./../assets/pieces/pawnB.png" } },
+        { piece: { name: 'pawn', color: 'black', firstPlay: false, src: "./../assets/pieces/pawnB.png" } },
+        { piece: { name: 'pawn', color: 'black', firstPlay: false, src: "./../assets/pieces/pawnB.png" } },
+        { piece: { name: 'pawn', color: 'black', firstPlay: false, src: "./../assets/pieces/pawnB.png" } },
+        { piece: { name: 'pawn', color: 'black', firstPlay: false, src: "./../assets/pieces/pawnB.png" } }
     ],
 
     // Line 3 (sem peças)
@@ -73,26 +73,26 @@ var boardObj = [
 
     // Line 7
     [
-        { piece: { name: 'pawn', color: 'white', src: "./../assets/images/pawnW.png" } },
-        { piece: { name: 'pawn', color: 'white', src: "./../assets/images/pawnW.png" } },
-        { piece: { name: 'pawn', color: 'white', src: "./../assets/images/pawnW.png" } },
-        { piece: { name: 'pawn', color: 'white', src: "./../assets/images/pawnW.png" } },
-        { piece: { name: 'pawn', color: 'white', src: "./../assets/images/pawnW.png" } },
-        { piece: { name: 'pawn', color: 'white', src: "./../assets/images/pawnW.png" } },
-        { piece: { name: 'pawn', color: 'white', src: "./../assets/images/pawnW.png" } },
-        { piece: { name: 'pawn', color: 'white', src: "./../assets/images/pawnW.png" } }
+        { piece: { name: 'pawn', color: 'white', firstPlay: false, src: "./../assets/pieces/pawnW.png" } },
+        { piece: { name: 'pawn', color: 'white', firstPlay: false, src: "./../assets/pieces/pawnW.png" } },
+        { piece: { name: 'pawn', color: 'white', firstPlay: false, src: "./../assets/pieces/pawnW.png" } },
+        { piece: { name: 'pawn', color: 'white', firstPlay: false, src: "./../assets/pieces/pawnW.png" } },
+        { piece: { name: 'pawn', color: 'white', firstPlay: false, src: "./../assets/pieces/pawnW.png" } },
+        { piece: { name: 'pawn', color: 'white', firstPlay: false, src: "./../assets/pieces/pawnW.png" } },
+        { piece: { name: 'pawn', color: 'white', firstPlay: false, src: "./../assets/pieces/pawnW.png" } },
+        { piece: { name: 'pawn', color: 'white', firstPlay: false, src: "./../assets/pieces/pawnW.png" } }
     ],
 
     // Line 8
     [
-        { piece: { name: 'rook', color: 'white', src: "./../assets/images/rookW.png" } },
-        { piece: { name: 'knight', color: 'white', src: "./../assets/images/knightW.png" } },
-        { piece: { name: 'bishop', color: 'white', src: "./../assets/images/bishopW.png" } },
-        { piece: { name: 'queen', color: 'white', src: "./../assets/images/queenW.png" } },
-        { piece: { name: 'king', color: 'white', src: "./../assets/images/kingW.png" } },
-        { piece: { name: 'bishop', color: 'white', src: "./../assets/images/bishopW.png" } },
-        { piece: { name: 'knight', color: 'white', src: "./../assets/images/knightW.png" } },
-        { piece: { name: 'rook', color: 'white', src: "./../assets/images/rookW.png" } }
+        { piece: { name: 'rook', color: 'white', src: "./../assets/pieces/rookW.png" } },
+        { piece: { name: 'knight', color: 'white', src: "./../assets/pieces/knightW.png" } },
+        { piece: { name: 'bishop', color: 'white', src: "./../assets/pieces/bishopW.png" } },
+        { piece: { name: 'queen', color: 'white', src: "./../assets/pieces/queenW.png" } },
+        { piece: { name: 'king', color: 'white', src: "./../assets/pieces/kingW.png" } },
+        { piece: { name: 'bishop', color: 'white', src: "./../assets/pieces/bishopW.png" } },
+        { piece: { name: 'knight', color: 'white', src: "./../assets/pieces/knightW.png" } },
+        { piece: { name: 'rook', color: 'white', src: "./../assets/pieces/rookW.png" } }
     ]
 ]
 
