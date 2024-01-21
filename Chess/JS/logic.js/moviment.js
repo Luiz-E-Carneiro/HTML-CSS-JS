@@ -113,13 +113,12 @@ const getDiagonals = (line, column, color, directions, moves, captures) => {
 }
 
 const movePiece = (newSpot) => {
-    //curentObj -- to take out
-    //NewSpot -- to go
     let capturedAreas = document.getElementsByClassName('capture-area')
     let capturedWhite = capturedAreas[0]
     let capturedBlack = capturedAreas[1]
     var img
-    //DELET IMG    
+    var captured = false
+    // Delete img    
     function deletePiece(childrens, newS = false) {
         for (let i = 0; i < childrens.length; i++) {
             if (childrens[i].tagName.toLowerCase() === 'img') {
@@ -130,7 +129,7 @@ const movePiece = (newSpot) => {
                     imgConteiner.classList.add('image-container')
                     imgConteiner.appendChild(img)
                     newSpot.piece.color === 'white' ? capturedWhite.appendChild(imgConteiner) : capturedBlack.appendChild(imgConteiner)
-
+                    captured = true
                 }
             }
         }
@@ -140,9 +139,9 @@ const movePiece = (newSpot) => {
     deletePiece(currentObj.cell.children)
     const { column, line } = { ...currentObj }
     const { name, color } = currentObj.piece
-    // ADD IT TO THE NEW CELL
+    // Add img in the new cell
     newSpot.cell.appendChild(img)
-    // ADD IN THE MAIN OBJ
+    // get infos in main obj (boardObj)
     var newColumn = newSpot.column
     var newLine = newSpot.line
     var WB = color === 'white' ? 'W' : 'B'
@@ -153,10 +152,19 @@ const movePiece = (newSpot) => {
         boardObj[newLine][newColumn].piece = { name: name, color: color, firstPlay: true, src: `./../assets/pieces/${name}${WB}.png` }
         if (newLine === 0 || newLine === 7) promotePawn(boardObj[newLine][newColumn])
     } else {
-        boardObj[newLine][newColumn].piece = { name: name, color: color, firstPlay: true ,src: `./../assets/pieces/${name}${WB}.png` }
+        boardObj[newLine][newColumn].piece = { name: name, color: color, firstPlay: true, src: `./../assets/pieces/${name}${WB}.png` }
     }
-
     boardObj[line][column].piece = false
+
+    //Sound
+    let captureSound = new Audio('./../../assets/sounds/capture.mp3')
+    captureSound.play
+    let whiteMoveSound = new Audio('./../../assets/sounds/move-self.mp3')
+    let blackMoveSound = new Audio('./../../assets/sounds/move-opponent.mp3')
+
+    if (captured) captureSound.play()
+    else player === 'Player1' ? whiteMoveSound.play() : blackMoveSound.play()
+
     refrash()
     // validateCheck()
 }
