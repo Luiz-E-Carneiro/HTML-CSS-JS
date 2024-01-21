@@ -55,7 +55,6 @@
 }
 
 .capture-area {
-    background-color: rgb(87, 80, 77);
     width: 3em;
     max-width: 3em;
     max-height: 28em;
@@ -63,6 +62,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+}
 
-    border-radius: 10px;
+.capture-area:first-of-type{
+    background-color: var(--white_cell);
+}
+.capture-area:last-of-type{
+    background-color: var(--black_cell);
 }
