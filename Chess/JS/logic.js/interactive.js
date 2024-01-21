@@ -34,6 +34,7 @@ const paintPath = (moves, captures) => {
 const refrash = () => {
     cleanHelpers()
     letPlayable(true)
+    cancelCastle()
 }
 
 const cleanHelpers = () => {
@@ -56,6 +57,16 @@ const letPlayable = (exclue = false) => {
         });
     });
 }
+
+const cancelCastle = () => {
+    boardObj.forEach(line => {
+        line.forEach(obj => {
+            if(obj.castle) delete obj.castle
+        });
+    });
+    possibleCastle = {left: null, right: null }
+}
+
 
 var blackChoose = document.getElementById('promoteBlackArea')
 var whiteChoose = document.getElementById('promoteWhiteArea')
