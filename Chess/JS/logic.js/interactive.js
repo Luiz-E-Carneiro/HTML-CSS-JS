@@ -58,13 +58,61 @@ const letPlayable = (exclue = false) => {
     });
 }
 
+
+const verificCastle = (divObj) => {
+    const { line, column, piece } = divObj
+    const color = piece.color
+
+    const allPieces = boardObj.map(line =>
+        line.map(cell => cell.piece && cell.piece.name === 'rook' && !cell.piece.firstPlay && cell.piece.color === color ? cell : null)
+    );
+    const filteredRooks = allPieces.flat().filter(cell => cell !== null);
+    if (filteredRooks.length == 0) return
+    filteredRooks.forEach(rookCell => {
+        if (rookCell.column === 0) verificEmptySpaces('left', rookCell.column)
+        if (rookCell.column === 7) verificEmptySpaces('right', rookCell.column)
+    });
+
+    function verificEmptySpaces(side, rookColumn) {
+        var emptySpaces = true
+        if (side === 'left') {
+            for (let i = rookColumn + 1; i < column; i++) {
+                if (boardObj[line][i].piece) emptySpaces = false
+            }
+        } else {
+            for (let i = rookColumn - 1; i > column; i--) {
+                if (boardObj[line][i].piece) emptySpaces = false
+            }
+        }
+
+        if (emptySpaces) {
+            var help = document.createElement('div')
+            helpersDots.push(help)
+            help.classList.add('square')
+            console.log(side);
+            if (side === 'left') {
+                boardObj[line][column - 2].cell.appendChild(help)
+                boardObj[line][column - 2].cell.classList.add('path')
+                boardObj[line][column - 2].castle = true
+                possibleCastle.left = boardObj[line][column - 2].cell
+            } else {
+                boardObj[line][column + 2].cell.appendChild(help)
+                boardObj[line][column + 2].cell.classList.add('path')
+                boardObj[line][column + 2].castle = true
+                possibleCastle.right = boardObj[line][column + 2].cell
+            }
+        }
+        console.log(possibleCastle);
+    }
+}
+
 const cancelCastle = () => {
     boardObj.forEach(line => {
         line.forEach(obj => {
-            if(obj.castle) delete obj.castle
+            if (obj.castle) delete obj.castle
         });
     });
-    possibleCastle = {left: null, right: null }
+    possibleCastle = { left: null, right: null }
 }
 
 
