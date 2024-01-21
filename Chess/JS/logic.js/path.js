@@ -1,81 +1,3 @@
-var player = 'Player1'
-var helpersDots = []
-var possibleCastle = { left: null, right: null }
-var possiblePlays = []
-var currentObj = ''
-
-boardObj.forEach(line => {
-    line.forEach(obj => {
-        let cell = obj.cell
-        cell.addEventListener('click', function () {
-            if (obj.castle) {
-                castle(obj)
-                player === 'Player1' ? player = 'Player2' : player = 'Player1'
-                console.log(boardObj);
-            }
-            else if (obj.possibleMove) {
-                movePiece(obj)
-                refrash()
-                player === 'Player1' ? player = 'Player2' : player = 'Player1'
-            } else {
-                if (currentObj === obj) {
-                    currentObj = ''
-                    refrash()
-                } else {
-                    if (verifiPlayerTime(obj.piece.color)) {
-                        currentObj = obj
-                        verificCell(currentObj)
-                    } else {
-                        refrash()
-                    }
-                }
-            }
-        })
-    });
-});
-
-const verificCell = (divObj) => {
-    refrash()
-    let { cell, piece } = divObj
-    var img = false
-
-    let elementosFilhos = cell.children;
-    for (let i = 0; i < elementosFilhos.length; i++) {
-        if (elementosFilhos[i].tagName.toLowerCase() === 'img') {
-            img = true
-        }
-    }
-    if (img) verificPieceToPath(divObj, piece)
-
-}
-
-const verificPieceToPath = (divObj, piece) => {
-    switch (piece.name) {
-        case 'pawn':
-            pawnPath(divObj)
-            break;
-        case 'rook':
-            rookPath(divObj)
-            break;
-        case 'knight':
-            knightPath(divObj)
-            break;
-        case 'bishop':
-            bishopPath(divObj)
-            break;
-        case 'queen':
-            queenPath(divObj)
-            break;
-        case 'king':
-            kingPath(divObj)
-            break;
-
-        default:
-            alert('Something went wrong, try again please!')
-            break;
-    }
-}
-
 const pawnPath = (divObj) => {
     const { line, column, piece } = divObj;
     var color = piece.color
@@ -211,52 +133,6 @@ const queenPath = (divObj) => {
     paintPath(allMoves, allCaptures)
 }
 
-const verificCastle = (divObj) => {
-    const { line, column, piece } = divObj
-    const color = piece.color
-
-    const allPieces = boardObj.map(line =>
-        line.map(cell => cell.piece && cell.piece.name === 'rook' && !cell.piece.firstPlay && cell.piece.color === color ? cell : null)
-    );
-    const filteredRooks = allPieces.flat().filter(cell => cell !== null);
-    if (filteredRooks.length == 0) return
-    filteredRooks.forEach(rookCell => {
-        if (rookCell.column === 0) verificEmptySpaces('left', rookCell.column)
-        if (rookCell.column === 7) verificEmptySpaces('right', rookCell.column)
-    });
-
-    function verificEmptySpaces(side, rookColumn) {
-        var emptySpaces = true
-        if (side === 'left') {
-            for (let i = rookColumn + 1; i < column; i++) {
-                if (boardObj[line][i].piece) emptySpaces = false
-            }
-        } else {
-            for (let i = rookColumn - 1; i > column; i--) {
-                if (boardObj[line][i].piece) emptySpaces = false
-            }
-        }
-
-        if (emptySpaces) {
-            var help = document.createElement('div')
-            helpersDots.push(help)
-            help.classList.add('square')
-            console.log(side);
-            if (side === 'left') {
-                boardObj[line][column - 2].cell.appendChild(help)
-                boardObj[line][column - 2].cell.classList.add('path')
-                boardObj[line][column - 2].castle = true
-                possibleCastle.left = boardObj[line][column - 2].cell
-            } else {
-                boardObj[line][column + 2].cell.appendChild(help)
-                boardObj[line][column + 2].cell.classList.add('path')
-                boardObj[line][column + 2].castle = true
-                possibleCastle.right = boardObj[line][column + 2].cell
-            }
-        }
-        console.log(possibleCastle);
-    }
-}
 const castle = (cellObj) => {
     var { line, column } = cellObj
     var color = cellObj.line === 0 ? 'black' : 'white'
@@ -283,9 +159,6 @@ const castle = (cellObj) => {
                 }
             })
         });
-
-        console.log(objKing);
-        console.log(objRook);
         var imgKing = deletePiece(objKing.cell.children)
         var imgRook = deletePiece(objRook.cell.children)
 
@@ -318,6 +191,11 @@ const castle = (cellObj) => {
                 }
             }
         }
+
+        //Sound
+        let castleSound = new Audio('./../../assets/sounds/castle.mp3')
+        castleSound.play()
+
         refrash()
     }
 }
