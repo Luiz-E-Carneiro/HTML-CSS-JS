@@ -166,5 +166,7 @@ const movePiece = (newSpot) => {
     else player === 'Player1' ? whiteMoveSound.play() : blackMoveSound.play()
 
     refrash()
-    // validateCheck()
+    resetBlockedCells()
+    validateCheck()
+    verificCheck()
 }
