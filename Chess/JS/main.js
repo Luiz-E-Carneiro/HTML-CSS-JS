@@ -22,8 +22,8 @@ boardObj.forEach(line => {
                     currentObj = ''
                     refrash()
                 } else {
+                    currentObj = obj
                     if (verifiPlayerTime(obj.piece.color)) {
-                        currentObj = obj
                         verificCell(currentObj)
                     } else {
                         refrash()
