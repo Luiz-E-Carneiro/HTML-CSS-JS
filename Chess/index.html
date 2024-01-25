@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="CSS/overall.css">
     <link rel="stylesheet" href="CSS/board.css">
     <link rel="stylesheet" href="CSS/pieces.css">
-    <link rel="shortcut icon" href="assets/images/browserTab.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imgs/browserTab.png" type="image/x-icon">
     <title>Chess</title>
 </head>
 <body>
-    <main class="x-Axie">
+    <div class="promote--area--white" id="promoteWhiteArea">
+
+    </div>
+    <div class="x--Axie">
 
         <div class="capture-area"></div>
 
@@ -18,13 +21,18 @@
 
         <div class="capture-area"></div>
 
-    </main>
+    </div>
+    <div class="promote--area--black" id="promoteBlackArea">
     </div>
     <script src="JS/board.js"></script>
     <script src="JS/logic/moviment.js"></script>
     <script src="JS/logic/path.js"></script>
     <script src="JS/main.js"></script>
     <script src="JS/logic/interactive.js"></script>
-    <script src="JS/logic/validator.js"></script>
+    <script src="JS/logic/validator/validates.js"></script>
+    <script src="JS/logic/validator/path_block.js"></script>
+    <script src="JS/logic/validator/block_cells.js"></script>
+    <script src="JS/logic/validator/check.js"></script>
+    <script src="JS/logic/validator/defender_piece.js"></script>
 </body>
 </html>
