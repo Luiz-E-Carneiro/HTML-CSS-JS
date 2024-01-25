@@ -70,14 +70,14 @@ const getDiagonals = (line, column, color, directions, moves, captures) => {
                     } else stopCondition = true
                     break;
 
-                case 'topRight':
+                case 'bottomRight':
                     if (line + j <= 7 && column + j <= 7) {
                         cell = boardObj[line + j][column + j];
                         stopCondition = column + j === 7 || line + j === 7;
                     } else stopCondition = true
                     break;
 
-                case 'bottomLeft':
+                case 'topRight':
                     if (line - j >= 0 && column + j <= 7) {
                         cell = boardObj[line - j][column + j];
                         stopCondition = line - j === 0
@@ -85,7 +85,7 @@ const getDiagonals = (line, column, color, directions, moves, captures) => {
                     } else stopCondition = true
                     break;
 
-                case 'bottomRight':
+                case 'bottomLeft':
                     if (line + j <= 7 && column - j >= 0) {
                         cell = boardObj[line + j][column - j];
                         stopCondition = line + j === 7
@@ -164,9 +164,10 @@ const movePiece = (newSpot) => {
 
     if (captured) captureSound.play()
     else player === 'Player1' ? whiteMoveSound.play() : blackMoveSound.play()
-
+        
     refrash()
     resetBlockedCells()
+    resetLimits()
     validateCheck()
     verificCheck()
 }
