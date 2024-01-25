@@ -6,14 +6,13 @@ var currentObj = ''
 
 boardObj.forEach(line => {
     line.forEach(obj => {
-        let cell = obj.cell
+        let cell = obj.cell 
         cell.addEventListener('click', function () {
             if (obj.castle) {
                 castle(obj)
                 player === 'Player1' ? player = 'Player2' : player = 'Player1'
                 console.log(boardObj);
-            }
-            else if (obj.possibleMove) {
+            } else if (obj.possibleMove) {
                 movePiece(obj)
                 refrash()
                 player === 'Player1' ? player = 'Player2' : player = 'Player1'
@@ -23,9 +22,9 @@ boardObj.forEach(line => {
                     refrash()
                 } else {
                     currentObj = obj
-                    if (verifiPlayerTime(obj.piece.color)) {
+                    if (verifiPlayerTime(obj.piece.color) && !obj.cannotMove) {
                         verificCell(currentObj)
-                    } else {
+                    } else{
                         refrash()
                     }
                 }
