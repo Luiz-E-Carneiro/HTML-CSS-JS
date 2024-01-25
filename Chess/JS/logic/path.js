@@ -46,12 +46,16 @@ const rookPath = (divObj) => {
     var color = piece.color
     var moves = []
     var captures = []
+    //    onlyLR  ;   onlyUD  
+    var cellsToPaint
+    if (divObj.onlyUD) cellsToPaint = getVerticalHorizontal(line, column, color, ['up', 'down'], moves, captures)
+    else if (divObj.onlyLR) cellsToPaint = getVerticalHorizontal(line, column, color, ['left', 'right'], moves, captures)
+    else cellsToPaint = getVerticalHorizontal(line, column, color, ['left', 'right', 'up', 'down'], moves, captures)
 
-    const cellsToPaint = getVerticalHorizontal(line, column, color, ['left', 'right', 'up', 'down'], moves, captures)
     paintPath(cellsToPaint[0], cellsToPaint[1])
 }
 
-const knightPath = (divObj, validator = false) => {
+const knightPath = (divObj) => {
     const { line, column, piece } = divObj;
     var color = piece.color
     var moves = []
@@ -87,9 +91,19 @@ const bishopPath = (divObj) => {
     var color = piece.color
     var moves = []
     var captures = []
-    const cellsToPaint = getDiagonals(line, column, color, ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'], moves, captures)
+    //      onlyTLBR    ;   onlyTRBL
+    var cellsToPaint
+    if (divObj.onlyTLBR || divObj.onlyTRBL) {
+        if (divObj.onlyTLBR) {
+            cellsToPaint = getDiagonals(line, column, color, ['topLeft', 'bottomRight'], moves, captures)
+        }
+        else if (divObj.onlyTRBL) {
+            cellsToPaint = getDiagonals(line, column, color, ['topRight', 'bottomLeft'], moves, captures)
+        }
+    } else {
+        cellsToPaint = getDiagonals(line, column, color, ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'], moves, captures)
+    }
     paintPath(cellsToPaint[0], cellsToPaint[1])
-
 }
 
 const kingPath = (divObj) => {
@@ -125,9 +139,28 @@ const queenPath = (divObj) => {
     var color = piece.color
     var moves = []
     var captures = []
-    const verticalHorizontal = getVerticalHorizontal(line, column, color, ['left', 'right', 'up', 'down'], moves, captures)
-    const diagonals = getDiagonals(line, column, color, ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'], moves, captures)
 
+    var verticalHorizontal = [[],[]]
+    var diagonals = [[],[]]
+
+    if (divObj.onlyUD == true || divObj.onlyLR == true || divObj.onlyTLBR == true || divObj.onlyTRBL == true) {
+        //    onlyLR  ;   onlyUD  
+        if (divObj.onlyUD) {
+            verticalHorizontal = getVerticalHorizontal(line, column, color, ['up', 'down'], moves, captures)
+        } else if (divObj.onlyLR) {
+            verticalHorizontal = getVerticalHorizontal(line, column, color, ['left', 'right'], moves, captures)
+        }
+
+        //      onlyTLBR    ;   onlyTRBL
+        if (divObj.onlyTLBR) {
+            diagonals = getDiagonals(line, column, color, ['topLeft', 'bottomRight'], moves, captures)
+        } else if (divObj.onlyTRBL) {
+            diagonals = getDiagonals(line, column, color, ['topRight', 'bottomLeft'], moves, captures)
+        }
+    } else {
+        verticalHorizontal = getVerticalHorizontal(line, column, color, ['left', 'right', 'up', 'down'], moves, captures)
+        diagonals = getDiagonals(line, column, color, ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'], moves, captures)
+    }
     var allMoves = verticalHorizontal[0].concat(diagonals[0])
     var allCaptures = verticalHorizontal[1].concat(diagonals[1])
     paintPath(allMoves, allCaptures)
@@ -136,13 +169,10 @@ const queenPath = (divObj) => {
 const castle = (cellObj) => {
     var { line, column } = cellObj
     var color = cellObj.line === 0 ? 'black' : 'white'
-    console.log(cellObj.cell);
-    console.log(cellObj.cell);
     if (cellObj.cell === possibleCastle.left) changePieces('left', color)
     if (cellObj.cell === possibleCastle.right) changePieces('right', color)
 
     function changePieces(side, color) {
-        console.log('entrei');
         var numberSide = side === 'left' ? 0 : 7
         var abbrevColor = color === 'white' ? 'W' : 'B'
         var objKing
@@ -161,9 +191,6 @@ const castle = (cellObj) => {
         });
         var imgKing = deletePiece(objKing.cell.children)
         var imgRook = deletePiece(objRook.cell.children)
-
-        console.log(imgKing);
-        console.log(imgRook);
 
         if (numberSide === 0) {
             boardObj[line][column].cell.appendChild(imgKing)
