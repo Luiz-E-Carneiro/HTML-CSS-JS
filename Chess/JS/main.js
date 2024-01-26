@@ -11,7 +11,6 @@ boardObj.forEach(line => {
             if (obj.castle) {
                 castle(obj)
                 player === 'Player1' ? player = 'Player2' : player = 'Player1'
-                console.log(boardObj);
             } else if (obj.possibleMove) {
                 movePiece(obj)
                 refrash()
@@ -22,8 +21,8 @@ boardObj.forEach(line => {
                     refrash()
                 } else {
                     currentObj = obj
-                    if (verifiPlayerTime(obj.piece.color) && !obj.cannotMove) {
-                        verificCell(currentObj)
+                    if (verifiPlayerTime(obj.piece.color) && !obj.cannotMove ) {
+                        if(!needHelp(obj)) verificCell(currentObj)
                     } else{
                         refrash()
                     }
