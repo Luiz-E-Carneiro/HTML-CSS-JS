@@ -1,4 +1,4 @@
-const pawnPath = (divObj) => {
+const pawnPath = (divObj, helpKing = false) => {
     const { line, column, piece } = divObj;
     var color = piece.color
     var x
@@ -38,10 +38,14 @@ const pawnPath = (divObj) => {
         checkAndPushCapture(column - 1);
         checkAndPushCapture(column + 1);
     }
-    paintPath(moves, captures)
+
+    if (!helpKing) paintPath(moves, captures)
+    else {
+        verificHelp ( moves, captures, divObj )
+    }
 }
 
-const rookPath = (divObj) => {
+const rookPath = (divObj, helpKing = false) => {
     const { line, column, piece } = divObj;
     var color = piece.color
     var moves = []
@@ -52,10 +56,14 @@ const rookPath = (divObj) => {
     else if (divObj.onlyLR) cellsToPaint = getVerticalHorizontal(line, column, color, ['left', 'right'], moves, captures)
     else cellsToPaint = getVerticalHorizontal(line, column, color, ['left', 'right', 'up', 'down'], moves, captures)
 
-    paintPath(cellsToPaint[0], cellsToPaint[1])
+    if (!helpKing) paintPath(cellsToPaint[0], cellsToPaint[1])
+    else {
+        verificHelp ( cellsToPaint[0], cellsToPaint[1], divObj )
+    }
+    
 }
 
-const knightPath = (divObj) => {
+const knightPath = (divObj, helpKing = false) => {
     const { line, column, piece } = divObj;
     var color = piece.color
     var moves = []
@@ -83,10 +91,15 @@ const knightPath = (divObj) => {
         if (column + 1 <= 7) addMove(line - 1, column + 2)
         if (column - 1 >= 0) addMove(line - 1, column - 2)
     }
-    paintPath(moves, captures)
+
+    if (!helpKing) paintPath(moves, captures)
+    else {
+        verificHelp ( moves, captures, divObj )
+    }
+    
 }
 
-const bishopPath = (divObj) => {
+const bishopPath = (divObj, helpKing = false) => {
     const { line, column, piece } = divObj;
     var color = piece.color
     var moves = []
@@ -103,10 +116,15 @@ const bishopPath = (divObj) => {
     } else {
         cellsToPaint = getDiagonals(line, column, color, ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'], moves, captures)
     }
-    paintPath(cellsToPaint[0], cellsToPaint[1])
+
+    if (!helpKing) paintPath(cellsToPaint[0], cellsToPaint[1])
+    else {
+        verificHelp ( cellsToPaint[0], cellsToPaint[1], divObj )
+    }
+
 }
 
-const kingPath = (divObj) => {
+const kingPath = (divObj, emptySpaces = false, scape = false) => {
     const { line, column, piece } = divObj;
     var color = piece.color
     var moves = []
@@ -131,17 +149,24 @@ const kingPath = (divObj) => {
         }
         else if (cell && cell.piece.color != color && !cell.blackKingCannotStay) captures.push(cell)
     }
-    paintPath(moves, captures)
+    if (scape) {
+        return moves.length > 0 || captures.length > 0
+    }
+    if (emptySpaces) {
+        return moves.length === 0 && captures.length === 0
+    } else {
+        paintPath(moves, captures)
+    }
 }
 
-const queenPath = (divObj) => {
+const queenPath = (divObj, helpKing = false) => {
     const { line, column, piece } = divObj
     var color = piece.color
     var moves = []
     var captures = []
 
-    var verticalHorizontal = [[],[]]
-    var diagonals = [[],[]]
+    var verticalHorizontal = [[], []]
+    var diagonals = [[], []]
 
     if (divObj.onlyUD == true || divObj.onlyLR == true || divObj.onlyTLBR == true || divObj.onlyTRBL == true) {
         //    onlyLR  ;   onlyUD  
@@ -163,7 +188,11 @@ const queenPath = (divObj) => {
     }
     var allMoves = verticalHorizontal[0].concat(diagonals[0])
     var allCaptures = verticalHorizontal[1].concat(diagonals[1])
-    paintPath(allMoves, allCaptures)
+    
+    if (!helpKing) paintPath(allMoves, allCaptures)
+    else {
+        verificHelp ( allMoves, allCaptures, divObj )
+    }
 }
 
 const castle = (cellObj) => {
@@ -208,7 +237,6 @@ const castle = (cellObj) => {
             boardObj[line][column - 1].piece = { name: 'rook', color: color, firstPlay: true, src: `./../assets/pieces/rook${abbrevColor}.png` }
 
         }
-
         function deletePiece(childrens) {
             for (let i = 0; i < childrens.length; i++) {
                 if (childrens[i].tagName.toLowerCase() === 'img') {
@@ -218,7 +246,6 @@ const castle = (cellObj) => {
                 }
             }
         }
-
         //Sound
         let castleSound = new Audio('./../../assets/sounds/castle.mp3')
         castleSound.play()
