@@ -2,8 +2,9 @@ var cellsBlocked = {
     black: [],
     white: []
 }
-const blockCellsToKing = (cellsArray, piece) => {
-    var color = piece.color
+const blockCellsToKing = (cellsArray, pieceObj) => {
+    var color = pieceObj.piece.color
+    var piece = pieceObj.piece
 
     if (piece.name === 'pawn' || piece.name === 'knight' || piece.name === 'king') {
         cellsArray.forEach(objSpot => {
@@ -18,7 +19,7 @@ const blockCellsToKing = (cellsArray, piece) => {
 
             if (objSpot.piece.name === 'king' && objSpot.piece.color !== color) {
                 alert('king in target')
-                objCheck.push({ piece: piece, cellsUntilKing: objSpot, objKing: objSpot })
+                objCheck.push({ attackPiece: pieceObj, cellsUntilKing: objSpot, objKing: objSpot })
                 booleanCheck = true
             }
         });
@@ -38,7 +39,7 @@ const blockCellsToKing = (cellsArray, piece) => {
 
                     if (objSpot.piece.name === 'king' && objSpot.piece.color !== color) {
                         alert('king in target')
-                        objCheck.push({ piece: piece, cellsUntilKing: direction, objKing: objSpot })
+                        objCheck.push({ attackPiece: pieceObj, cellsUntilKing: direction, objKing: objSpot })
                         booleanCheck = true
                     }
                 });
@@ -57,6 +58,7 @@ const resetBlockedCells = () => {
 }
 
 const blockVerticalHorizontal = (line, column, color, directions, piece) => {
+    var pieceObj = boardObj[line][column]
     untilKing = {
         left: [],
         right: [],
@@ -81,7 +83,7 @@ const blockVerticalHorizontal = (line, column, color, directions, piece) => {
                         stopBoardCondition = column - j === 0;
                         untilKing.left.push(cell)
                         if (cell.piece.name === 'king' && cell.piece.color != color) {
-                            verificDefendingPiece( untilKing.left, piece, direc)
+                            verificDefendingPiece(untilKing.left, piece, direc)
                             stopBoardCondition = true
                         }
                     } else stopBoardCondition = true
@@ -93,7 +95,7 @@ const blockVerticalHorizontal = (line, column, color, directions, piece) => {
                         stopBoardCondition = column + j === 7;
                         untilKing.right.push(cell)
                         if (cell.piece.name === 'king' && cell.piece.color != color) {
-                            verificDefendingPiece( untilKing.right, piece, direc)
+                            verificDefendingPiece(untilKing.right, piece, direc)
                             stopBoardCondition = true
                         }
                     } else stopBoardCondition = true
@@ -105,7 +107,7 @@ const blockVerticalHorizontal = (line, column, color, directions, piece) => {
                         stopBoardCondition = line - j === 0;
                         untilKing.up.push(cell)
                         if (cell.piece.name === 'king' && cell.piece.color != color) {
-                            verificDefendingPiece( untilKing.up, piece, direc)
+                            verificDefendingPiece(untilKing.up, piece, direc)
                             stopBoardCondition = true
                         }
                     } else stopBoardCondition = true
@@ -117,7 +119,7 @@ const blockVerticalHorizontal = (line, column, color, directions, piece) => {
                         stopBoardCondition = line + j === 7;
                         untilKing.down.push(cell)
                         if (cell.piece.name === 'king' && cell.piece.color != color) {
-                            verificDefendingPiece( untilKing.down, piece, direc)
+                            verificDefendingPiece(untilKing.down, piece, direc)
                             stopBoardCondition = true
                         }
                     } else stopBoardCondition = true
@@ -145,10 +147,10 @@ const blockVerticalHorizontal = (line, column, color, directions, piece) => {
             j++;
         }
     }
-    blockCellsToKing([right, left, up, down], piece)
+    blockCellsToKing([right, left, up, down], pieceObj)
 }
 const blockDiagonals = (line, column, color, directions, piece) => {
-
+    var pieceObj = boardObj[line][column]
     untilKing = {
         topLeft: [],
         topRight: [],
@@ -173,7 +175,7 @@ const blockDiagonals = (line, column, color, directions, piece) => {
                         untilKing.topLeft.push(cell)
                         stopBoardCondition = column - j === 0 || line - j === 0;
                         if (cell.piece.name === 'king' && cell.piece.color != color) {
-                            verificDefendingPiece( untilKing.topLeft, piece, direc)
+                            verificDefendingPiece(untilKing.topLeft, piece, direc)
                             stopBoardCondition = true
                         }
                     } else stopBoardCondition = true
@@ -185,7 +187,7 @@ const blockDiagonals = (line, column, color, directions, piece) => {
                         untilKing.topRight.push(cell)
                         stopBoardCondition = column + j === 7 || line - j === 0;
                         if (cell.piece.name === 'king' && cell.piece.color != color) {
-                            verificDefendingPiece( untilKing.topRight, piece, direc)
+                            verificDefendingPiece(untilKing.topRight, piece, direc)
                             stopBoardCondition = true
                         }
                     } else stopBoardCondition = true
@@ -197,7 +199,7 @@ const blockDiagonals = (line, column, color, directions, piece) => {
                         untilKing.bottomLeft.push(cell)
                         stopBoardCondition = line + j === 7 || column - j === 0;
                         if (cell.piece.name === 'king' && cell.piece.color != color) {
-                            verificDefendingPiece( untilKing.bottomLeft, piece, direc)
+                            verificDefendingPiece(untilKing.bottomLeft, piece, direc)
                             stopBoardCondition = true
                         }
                     } else stopBoardCondition = true
@@ -209,7 +211,7 @@ const blockDiagonals = (line, column, color, directions, piece) => {
                         untilKing.bottomRight.push(cell)
                         stopBoardCondition = line + j === 7 || column + j === 7;
                         if (cell.piece.name === 'king' && cell.piece.color != color) {
-                            verificDefendingPiece( untilKing.bottomRight, piece, direc)
+                            verificDefendingPiece(untilKing.bottomRight, piece, direc)
                             stopBoardCondition = true
                         }
                     } else stopBoardCondition = true
@@ -237,5 +239,5 @@ const blockDiagonals = (line, column, color, directions, piece) => {
             j++;
         }
     }
-    blockCellsToKing([topRight, topLeft, bottomLeft, bottomRight], piece);
+    blockCellsToKing([topRight, topLeft, bottomLeft, bottomRight], pieceObj);
 }
