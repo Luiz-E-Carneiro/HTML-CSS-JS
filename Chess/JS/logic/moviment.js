@@ -164,10 +164,12 @@ const movePiece = (newSpot) => {
 
     if (captured) captureSound.play()
     else player === 'Player1' ? whiteMoveSound.play() : blackMoveSound.play()
-        
+   
     refrash()
+    resetCheck()
     resetBlockedCells()
     resetLimits()
+
     validateCheck()
     verificCheck()
 }
