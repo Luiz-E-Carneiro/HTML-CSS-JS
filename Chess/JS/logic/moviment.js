@@ -146,7 +146,7 @@ const movePiece = (newSpot) => {
     var newLine = newSpot.line
     var WB = color === 'white' ? 'W' : 'B'
     // Piece Check
-    if (currentObj.piece.name === 'pawn' || currentObj.piece.name === 'rook' || currentObj.piece.name === 'king' && currentObj.piece.firstPlay === false) {
+    if (currentObj.piece.firstPlay === false && currentObj.piece.name === 'pawn' || currentObj.piece.name === 'rook' || currentObj.piece.name === 'king') {
         boardObj[newLine][newColumn].piece = { name: name, color: color, firstPlay: true, src: `./../assets/pieces/${name}${WB}.png` }
     } else if (currentObj.piece.name === 'pawn') {
         boardObj[newLine][newColumn].piece = { name: name, color: color, firstPlay: true, src: `./../assets/pieces/${name}${WB}.png` }
@@ -156,15 +156,21 @@ const movePiece = (newSpot) => {
     }
     boardObj[line][column].piece = false
 
+    gameRefrash()
+
     //Sound
     let captureSound = new Audio('./../../assets/sounds/capture.mp3')
     captureSound.play
     let whiteMoveSound = new Audio('./../../assets/sounds/move-self.mp3')
     let blackMoveSound = new Audio('./../../assets/sounds/move-opponent.mp3')
-
+    let checkSound = new Audio('./../../../assets/sounds/move-check.mp3')
+    
     if (captured) captureSound.play()
+    if(booleanCheck) checkSound.play()
     else player === 'Player1' ? whiteMoveSound.play() : blackMoveSound.play()
-   
+}
+
+function gameRefrash() {
     refrash()
     resetCheck()
     resetBlockedCells()
