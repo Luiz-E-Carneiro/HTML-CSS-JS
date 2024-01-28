@@ -1,181 +1,161 @@
-const getVerticalHorizontal = (line, column, color, directions, moves, captures) => {
-    for (let i = 0; i < directions.length; i++) {
-        let j = 1;
-        let stopCondition = false;
+const verifiPlayerTime = (color) => {
+    if (color === 'white' && player === 'Player1') {
+        return true
+    }
+    else if (color === 'black' && player === 'Player2') {
+        return true
+    }
+    else {
+        return false
+    }
+}
 
-        while (!stopCondition) {
-            let cell = '';
-            switch (directions[i]) {
-                case 'left':
-                    if (column - j >= 0) {
-                        cell = boardObj[line][column - j];
-                        stopCondition = column - j === 0;
-                    } else stopCondition = true
-                    break;
+const paintPath = (moves, captures) => {
+    moves.forEach(c => {
+        var help = document.createElement('div')
+        helpersDots.push(help)
+        c.cell.appendChild(help)
+        help.classList.add('ball')
+        c.cell.classList.add('path')
+    })
+    if (captures.length > 0) {
+        captures.forEach(c => {
+            var help = document.createElement('div')
+            helpersDots.push(help)
+            help.classList.add('ring')
+            c.cell.appendChild(help)
+            c.cell.classList.add('path')
+        });
+    }
+    possiblePlays.push(moves, captures)
+    letPlayable()
+}
 
-                case 'right':
-                    if (column + j <= 7) {
-                        cell = boardObj[line][column + j];
-                        stopCondition = column + j === 7;
-                    } else stopCondition = true
-                    break;
+const refrash = () => {
+    cleanHelpers()
+    letPlayable(true)
+    cancelCastle()
+}
 
-                case 'up':
-                    if (line - j >= 0) {
-                        cell = boardObj[line - j][column];
-                        stopCondition = line - j === 0;
-                    } else stopCondition = true
-                    break;
+const cleanHelpers = () => {
+    helpersDots.forEach(div => {
+        div.parentNode.removeChild(div)
+    });
+    helpersDots = []
+}
 
-                case 'down':
-                    if (line + j <= 7) {
-                        cell = boardObj[line + j][column];
-                        stopCondition = line + j === 7;
-                    } else stopCondition = true
-                    break;
-
-                default:
-                    alert('Something went wrong, try agin please. . .')
-                    return;
-            }
-            if (cell === '') continue
-            if (!cell.piece) {
-                moves.push(cell);
+const letPlayable = (exclue = false) => {
+    possiblePlays.forEach(arrayDivs => {
+        arrayDivs.forEach(c => {
+            let { column, line } = c
+            if (exclue) {
+                delete boardObj[line][column].possibleMove
+                possiblePlays = []
             } else {
-                if (cell.piece.color !== color) {
-                    captures.push(cell);
-                }
-                stopCondition = true;
+                boardObj[line][column].possibleMove = true
             }
-            j++;
-        }
-    }
-    return [moves, captures]
+        });
+    });
 }
 
-const getDiagonals = (line, column, color, directions, moves, captures) => {
-    var moves = moves
-    var captures = captures
-    for (let direc of directions) {
-        let j = 1;
-        let stopCondition = false;
 
-        while (!stopCondition) {
-            let cell = '';
-            switch (direc) {
-                case 'topLeft':
-                    if (line - j >= 0 && column - j >= 0) {
-                        cell = boardObj[line - j][column - j];
-                        stopCondition = column + j === 0 || line + j === 0;
-                    } else stopCondition = true
-                    break;
+const verificCastle = (divObj) => {
+    const { line, column, piece } = divObj
+    const color = piece.color
 
-                case 'bottomRight':
-                    if (line + j <= 7 && column + j <= 7) {
-                        cell = boardObj[line + j][column + j];
-                        stopCondition = column + j === 7 || line + j === 7;
-                    } else stopCondition = true
-                    break;
+    const allPieces = boardObj.map(line =>
+        line.map(cell => cell.piece && cell.piece.name === 'rook' && !cell.piece.firstPlay && cell.piece.color === color ? cell : null)
+    );
+    const filteredRooks = allPieces.flat().filter(cell => cell !== null);
+    if (filteredRooks.length == 0) return
+    filteredRooks.forEach(rookCell => {
+        if (rookCell.column === 0) verificEmptySpaces('left', rookCell.column)
+        if (rookCell.column === 7) verificEmptySpaces('right', rookCell.column)
+    });
 
-                case 'topRight':
-                    if (line - j >= 0 && column + j <= 7) {
-                        cell = boardObj[line - j][column + j];
-                        stopCondition = line - j === 0
-                        stopCondition = column + j === 7;
-                    } else stopCondition = true
-                    break;
-
-                case 'bottomLeft':
-                    if (line + j <= 7 && column - j >= 0) {
-                        cell = boardObj[line + j][column - j];
-                        stopCondition = line + j === 7
-                        stopCondition = column - j === 0;
-                    } else stopCondition = true
-                    break;
-
-                default:
-                    alert('something went wrong, try agin please. . .')
-                    return;
+    function verificEmptySpaces(side, rookColumn) {
+        var emptySpaces = true
+        if (side === 'left') {
+            for (let i = rookColumn + 1; i < column; i++) {
+                if (boardObj[line][i].piece) emptySpaces = false
             }
-            if (cell === '') continue
-            if (!cell.piece) {
-                moves.push(cell);
+        } else {
+            for (let i = rookColumn - 1; i > column; i--) {
+                if (boardObj[line][i].piece) emptySpaces = false
+            }
+        }
+
+        if (emptySpaces) {
+            var help = document.createElement('div')
+            helpersDots.push(help)
+            help.classList.add('square')
+            if (side === 'left') {
+                boardObj[line][column - 2].cell.appendChild(help)
+                boardObj[line][column - 2].cell.classList.add('path')
+                boardObj[line][column - 2].castle = true
+                possibleCastle.left = boardObj[line][column - 2].cell
             } else {
-                if (cell.piece.color !== color) {
-                    captures.push(cell);
-                }
-                stopCondition = true;
-            }
-            j++;
-        }
-    }
-    return ([moves, captures])
-}
-
-const movePiece = (newSpot) => {
-    let capturedAreas = document.getElementsByClassName('capture-area')
-    let capturedWhite = capturedAreas[0]
-    let capturedBlack = capturedAreas[1]
-    var img
-    var captured = false
-    // Delete img    
-    function deletePiece(childrens, newS = false) {
-        for (let i = 0; i < childrens.length; i++) {
-            if (childrens[i].tagName.toLowerCase() === 'img') {
-                img = childrens[i]
-                childrens[i].parentNode.removeChild(childrens[i])
-                if (newS) {
-                    let imgConteiner = document.createElement('div')
-                    imgConteiner.classList.add('image-container')
-                    imgConteiner.appendChild(img)
-                    newSpot.piece.color === 'white' ? capturedWhite.appendChild(imgConteiner) : capturedBlack.appendChild(imgConteiner)
-                    captured = true
-                }
+                boardObj[line][column + 2].cell.appendChild(help)
+                boardObj[line][column + 2].cell.classList.add('path')
+                boardObj[line][column + 2].castle = true
+                possibleCastle.right = boardObj[line][column + 2].cell
             }
         }
     }
-
-    deletePiece(newSpot.cell.children, true)
-    deletePiece(currentObj.cell.children)
-    const { column, line } = { ...currentObj }
-    const { name, color } = currentObj.piece
-    // Add img in the new cell
-    newSpot.cell.appendChild(img)
-    // get infos in main obj (boardObj)
-    var newColumn = newSpot.column
-    var newLine = newSpot.line
-    var WB = color === 'white' ? 'W' : 'B'
-    // Piece Check
-    if (currentObj.piece.firstPlay === false && currentObj.piece.name === 'pawn' || currentObj.piece.name === 'rook' || currentObj.piece.name === 'king') {
-        boardObj[newLine][newColumn].piece = { name: name, color: color, firstPlay: true, src: `./../assets/pieces/${name}${WB}.png` }
-    } else if (currentObj.piece.name === 'pawn') {
-        boardObj[newLine][newColumn].piece = { name: name, color: color, firstPlay: true, src: `./../assets/pieces/${name}${WB}.png` }
-        if (newLine === 0 || newLine === 7) promotePawn(boardObj[newLine][newColumn])
-    } else {
-        boardObj[newLine][newColumn].piece = { name: name, color: color, firstPlay: true, src: `./../assets/pieces/${name}${WB}.png` }
-    }
-    boardObj[line][column].piece = false
-
-    gameRefrash()
-
-    //Sound
-    let captureSound = new Audio('./../../assets/sounds/capture.mp3')
-    captureSound.play
-    let whiteMoveSound = new Audio('./../../assets/sounds/move-self.mp3')
-    let blackMoveSound = new Audio('./../../assets/sounds/move-opponent.mp3')
-    let checkSound = new Audio('./../../../assets/sounds/move-check.mp3')
-    
-    if (captured) captureSound.play()
-    if(booleanCheck) checkSound.play()
-    else player === 'Player1' ? whiteMoveSound.play() : blackMoveSound.play()
 }
 
-function gameRefrash() {
-    refrash()
-    resetCheck()
-    resetBlockedCells()
-    resetLimits()
+const cancelCastle = () => {
+    boardObj.forEach(line => {
+        line.forEach(obj => {
+            if (obj.castle) delete obj.castle
+        });
+    });
+    possibleCastle = { left: null, right: null }
+}
 
-    validateCheck()
-    verificCheck()
+
+var blackChoose = document.getElementById('promoteBlackArea')
+var whiteChoose = document.getElementById('promoteWhiteArea')
+
+const promotePawn = (cellObj) => {
+    var color = cellObj.piece.color
+    blackChoose.innerHTML = ''
+    whiteChoose.innerHTML = ''
+    var letter = color === 'white' ? 'W' : 'B'
+    var pieces = [
+        `./../../assets/pieces/knight${letter}.png`,
+        `./../../assets/pieces/bishop${letter}.png`,
+        `./../../assets/pieces/rook${letter}.png`,
+        `./../../assets/pieces/queen${letter}.png`,
+    ]
+    var names = ['knight', 'bishop', 'rook', 'queen']
+    for (let i = 0; i < 4; i++) {
+        let backImg = document.createElement('div')
+        backImg.classList.add('backImg')
+        let img = document.createElement('img')
+        img.src = pieces[i]
+        backImg.appendChild(img)
+        if (color === 'white') {
+            whiteChoose.style.visibility = 'visible'
+            whiteChoose.appendChild(backImg)
+        } else {
+            blackChoose.style.visibility = 'visible'
+            blackChoose.appendChild(backImg)
+        }
+        backImg.addEventListener('click', function () {
+            let childrens = cellObj.cell.children
+            for (let j = 0; j < childrens.length; j++) {
+                if (childrens[j].tagName.toLowerCase() === 'img') {
+                    childrens[j].src = pieces[i]
+                    cellObj.piece.name = names[i]
+                    cellObj.piece.src = pieces[i]
+                }
+            }
+            setTimeout(() => {
+                this.parentNode.style.visibility = 'hidden'
+            }, 150);
+
+            gameRefrash()
+        })
+    }
 }
