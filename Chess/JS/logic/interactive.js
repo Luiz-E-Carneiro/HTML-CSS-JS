@@ -89,7 +89,6 @@ const verificCastle = (divObj) => {
             var help = document.createElement('div')
             helpersDots.push(help)
             help.classList.add('square')
-            console.log(side);
             if (side === 'left') {
                 boardObj[line][column - 2].cell.appendChild(help)
                 boardObj[line][column - 2].cell.classList.add('path')
@@ -102,7 +101,6 @@ const verificCastle = (divObj) => {
                 possibleCastle.right = boardObj[line][column + 2].cell
             }
         }
-        console.log(possibleCastle);
     }
 }
 
@@ -118,6 +116,7 @@ const cancelCastle = () => {
 
 var blackChoose = document.getElementById('promoteBlackArea')
 var whiteChoose = document.getElementById('promoteWhiteArea')
+
 const promotePawn = (cellObj) => {
     var color = cellObj.piece.color
     blackChoose.innerHTML = ''
@@ -143,8 +142,7 @@ const promotePawn = (cellObj) => {
             blackChoose.style.visibility = 'visible'
             blackChoose.appendChild(backImg)
         }
-        backImg.addEventListener('click', function (color) {
-
+        backImg.addEventListener('click', function () {
             let childrens = cellObj.cell.children
             for (let j = 0; j < childrens.length; j++) {
                 if (childrens[j].tagName.toLowerCase() === 'img') {
@@ -156,6 +154,7 @@ const promotePawn = (cellObj) => {
             setTimeout(() => {
                 this.parentNode.style.visibility = 'hidden'
             }, 150);
+            gameRefrash()
         })
     }
 }
