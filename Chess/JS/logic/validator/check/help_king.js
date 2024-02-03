@@ -30,16 +30,17 @@ const helpKing = (color) => {
     }
 }
 
-const verificHelp = (moves, captures, pieceObj ) => {
+const verificHelp = (moves, captures, pieceObj) => {
     let { cellsUntilKing, attackPiece } = objCheck[0]
 
-    moves.forEach(move => {
-        cellsUntilKing.forEach(cell => {
-            if(cell === move) helpKingObjs.push({helpPiece: pieceObj, helpCell: move})
-        });
-    });
-
     captures.forEach(cap => {
-        if(cap === attackPiece) helpKingObjs.push({helpPiece: pieceObj, helpCell: cap}) 
+        if (cap === attackPiece) helpKingObjs.push({ helpPiece: pieceObj, helpCell: cap })
     })
+    if (cellsUntilKing.length != undefined) {
+        moves.forEach(move => {
+            cellsUntilKing.forEach(cell => {
+                if (cell === move) helpKingObjs.push({ helpPiece: pieceObj, helpCell: move })
+            });
+        });
+    }
 }
