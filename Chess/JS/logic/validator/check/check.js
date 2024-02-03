@@ -39,10 +39,10 @@ const blockAllPieces = (color) => {
 
 const needHelp = (currentObj) => {
     refrash()
-    if(helpKingObjs.length == 0) return false
+    if(helpKingObjs.length == 0 || currentObj.piece.name === 'king') return false
     for (let i = 0; i < helpKingObjs.length; i++) {
         if(helpKingObjs[i].helpPiece === currentObj){
-            paintPath([helpKingObjs[i].helpCell], [])
+            paintPath([], [helpKingObjs[i].helpCell])
         }
     }
     return true
