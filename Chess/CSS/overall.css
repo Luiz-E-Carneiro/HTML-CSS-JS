@@ -1,5 +1,9 @@
-*{
-    margin: 0; padding: 0; box-sizing: border-box; user-select: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Arial';
 }
 
 body {
@@ -8,11 +12,13 @@ body {
     height: 100%;
     background-color: #191919;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: .7em;
+    gap: .5em;
+    position: relative;
 }
+
 
 .promote--area--black,
 .promote--area--white {
@@ -23,7 +29,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.promote--area--white {
+    top: 10px;
+}
+.promote--area--black {
+    bottom: 10px;
 }
 
 .backImg {
@@ -49,4 +63,127 @@ body {
 
 .backImg:hover img {
     width: 65%;
+}
+
+.left--side,.right--side {
+    height: 28em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left--side {
+    align-items: center;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.reset--btn{
+    max-width: 10em;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--black_cell);
+    border: 1px solid var(--white_cell);
+    color: whitesmoke;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .1s ease-in-out;
+}
+.reset--btn:hover{
+    background-color: var(--white_cell);
+    border: 1px solid var(--black_cell);
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.scoreboard--area *{
+color: whitesmoke;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.board--styles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    color: white;
+}
+
+.style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    gap: 2em;
+    padding: 10px;
+    transition: .2s ease-in-out;
+}
+
+.style:hover{
+    background-color: rgb(255, 255, 255, .4);
+    color: black;
+    border-radius: 15px;
+}
+
+.defaultBoard,
+._3Dboard,
+.tiltBoard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+}
+
+.defaultBoard > div,
+._3Dboard > div,
+.tiltBoard > div {
+    width: 50%;
+    height: 50%;
+    background-color: var(--black_cell)
+}
+
+.defaultBoard > div:nth-child(1),
+._3Dboard > div:nth-child(1),
+.tiltBoard > div:nth-child(1),
+.defaultBoard > div:nth-child(4),
+._3Dboard > div:nth-child(4),
+.tiltBoard > div:nth-child(4) {
+    background-color: var(--white_cell);
+}
+
+._3Dboard{
+    transform: rotate(-10deg) skew(15deg);
+    position: relative;
+}
+
+._3Dboard::before {
+    content: '';
+    position: absolute;
+    right: 23.1px;
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--white_cell) 0%, var(--white_cell) 50%, var(--black_cell) 50%, var(--black_cell) 100%);
+    background-size: 40px;
+    transform: rotate(90deg) skew(50deg);
+    top:20.4px;
+}
+
+._3Dboard::after{
+    content: '';
+    position: absolute;
+    top: 39.3px;
+    height: 8px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--black_cell) 0%, var(--black_cell) 50%, var(--white_cell) 50%, var(--white_cell) 100%);
+    background-size: 40px;
+    transform: rotate(0deg) skew(-40deg);
+    left: -3.5px;
+
 }
