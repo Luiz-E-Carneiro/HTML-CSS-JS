@@ -1,7 +1,6 @@
 :root {
     --black_cell: rgb(136, 94, 63);
     --white_cell: rgb(200, 172, 116);
-    --path: rgba(168, 145, 99, 0.815);
 }
 
 .x--Axie {
@@ -70,4 +69,56 @@
 }
 .capture-area:last-of-type{
     background-color: var(--black_cell);
+}
+/*
+
+.x--Axie {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+
+.board {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg) skew(15deg);
+    width: 28em;
+    height: 28em;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    background-color: grey;
+    box-shadow: -20px 20px 20px white;
+}
+
+.board:hover {
+    top: 45%;
+    box-shadow: -40px 40px 50px white;
+}
+
+.board::before {
+    content: '';
+    position: absolute;
+    right: calc(28em/1.9144);
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--white_cell) 0%, var(--white_cell) 50%, var(--black_cell) 50%, var(--black_cell) 100%);
+    background-size: calc(28em/4);
+    transform: rotate(90deg) skew(45deg);
+    top: calc(28em/2);
+}
+
+.board::after{
+    content: '';
+    position: absolute;
+    top: 28em;
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--black_cell) 0%, var(--black_cell) 50%, var(--white_cell) 50%, var(--white_cell) 100%);
+    background-size: calc(28em/4);
+    transform: rotate(0deg) skew(-45deg);
+    left: -10px;
 }
