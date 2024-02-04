@@ -10,6 +10,40 @@
     <title>Chess</title>
 </head>
 <body>
+    <div class="left--side">
+            <div class="scoreboard--area">
+                <h4>ScoreBoard</h4>
+                <div>
+                    <span>Player 1 -</span><span>00</span>
+                    <span> X </span>
+                    <span>00</span><span>- Player 2</span>
+                </div>
+                <p>Draws:<span>00</span></p>
+            </div>
+        <button class="reset--btn" id="resetBtn">Reset Scores</button>
+
+        <div class="board--styles">
+            <h3>Change Board Style</h3>
+            <div class="style">
+                <span>Default:</span>
+                <div class="defaultBoard">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="style">
+                <span>3D:</span>
+                <div class="_3Dboard">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="promote--area--white" id="promoteWhiteArea">
 
     </div>
@@ -24,6 +58,19 @@
     </div>
     <div class="promote--area--black" id="promoteBlackArea">
     </div>
+    <div class="right--side">
+        <div class="timer">
+            <h3>Player 2</h3>
+            <h3>00:00</h3>
+            <button>Draw</button>
+        </div>
+
+        <div class="timer">
+            <h3>Player 1</h3>
+            <h3>00:00</h3>
+            <button>Draw</button>
+        </div>
+    </div>
     <script src="JS/board.js"></script>
     <script src="JS/logic/moviment.js"></script>
     <script src="JS/logic/path.js"></script>
@@ -36,5 +83,6 @@
     <script src="JS/logic/validator/block/path_block.js"></script>
     <script src="JS/logic/validator/block/block_cells.js"></script>
     <script src="JS/logic/validator/defender_piece.js"></script>
+    <script src="JS/animation/tilt.js"></script>
 </body>
 </html>
