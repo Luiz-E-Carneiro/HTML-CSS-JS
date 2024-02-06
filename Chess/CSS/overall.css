@@ -17,6 +17,7 @@ body {
     align-items: center;
     gap: .5em;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -31,11 +32,13 @@ body {
     align-items: center;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
+
 .promote--area--white {
     top: 10px;
 }
+
 .promote--area--black {
     bottom: 10px;
 }
@@ -65,13 +68,15 @@ body {
     width: 65%;
 }
 
-.left--side,.right--side {
+.left--side,
+.right--side {
     height: 28em;
-    width: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .left--side {
     align-items: center;
 }
@@ -84,7 +89,7 @@ body {
     gap: 1.5em;
 }
 
-.reset--btn{
+.reset--btn {
     max-width: 10em;
     padding: 10px;
     font-size: 1rem;
@@ -95,25 +100,31 @@ body {
     font-weight: bold;
     transition: .1s ease-in-out;
 }
-.reset--btn:hover{
+
+.reset--btn:hover {
     background-color: var(--white_cell);
     border: 1px solid var(--black_cell);
     color: rgba(0, 0, 0, 0.66);
 }
 
-.scoreboard--area *{
-color: whitesmoke;
-display: flex;
-justify-content: center;
-align-items: center;
+.scoreboard--area * {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.board--styles{
+.board--styles {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    gap: 2em;
     color: white;
+}
+
+.board--styles > div {
+    display: flex;
+    gap: 6em;
 }
 
 .style {
@@ -126,39 +137,35 @@ align-items: center;
     transition: .2s ease-in-out;
 }
 
-.style:hover{
+.style:hover {
     background-color: rgb(255, 255, 255, .4);
     color: black;
     border-radius: 15px;
 }
 
-.defaultBoard,
-._3Dboard,
-.tiltBoard {
+.default--board,
+._3Dboard {
     display: flex;
     flex-wrap: wrap;
     width: 40px;
     height: 40px;
 }
 
-.defaultBoard > div,
-._3Dboard > div,
-.tiltBoard > div {
+.default--board>div,
+._3Dboard>div {
     width: 50%;
     height: 50%;
     background-color: var(--black_cell)
 }
 
-.defaultBoard > div:nth-child(1),
-._3Dboard > div:nth-child(1),
-.tiltBoard > div:nth-child(1),
-.defaultBoard > div:nth-child(4),
-._3Dboard > div:nth-child(4),
-.tiltBoard > div:nth-child(4) {
+.default--board>div:nth-child(1),
+._3Dboard>div:nth-child(1),
+.default--board>div:nth-child(4),
+._3Dboard>div:nth-child(4) {
     background-color: var(--white_cell);
 }
 
-._3Dboard{
+._3Dboard {
     transform: rotate(-10deg) skew(15deg);
     position: relative;
 }
@@ -172,10 +179,10 @@ align-items: center;
     background: linear-gradient(90deg, var(--white_cell) 0%, var(--white_cell) 50%, var(--black_cell) 50%, var(--black_cell) 100%);
     background-size: 40px;
     transform: rotate(90deg) skew(50deg);
-    top:20.4px;
+    top: 20.4px;
 }
 
-._3Dboard::after{
+._3Dboard::after {
     content: '';
     position: absolute;
     top: 39.3px;
@@ -186,4 +193,102 @@ align-items: center;
     transform: rotate(0deg) skew(-40deg);
     left: -3.5px;
 
+}
+
+.color--area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+.default--color, .blue--board {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+    overflow: hidden;
+}
+
+.default--color:hover, .blue--board:hover {
+    background-color: rgb(255, 255, 255, .4);
+    border-radius: 15px;
+}
+
+.default--color > div > div, .blue--board > div > div {
+    width: 20px;
+    height: 20px;
+}
+
+.whiteSpot {
+    background-color: #c8ac74;
+}
+.blackSpot {
+    background-color: #885e3f;
+}
+
+.lBlueSpot{
+    background-color:#0e3dfb78;
+}
+.dBlueSpot{
+    background-color:#0c193b;
+}
+
+.middle--area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.play--again--btn {
+    padding: 10px;
+    color: #f5f5f5;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 2px solid #147355;
+    border-radius: 7px;
+    background-color: #12a34b;
+    box-shadow: -5px 5px 0 #147355;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    transition: all .3s;
+}
+
+.play--again--btn:hover {
+    border-color: #12a34b;
+    background-color: #147355;
+    color: #12a34b;
+    box-shadow: -5px 5px 0 #12a34b;
+}
+
+.play--again--btn:active {
+    border-color: #147355;
+    background-color: #12a34b;
+    color: #f5f5f5;
+    transform: translateX(-5px) translateY(5px);
+    box-shadow: none;
+}
+
+.play--again--btn:hover .material-symbols-outlined {
+    animation: rotate360 1s ease-in-out infinite;
+
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
 }
