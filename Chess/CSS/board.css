@@ -1,9 +1,12 @@
 :root {
-    --black_cell: rgb(136, 94, 63);
-    --white_cell: rgb(200, 172, 116);
+    --black_cell: #885e3f;
+    --white_cell: #c8ac74;
 }
 
 .x--Axie {
+    flex: 1;
+    min-width: 33em;
+    height: 28em;
     display: flex;
     gap: .5em;
 }
@@ -63,6 +66,9 @@
     align-items: center;
     border-radius: 5px;
 }
+.hidden {
+    visibility: hidden;
+}
 
 .capture-area:first-of-type{
     background-color: var(--white_cell);
@@ -70,23 +76,18 @@
 .capture-area:last-of-type{
     background-color: var(--black_cell);
 }
-/*
 
-.x--Axie {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    flex-grow: 1;
-    position: relative;
+.checkMate{
+    background-color: #b20f0a;
 }
 
-.board {
+.board3D {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-10deg) skew(15deg);
-    width: 28em;
-    height: 28em;
+    width: 23em;
+    height: 23em;
     display: flex;
     flex-wrap: wrap;
     transition: 0.5s;
@@ -94,31 +95,31 @@
     box-shadow: -20px 20px 20px white;
 }
 
-.board:hover {
+.board3D:hover {
     top: 45%;
     box-shadow: -40px 40px 50px white;
 }
 
-.board::before {
+.board3D::before {
     content: '';
     position: absolute;
-    right: calc(28em/1.9144);
+    right: calc(23em/1.9);
     height: 20px;
     width: 100%;
     background: linear-gradient(90deg, var(--white_cell) 0%, var(--white_cell) 50%, var(--black_cell) 50%, var(--black_cell) 100%);
-    background-size: calc(28em/4);
+    background-size: calc(23em/4);
     transform: rotate(90deg) skew(45deg);
-    top: calc(28em/2);
+    top: calc(23em/2);
 }
 
-.board::after{
+.board3D::after{
     content: '';
     position: absolute;
-    top: 28em;
+    top: 23em;
     height: 20px;
     width: 100%;
     background: linear-gradient(90deg, var(--black_cell) 0%, var(--black_cell) 50%, var(--white_cell) 50%, var(--white_cell) 100%);
-    background-size: calc(28em/4);
+    background-size: calc(23em/4);
     transform: rotate(0deg) skew(-45deg);
     left: -10px;
 }
