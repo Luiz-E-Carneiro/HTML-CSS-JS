@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    user-select: none;
+}
+
+:root {
+    --dark_purple: #1A1423;
+    --purple: #372549;
+    --purple_tranparent: #271e34bd;
+    --almost_white: #f4f4f4;
+    --almost_right: #FF6F61;
+    --current_cell: #1a142392;
+    --right_letter: #6ABD45;
+    --neon_green: #03DD5E;
+    --dark_green: #02A144;
+    --yellow: #afaf25;
+    --dark_yellow: #949400cb;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: var(--purple);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.title {
+    font-size: calc(15px + 4.5vw);
+    font-weight: bold;
+}
+
+.back-alert{
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .4vw;
+    visibility: hidden;
+}
+
+.alert{
+    padding: 4px;
+    background-color: var(--yellow);
+    box-shadow: 4px 4px var(--dark_yellow);
+    border-radius: 5px;
+    color: white;
+}
+
+img {
+    max-width: 6em;
+    width: calc(25px + 4.5vw);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.board-area {
+    margin-top: 20px;
+    max-width: 45em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board {
+    width: 20em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.line {
+    width: 100%;
+    height: calc(100%/6 - 4px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.current-cell {
+    background-color: var(--current_cell);
+    width: calc(100%/5 - 3px);
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    width: calc(100%/5 - 3px);
+    height: 100%;
+    background-color: var(--purple_tranparent);
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borderedCell {
+    background-color: var(--current_cell);
+    border-top: 11px solid transparent;
+    border-left: 11px solid transparent;
+    border-right: 10px solid var(--dark_purple);
+    border-bottom: 10px solid var(--dark_purple);
+}
+
+.animateDiv {
+    animation: jumpAndScale 0.5s ease-out;
+}
+
+.inputLetter {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--almost_white);
+    font-size: calc(15px + 2vw);
+    text-align: center;
+    font-weight: 900;
+}
+
+.doneLetter {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: calc(15px + 2vw);
+}
+
+@keyframes jumpAndScale {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
