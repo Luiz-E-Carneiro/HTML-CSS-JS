@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike - Informações e Curiosidades</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-cs-primary {
+            background-color: #1B1F23;
+        }
+
+        .bg-cs-secondary {
+            background-color: #2D2F33;
+        }
+
+        .text-gold {
+            color: #D4AF37;
+        }
+
+        .hover-text-gold:hover {
+            color: #D4AF37;
+        }
+    </style>
+</head>
+
+<body class="bg-cs-primary text-white font-sans">
+    <header class="bg-cs-secondary py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl text-gold font-bold">Counter-Strike</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#history" class="hover-text-gold">História</a></li>
+                    <li><a href="#game-modes" class="hover-text-gold">Modos de Jogo</a></li>
+                    <li><a href="#maps" class="hover-text-gold">Mapas</a></li>
+                    <li><a href="#ranking" class="hover-text-gold">Ranking</a></li>
+                    <li><a href="#weapons" class="hover-text-gold">Armas</a></li>
+                    <li><a href="#skins" class="hover-text-gold">Skins</a></li>
+                    <li><a href="#bombs" class="hover-text-gold">Bombas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto my-8">
+
+        <section id="history" class="my-12 flex items-end border-b">
+            <div class="flex-1 justify-between pr-4 mb-4">
+                <h2 class="text-2xl text-gold font-semibold mb-4">História</h2>
+                <p>Counter-Strike foi lançado inicialmente como um mod para Half-Life em 1999, criado por Minh
+                    "Gooseman" Le e Jess Cliffe. Devido ao seu enorme sucesso, a Valve adquiriu os direitos do jogo e
+                    lançou a versão comercial em 2000.</p>
+                <p>Desde então, Counter-Strike evoluiu significativamente, passando por várias versões, incluindo CS:
+                    Source e CS: Global Offensive (CS GO), que é a versão mais jogada atualmente.</p>
+                <p>CS GO trouxe uma série de melhorias, como gráficos atualizados, novas armas, mapas e modos de jogo,
+                    além de um sistema de matchmaking e uma economia de skins que movimenta milhões de dólares.</p>
+                <p>Por fim, CS 2.0, o último CS lançado, que está no seu hype, trouxe ainda mais possibilidades de jogo,
+                    melhores gráficos e mecânicas. Certamente fará mais sucesso que o CS GO em algum momento.</p>
+            </div>
+            <img src="assets/ct-joinha.png" alt="Ct dando joinha" class="w-1/3">
+        </section>
+
+        <section id="game-modes" class="my-12">
+            <h2 class="text-2xl text-gold font-semibold mb-4">Modos de Jogo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-cs-secondary p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2">Competitivo</h3>
+                    <p>O modo competitivo é a essência de Counter-Strike, onde equipes de 5 jogadores se enfrentam em um
+                        formato melhor de 30 rounds.</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2">Casual</h3>
+                    <p>O modo casual permite que os jogadores joguem partidas sem a pressão do ranking competitivo,
+                        ideal para praticar e se divertir.</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded">
+                    <h3 class="text-xl font-bold mb-2">Deathmatch</h3>
+                    <p>Em Deathmatch, os jogadores renascem imediatamente após a morte, focando em treinar suas
+                        habilidades de tiro e reação rápida.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="maps" class="my-12">
+            <h2 class="text-2xl text-gold font-semibold mb-4">Mapas icônicos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-cs-secondary p-4 rounded">
+                    <img src="https://files.bo3.gg/uploads/news/16427/title_image/960x480-c2c6b28448789f458ec773fae75a937e.webp"
+                        alt="Dust II" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Dust II</h3>
+                    <p>Dust II é um dos mapas mais populares e icônicos do Counter-Strike, conhecido por seu layout
+                        equilibrado e jogabilidade estratégica.</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded">
+                    <img src="https://img-cdn.hltv.org/gallerypicture/qvQdT82RvIX2GuxlMQ4v6G.jpg?ixlib=java-2.1.0&w=1200&s=156b7054083cd2802177a815bb4af02b"
+                        alt="Mirage" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Mirage</h3>
+                    <p>Mirage é um mapa clássico que favorece tanto o lado dos CTs quanto o dos Ts, sendo amplamente
+                        jogado em competições.</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded">
+                    <img src="https://arena.rtp.pt/wp-content/uploads/2023/09/cs2_Inferno_A.jpeg" alt="Inferno"
+                        class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Inferno</h3>
+                    <p>Inferno é conhecido por seus espaços estreitos e táticas de controle de mapa, sendo um desafio
+                        constante para os jogadores.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ranking" class="my-12">
+            <h2 class="text-2xl text-gold font-semibold mb-4">Tabela de Melhores Times (por pontos):</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-cs-secondary rounded">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
+                                Time</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
+                                Jogadores</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
+                                Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-cs-primary">
+                            <td class="px-6 py-4 whitespace-nowrap">Spirit</td>
+                            <td class="px-6 py-4 whitespace-nowrap">chopper, sh1ro, magixx, zont1x, donk</td>
+                            <td class="px-6 py-4 whitespace-nowrap">997</td>
+                        </tr>
+                        <tr class="bg-cs-secondary">
+                            <td class="px-6 py-4 whitespace-nowrap">Vitality</td>
+                            <td class="px-6 py-4 whitespace-nowrap">apEX, ZywOo, flameZ, Spinx, mezii</td>
+                            <td class="px-6 py-4 whitespace-nowrap">911</td>
+                        </tr>
+                        <tr class="bg-cs-primary">
+                            <td class="px-6 py-4 whitespace-nowrap">MOUZ</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Brollan, siuhy, torzi, Jimpphst, xertioN</td>
+                            <td class="px-6 py-4 whitespace-nowrap">882</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="weapons" class="my-12">
+            <h2 class="text-2xl text-gold font-semibold mb-4">Armas mais utilizadas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-cs-secondary p-4 rounded">
+                    <img src="https://steamuserimages-a.akamaihd.net/ugc/2027222811583360784/55519D017C6C61D77950A26F84E4EA7563DF0022/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+                        alt="AK-47" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">AK-47</h3>
+                    <p>A AK-47 é uma das armas mais icônicas de Counter-Strike, conhecida por seu alto poder de fogo e
+                        eficiência em combates de média distância.</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded">
+                    <img src="https://dotesports.com/wp-content/uploads/2023/10/M4A1-S-CS2.png?resize=1536,864"
+                        alt="M4A4" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">M4A4</h3>
+                    <p>A M4A4 é a arma padrão dos CTs, famosa por sua precisão e cadência de tiro, sendo uma escolha
+                        popular em partidas competitivas.</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded">
+                    <img src="https://i.ytimg.com/vi/qqrU5BNsFqA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgWihlMA8=&rs=AOn4CLCW2g4DIAzb42nM0fEeuIZxo_6eeA"
+                        alt="AWP" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">AWP</h3>
+                    <p>A AWP é a sniper mais poderosa do jogo, capaz de eliminar inimigos com um único tiro no corpo,
+                        sendo crucial em muitas estratégias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skins" class="my-12">
+            <h2 class="text-2xl text-gold font-semibold mb-4">Skins mais raras</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-cs-secondary p-4 rounded">
+                    <img src="https://media.karousell.com/media/photos/products/2023/10/3/ak47_case_hardened_cs2_csgo_1696313559_153a1a71_progressive.jpg"
+                        alt="AK-47 Redline" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">AK-47 | Case Hardened</h3>
+                    <p>A AK-47 Case Hardened também é uma skin muito valiosa, podendo valer mais de R$ 4 milhões devido
+                        sua elegância e possíveis conjuto de características!</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded">
+                    <img src="https://www.pichauarena.com.br/wp-content/uploads/2023/11/1682677147104.webp"
+                        alt="M4A4 Howl" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">M4A4 | Howl</h3>
+                    <p>A M4A4 Howl é conhecida por sua arte impressionante, sendo uma das skins mais procuradas pelos
+                        colecionadores.</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded">
+                    <img src="https://cdn.csgoskins.gg/public/uih/galleries/aHR0cHM6Ly9jZG4uY3Nnb3NraW5zLmdnL3B1YmxpYy9pbWFnZXMvZ2FsbGVyaWVzL3YyL2F3cC1kcmFnb24tbG9yZS9yZWxvYWRpbmcucG5n/1000/auto/85/notrim/f96ebd28c3ac2fb96d08f7845d3224d7.webp"
+                        alt="Dragon Lore" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">AWP | Dragon Lore</h3>
+                    <p>A skin Dragon Lore para AWP é uma das mais raras e valiosas do jogo, destacando-se pelo seu
+                        design exclusivo e detalhes intrincados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bombs" class="my-12 pb-8 border-b">
+            <h2 class="text-2xl text-gold font-semibold mb-4">Trajetória das Bombas no CS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-cs-secondary p-4 rounded text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO29ZtR4yYalUXJrVGKamguKaUt2f9qISMra-OBUkmcpa0g0sP9g2gZYIyF-pGxVzV_zM&usqp=CAU"
+                        alt="CS 1.6 Bomb" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">CS 1.6</h3>
+                    <p>A bomba clássica do CS 1.6, conhecida por sua simplicidade e design icônico que todos os
+                        jogadores veteranos reconhecem.</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded text-center">
+                    <img src="https://gamer-lab.com/1im1305581906_87195700" alt="CS Condition Zero Bomb"
+                        class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">CS Condition Zero</h3>
+                    <p>O CS Condition Zero trouxe algumas mudanças visuais na bomba, mantendo a funcionalidade clássica
+                        do jogo.</p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded text-center">
+                    <img src="https://s2-ge.glbimg.com/1K3eweDLXXjfhFl-kf5rMFYrKds=/0x0:500x280/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/i/j/lzeUNbT5ehjBCovWWjKg/eaaaa9o.jpg"
+                        alt="CS GO Bomb" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">CS GO</h3>
+                    <p>A bomba do CS GO é mais detalhada, refletindo a evolução gráfica e o aumento da imersão no jogo.
+                    </p>
+                </div>
+                <div class="bg-cs-secondary p-4 rounded text-center">
+                    <img src="https://assets.gamearena.gg/wp-content/uploads/2023/09/29215624/C4.jpg" alt="CS2 Bomb"
+                        class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">CS2</h3>
+                    <p>A bomba do CS2 apresenta um design similiar ao CS GO, incorporando detalhes visuais
+                        impressionantes e mais realistas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
