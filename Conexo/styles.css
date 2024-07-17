@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.game-container{
+    height: 18em;
+}
+
+.setup-container, .game-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.setup-container {
+    width: 300px;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.score-board {
+    max-height: 15em;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.connections {
+    max-height: 15em;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+.game-board {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#words-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.word {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.word.selected {
+    background-color: #FF5722;
+}
+
+#connections-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#connections-list li {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.background-score{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+.final-score{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 60vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.result {
+    text-align: center;
+    color: #4CAF50;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #3d8c40;
+    color: #FFF;
+    font-weight: 600;
+    border: none;
+    border: 2px solid ;
+    border-radius: 5px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Conexo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="setup-container">
+        <h2>Configuração do Jogo</h2>
+        <label for="num-players">Número de Jogadores (2 a 4):</label>
+        <input type="number" id="num-players" name="num-players" min="2" max="4" value="2">
+        <button id="start-game">Iniciar Jogo</button>
+    </div>
+    <div class="game-container" style="display: none;">
+        <div class="score-board">
+            <h2>Placar</h2>
+            <div id="score-container"></div>
+        </div>
+        <div class="game-board">
+            <h2>Rodada <span class="round-span">-1</span>/3</h2>
+            <p id="current-player"></p>
+            <div id="words-container"></div>
+        </div>
+        <div class="connections">
+            <h2>Conexões</h2>
+            <ul id="connections-list"></ul>
+        </div>
+    </div>
+    <div class="background-score">
+        <div class="final-score">
+            <h1>Resultado:</h1>
+            <p class="result"></p>
+            <button onclick="resetGame()">Reiniciar</button>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
