@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-image: url('https://img.freepik.com/premium-photo/nature-background-nature-view-with-mountain-forest-landscape_951562-838.jpg?w=826');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section {
+    padding: 1em 2em;
+}
