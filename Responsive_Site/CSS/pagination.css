@@ -1,0 +1,44 @@
+.pagination-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination{
+    display: flex;
+    list-style: none;
+    background-color: rgb(146, 201, 146);
+}
+
+.pagination > li{
+    border: 1px solid rgb(18, 79, 18);
+}
+
+.pagination > li:hover{
+    background-color: rgb(18, 79, 18);
+}
+
+.pagination > li:hover  a{
+    color: rgb(146, 201, 146);
+}
+
+.pagination > li > a {
+    text-decoration: none;
+    color: rgb(18, 79, 18);
+}
+
+.pagination > li:nth-child(2){
+    background-color: rgb(18, 79, 18);
+}
+
+.pagination > li:nth-child(2) > a{
+    color: rgb(146, 201, 146);
+}
+
+.action {
+    padding: 9px 12px;
+}
+.page-item{
+    padding: 9px;
+}
+

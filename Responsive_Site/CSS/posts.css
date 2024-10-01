@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: justify;
 }
 
 .post:hover {
@@ -68,5 +69,11 @@
 
     .post p {
         font-size: 0.9em;
+    }
+    .post > p{
+        font-size: .8rem;
+    }
+    .post > div > p{
+        font-size: .7rem;
     }
 }
