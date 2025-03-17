@@ -81,3 +81,32 @@ main{
     font-size: 1.5rem;
     text-align: center;
 }
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 40px;
+}
+
+.footer-btn .text {
+    display: none;
+    margin-left: 5px;
+}
+
+footer:hover .footer-btn {
+    width: auto;
+    padding: 10px 15px;
+}
+
+footer:hover .footer-btn .text {
+    display: inline;
+}
