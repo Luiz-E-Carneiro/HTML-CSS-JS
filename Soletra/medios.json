@@ -1,0 +1,233 @@
+[
+    {"palavra": "abstrato", "definicao": "Que não é concreto, que se refere a ideias, conceitos ou qualidades."},
+    {"palavra": "alicerce", "definicao": "Base sólida que serve de fundamento para algo, geralmente usada em construção."},
+    {"palavra": "altruísmo", "definicao": "Atitude de preocupação e dedicação ao bem-estar dos outros."},
+    {"palavra": "âmago", "definicao": "Parte mais profunda e essencial de algo."},
+    {"palavra": "ameixa", "definicao": "Fruto comestível, redondo, de cor variando entre o roxo e o amarelo."},
+    {"palavra": "análise", "definicao": "Exame detalhado de algo, com o objetivo de entender ou explicar."},
+    {"palavra": "análogo", "definicao": "Que possui semelhança ou correspondência com algo."},
+    {"palavra": "afluirão", "definicao": "Forma do verbo afluir, que significa vir ou chegar em grande quantidade."},
+    {"palavra": "afônico", "definicao": "Que está sem voz, sem som."},
+    {"palavra": "agônico", "definicao": "Relacionado ao sofrimento extremo, à agonia."},
+    {"palavra": "alcance", "definicao": "Distância ou área que algo pode atingir ou atingir com eficácia."},
+    {"palavra": "alfaiate", "definicao": "Profissional que faz roupas sob medida, especialmente ternos."},
+    {"palavra": "álibi", "definicao": "Prova de que alguém estava em outro lugar no momento de um crime."},
+    {"palavra": "antílope", "definicao": "Mamífero herbívoro de pernas longas e ágil, encontrado principalmente na África."},
+    {"palavra": "antropologia", "definicao": "Estudo dos seres humanos, suas culturas, comportamentos e evolução."},
+    {"palavra": "apneia", "definicao": "Interrupção temporária da respiração."},
+    {"palavra": "apreço", "definicao": "Sentimento de estima ou reconhecimento por algo ou alguém."},
+    {"palavra": "apreensão", "definicao": "Sentimento de ansiedade ou medo em relação ao futuro."},
+    {"palavra": "aptidão", "definicao": "Capacidade natural ou adquirida para realizar uma tarefa."},
+    {"palavra": "ânimo", "definicao": "Estado emocional de alguém, especialmente relacionado à disposição para agir."},
+    {"palavra": "ânsia", "definicao": "Sentimento intenso de desejo ou necessidade."},
+    {"palavra": "ansioso", "definicao": "Que sente ansiedade, preocupado com algo futuro ou incerto."},
+    {"palavra": "antecedente", "definicao": "Algo que ocorreu antes de outro evento ou fato."},
+    {"palavra": "antepassado", "definicao": "Pessoa que viveu em gerações anteriores à sua."},
+    {"palavra": "antever", "definicao": "Ver ou prever algo no futuro."},
+    {"palavra": "arbítrio", "definicao": "Liberdade para decidir ou agir de acordo com a própria vontade."},
+    {"palavra": "assimilar", "definicao": "Absorver e incorporar algo, como um conhecimento ou hábito."},
+    {"palavra": "asterisco", "definicao": "Símbolo (*) usado para destacar ou indicar uma nota de rodapé."},
+    {"palavra": "átomo", "definicao": "A menor unidade de matéria que conserva as propriedades de um elemento químico."},
+    {"palavra": "atônito", "definicao": "Que está surpreso, espantado ou chocado."},
+    {"palavra": "atrás", "definicao": "Em um lugar mais distante ou posterior em relação a algo ou alguém."},
+    {"palavra": "atrasar", "definicao": "Fazer com que algo ou alguém se atrase, chegue depois do esperado."},
+    {"palavra": "artífice", "definicao": "Pessoa que executa um trabalho manual ou que possui habilidades especiais em uma área."},
+    {"palavra": "ascendente", "definicao": "Que se eleva, que sobe; também, pessoa ou antepassado de uma linha genealógica."},
+    {"palavra": "assegurar", "definicao": "Garantir ou confirmar algo de forma definitiva."},
+    {"palavra": "assembleia", "definicao": "Reunião de um grupo de pessoas para discutir ou decidir sobre assuntos comuns."},
+    {"palavra": "bosquejo", "definicao": "Esboço ou rascunho inicial de algo, especialmente de uma obra de arte ou plano."},
+    {"palavra": "brisa", "definicao": "Vento suave e agradável."},
+    {"palavra": "bússola", "definicao": "Instrumento usado para determinar direções com base no magnetismo."},
+    {"palavra": "cadarço", "definicao": "Cordão usado para amarrar ou ajustar sapatos."},
+    {"palavra": "atraso", "definicao": "Situação em que algo ou alguém não chega ou acontece no tempo esperado."},
+    {"palavra": "audaz", "definicao": "Pessoa corajosa, ousada e disposta a enfrentar desafios."},
+    {"palavra": "audiência", "definicao": "Número de pessoas que assistem ou ouvem algo, especialmente em um julgamento ou evento público."},
+    {"palavra": "aversão", "definicao": "Sentimento de repulsa ou desgosto por algo ou alguém."},
+    {"palavra": "azedo", "definicao": "Sabor ácido ou ácido em excesso, também usado para descrever algo amargo ou desagradável."},
+    {"palavra": "baldeação", "definicao": "Mudança de transporte, especialmente em sistemas de transporte público."},
+    {"palavra": "cegueira", "definicao": "Perda da capacidade de enxergar."},
+    {"palavra": "célebre", "definicao": "Muito conhecido, famoso."},
+    {"palavra": "célere", "definicao": "Que é rápido ou veloz."},
+    {"palavra": "cena", "definicao": "Momento ou acontecimento que faz parte de um evento maior, também se refere a uma representação teatral."},
+    {"palavra": "cálculo", "definicao": "Operação matemática ou análise numérica para resolver um problema."},
+    {"palavra": "cansaço", "definicao": "Estado físico ou mental de exaustão."},
+    {"palavra": "capricho", "definicao": "Desejo ou vontade repentina e muitas vezes irracional."},
+    {"palavra": "caranguejo", "definicao": "Crustáceo marinho ou de água doce com pinças grandes."},
+    {"palavra": "caráter", "definicao": "Conjunto de características e qualidades morais de uma pessoa."},
+    {"palavra": "cárcere", "definicao": "Prisão ou lugar onde se mantém alguém detido."},
+    {"palavra": "censura", "definicao": "Ato de proibir ou restringir a divulgação de algo."},
+    {"palavra": "cérebro", "definicao": "Órgão responsável pelas funções cognitivas e controle do corpo."},
+    {"palavra": "coalizão", "definicao": "Aliança ou união entre diferentes grupos para alcançar um objetivo comum."},
+    {"palavra": "coçar", "definicao": "Fazer movimentos repetitivos com as mãos em uma área do corpo para aliviar coceira."},
+    {"palavra": "coceira", "definicao": "Sensação irritante que provoca o desejo de coçar uma parte do corpo."},
+    {"palavra": "coincidência", "definicao": "Quando dois ou mais eventos ocorrem simultaneamente ou de forma inesperada."},
+    {"palavra": "combustível", "definicao": "Substância capaz de liberar energia por meio de combustão."},
+    {"palavra": "complexo", "definicao": "Algo que possui várias partes interligadas, tornando-se difícil de entender ou resolver."},
+    {"palavra": "chance", "definicao": "Probabilidade de um evento ocorrer."},
+    {"palavra": "chantagem", "definicao": "Ato de extorquir dinheiro ou favores mediante ameaça ou intimidação."},
+    {"palavra": "chavões", "definicao": "Expressões ou frases comuns e repetidas, muitas vezes sem significado real."},
+    {"palavra": "chimpanzé", "definicao": "Espécie de macaco muito próxima ao ser humano."},
+    {"palavra": "chuchu", "definicao": "Legume de casca verde e polpa macia, bastante comum na culinária."},
+    {"palavra": "circunstância", "definicao": "Fatores ou condições que rodeiam e influenciam uma situação."},
+        {
+          "palavra": "subjacente",
+          "descricao": "Que está abaixo ou subentendido, que não é diretamente expresso, mas está implícito."
+        },
+        {
+          "palavra": "subsídio",
+          "descricao": "Ajuda financeira ou apoio para algo, geralmente fornecido por um governo ou organização."
+        },
+        {
+          "palavra": "xadrez",
+          "descricao": "Jogo de tabuleiro estratégico entre duas pessoas, onde o objetivo é capturar o rei adversário."
+        },
+        {
+          "palavra": "tórax",
+          "descricao": "Parte do corpo humano entre o pescoço e o abdômen, onde se localizam os pulmões e o coração."
+        },
+        {
+          "palavra": "transmissão",
+          "descricao": "Ato de passar algo de uma pessoa para outra, como informações ou doenças."
+        },
+        {
+          "palavra": "túnel",
+          "descricao": "Passagem subterrânea, geralmente escavada para transporte, drenagem ou outros fins."
+        },
+        {
+          "palavra": "vanglória",
+          "descricao": "Senso excessivo de orgulho e vaidade, frequentemente demonstrado de forma exagerada."
+        },
+        {
+          "palavra": "viço",
+          "descricao": "Aspecto de saúde, frescor ou vigor, geralmente usado para descrever plantas ou pessoas."
+        },
+        {
+          "palavra": "volátil",
+          "descricao": "Que pode mudar rapidamente ou que se evapora facilmente, especialmente usado em química para descrever substâncias."
+        },
+        {
+          "palavra": "suspenso",
+          "descricao": "Que está pendurado ou em espera, sem contato com o chão ou com uma superfície de apoio."
+        },
+        {
+          "palavra": "temperança",
+          "descricao": "Moderação, especialmente em relação a alimentos, bebidas ou outros prazeres."
+        },
+        {
+          "palavra": "tenaz",
+          "descricao": "Que demonstra força, determinação ou resistência, difícil de ser quebrado ou vencido."
+        },
+        {
+          "palavra": "tendência",
+          "descricao": "Inclinação ou direção de algo, seja comportamento, estilo ou movimento."
+        },
+        {
+          "palavra": "têxtil",
+          "descricao": "Relativo a tecidos ou materiais que podem ser tecidos, geralmente usados para roupas ou outros produtos."
+        },
+        {
+          "palavra": "torácico",
+          "descricao": "Relacionado ao tórax, região do corpo onde se encontram os pulmões e o coração."
+        },
+        {
+          "palavra": "substância",
+          "descricao": "Material ou composto que tem uma composição definida, seja natural ou sintético."
+        },
+        {
+          "palavra": "subterrâneo",
+          "descricao": "Que está abaixo da superfície da Terra, como cavernas, minas ou sistemas de esgoto."
+        },
+        {
+          "palavra": "subverter",
+          "descricao": "Alterar ou corromper algo, especialmente normas ou sistemas estabelecidos, geralmente com o intuito de derrubar ou desestabilizar."
+        },
+        {
+          "palavra": "sucumbir",
+          "descricao": "Ceder ou ser derrotado por algo, como uma doença, uma dificuldade ou uma pressão."
+        },
+        {
+          "palavra": "superstição",
+          "descricao": "Crença irracional em acontecimentos que não têm base científica, geralmente envolvendo o temor do desconhecido."
+        },
+        {
+          "palavra": "suscetível",
+          "descricao": "Que é propenso ou vulnerável a ser afetado por algo, como uma doença ou uma influência externa."
+        },
+            {
+              "palavra": "ressalva",
+              "descricao": "Exceção ou restrição a algo, geralmente mencionada para evitar uma interpretação errada ou para delimitar um conceito."
+            },
+            {
+              "palavra": "retorquir",
+              "descricao": "Responder a uma pergunta ou afirmação de forma rápida e, muitas vezes, de maneira irônica ou crítica."
+            },
+            {
+              "palavra": "retrógrado",
+              "descricao": "Que se move ou evolui para trás, contrário ao progresso ou desenvolvimento."
+            },
+            {
+              "palavra": "refulja",
+              "descricao": "Verbo que significa brilhar intensamente, como luz ou brilho que emana de algo."
+            },
+            {
+              "palavra": "refutação",
+              "descricao": "Ato de provar ou demonstrar que uma afirmação ou argumento está errado ou inválido."
+            },
+            {
+              "palavra": "regozija",
+              "descricao": "Sentir grande alegria ou satisfação, especialmente em resposta a um evento positivo ou esperado."
+            },
+            {
+              "palavra": "reivindicar",
+              "descricao": "Exigir algo que se acredita ter direito ou mérito, geralmente em relação a uma propriedade ou um direito."
+            },
+            {
+              "palavra": "rejeição",
+              "descricao": "Ato de recusar ou não aceitar algo, como uma proposta, ideia ou pessoa."
+            },
+            {
+              "palavra": "rejuvenescer",
+              "descricao": "Tornar-se mais jovem ou recuperar aspectos de juventude, seja fisicamente ou psicologicamente."
+            },
+            {
+              "palavra": "sobressair",
+              "descricao": "Destacar-se ou ser mais visível ou importante em meio a outros."
+            },
+            {
+              "palavra": "sovinice",
+              "descricao": "Atitude de extrema avareza, de não querer gastar dinheiro ou compartilhar recursos."
+            },
+            {
+              "palavra": "salsa",
+              "descricao": "Planta aromática utilizada em diversos pratos, com folhas verde-escuras e sabor característico."
+            },
+            {
+              "palavra": "sedentário",
+              "descricao": "Que leva uma vida sem grandes movimentações físicas, geralmente associado à inatividade."
+            },
+            {
+              "palavra": "sensível",
+              "descricao": "Que tem a capacidade de perceber estímulos de forma intensa ou que demonstra emoções facilmente."
+            },
+            {
+              "palavra": "sensorial",
+              "descricao": "Relacionado aos sentidos ou à percepção sensorial, como a visão, audição, tato, olfato e paladar."
+            },
+            {
+              "palavra": "servo",
+              "descricao": "Pessoa que trabalha ou serve a outra, comumente em uma posição subordinada ou de escravidão."
+            },
+            {
+              "palavra": "sinuoso",
+              "descricao": "Que possui curvas ou voltas, que é tortuoso ou ondulado."
+            },
+            {
+              "palavra": "sobejo",
+              "descricao": "Excesso ou algo que é sobrante, que está a mais."
+            },
+            {
+              "palavra": "sobrancelha",
+              "descricao": "A parte do rosto que fica acima dos olhos, composta por pelos que ajudam a proteger os olhos."
+            }          
+  ]
+  

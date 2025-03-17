@@ -1,0 +1,192 @@
+{
+    "1": {
+        "facil": [
+            {"palavra": "bola", "descricao": "Objeto esférico usado em diversos esportes."},
+            {"palavra": "gato", "descricao": "Animal de estimação felino."},
+            {"palavra": "mesa", "descricao": "Móvel utilizado para apoio de objetos e refeições."},
+            {"palavra": "casa", "descricao": "Local onde as pessoas moram."},
+            {"palavra": "carro", "descricao": "Veículo automotor utilizado para transporte."},
+            {"palavra": "rio", "descricao": "Curso de água natural que deságua em mares ou lagos."},
+            {"palavra": "luz", "descricao": "Radiação visível que permite enxergar."},
+            {"palavra": "pão", "descricao": "Alimento feito de farinha e fermento."},
+            {"palavra": "sol", "descricao": "Estrela central do sistema solar."},
+            {"palavra": "vento", "descricao": "Movimento do ar atmosférico."}
+        ],
+        "medio": [
+            {"palavra": "janela", "descricao": "Abertura em paredes para entrada de luz e ar."},
+            {"palavra": "caderno", "descricao": "Conjunto de folhas encadernadas para escrita."},
+            {"palavra": "montanha", "descricao": "Elevação natural do terreno com grande altitude."},
+            {"palavra": "história", "descricao": "Narrativa de fatos passados."},
+            {"palavra": "telefone", "descricao": "Aparelho usado para comunicação à distância."},
+            {"palavra": "computador", "descricao": "Máquina eletrônica que processa dados."},
+            {"palavra": "bicicleta", "descricao": "Meio de transporte de duas rodas movido a pedais."},
+            {"palavra": "caminhão", "descricao": "Veículo grande utilizado para transporte de cargas."},
+            {"palavra": "planeta", "descricao": "Corpo celeste que orbita uma estrela."},
+            {"palavra": "abacaxi", "descricao": "Fruta tropical de casca espinhosa e polpa doce."}
+        ],
+        "dificil": [
+            {"palavra": "onomatopeia", "descricao": "Palavra que imita sons da natureza."},
+            {"palavra": "paralelepípedo", "descricao": "Sólido geométrico de seis faces retangulares."},
+            {"palavra": "procrastinação", "descricao": "Ato de adiar ou postergar tarefas."},
+            {"palavra": "otorrinolaringologista", "descricao": "Médico especialista em ouvidos, nariz e garganta."},
+            {"palavra": "inconstitucionalissimamente", "descricao": "De maneira extremamente inconstitucional."},
+            {"palavra": "circunferência", "descricao": "Linha curva fechada cujos pontos estão à mesma distância do centro."},
+            {"palavra": "transcendental", "descricao": "Algo que vai além da experiência comum."},
+            {"palavra": "desproporcional", "descricao": "Algo que não está em proporção adequada."},
+            {"palavra": "estapafúrdio", "descricao": "Algo extremamente absurdo ou sem sentido."},
+            {"palavra": "hipopotomonstrosesquipedaliofobia", "descricao": "Medo irracional de palavras longas."}
+        ]
+    },
+    "2": {
+    "facil": [
+      { "palavra": "casa", "descricao": "Local onde as pessoas moram." },
+      { "palavra": "sol", "descricao": "Estrela que ilumina a Terra." },
+      { "palavra": "pato", "descricao": "Ave aquática com bico achatado." },
+      { "palavra": "bola", "descricao": "Objeto esférico usado em esportes." },
+      { "palavra": "gato", "descricao": "Animal doméstico de pequeno porte." },
+      { "palavra": "mesa", "descricao": "Móvel usado para refeições ou trabalho." },
+      { "palavra": "vento", "descricao": "Movimento do ar na atmosfera." },
+      { "palavra": "rio", "descricao": "Curso de água natural que corre para o mar." },
+      { "palavra": "luz", "descricao": "Radiação que torna os objetos visíveis." },
+      { "palavra": "janela", "descricao": "Abertura em uma parede para entrada de luz e ar." }
+    ],
+    "medio": [
+      { "palavra": "garrafa", "descricao": "Recipiente para armazenar líquidos." },
+      { "palavra": "telescópio", "descricao": "Instrumento óptico para observar objetos distantes." },
+      { "palavra": "bicicleta", "descricao": "Veículo de duas rodas movido por pedais." },
+      { "palavra": "elefante", "descricao": "O maior animal terrestre vivo." },
+      { "palavra": "escola", "descricao": "Local onde se aprende diversas matérias." },
+      { "palavra": "computador", "descricao": "Máquina eletrônica para processar dados." },
+      { "palavra": "oceano", "descricao": "Grande extensão de água salgada." },
+      { "palavra": "montanha", "descricao": "Grande elevação natural de terreno." },
+      { "palavra": "astronauta", "descricao": "Pessoa treinada para viajar no espaço." },
+      { "palavra": "biblioteca", "descricao": "Lugar onde se guardam muitos livros." }
+    ],
+    "dificil": [
+      { "palavra": "otorrinolaringologista", "descricao": "Médico especialista em ouvido, nariz e garganta." },
+      { "palavra": "paralelepípedo", "descricao": "Bloco de pedra usado em calçamentos." },
+      { "palavra": "anticonstitucionalissimamente", "descricao": "De maneira extremamente anticonstitucional." },
+      { "palavra": "pneumoultramicroscopicossilicovulcanoconiótico", "descricao": "Referente a uma doença pulmonar causada pela inalação de partículas de sílica." },
+      { "palavra": "inconstitucionalidade", "descricao": "Qualidade do que não está de acordo com a Constituição." },
+      { "palavra": "esternocleidomastoideo", "descricao": "Músculo do pescoço responsável pela rotação da cabeça." },
+      { "palavra": "aerodinâmica", "descricao": "Parte da física que estuda o movimento do ar e sua interação com objetos." },
+      { "palavra": "psicopedagogia", "descricao": "Área que estuda processos de aprendizagem e dificuldades educacionais." },
+      { "palavra": "radiotelescópio", "descricao": "Instrumento usado para detectar ondas de rádio do espaço." },
+      { "palavra": "proparoxítona", "descricao": "Palavra cuja sílaba tônica é a antepenúltima." }
+    ]
+  },
+  "3": {
+    "facil": [
+      { "palavra": "livro", "descricao": "Conjunto de folhas escritas ou impressas encadernadas." },
+      { "palavra": "carro", "descricao": "Veículo motorizado de quatro rodas." },
+      { "palavra": "chave", "descricao": "Objeto usado para abrir fechaduras." },
+      { "palavra": "banana", "descricao": "Fruta tropical alongada e amarela." },
+      { "palavra": "fogo", "descricao": "Combustão visível que gera calor e luz." },
+      { "palavra": "leite", "descricao": "Líquido branco produzido por mamíferos." },
+      { "palavra": "dente", "descricao": "Estrutura óssea na boca usada para mastigar." },
+      { "palavra": "festa", "descricao": "Evento de comemoração com música e comida." },
+      { "palavra": "praia", "descricao": "Faixa de areia à beira do mar." },
+      { "palavra": "céu", "descricao": "Espaço visível acima da Terra." }
+    ],
+    "medio": [
+      { "palavra": "helicóptero", "descricao": "Aeronave que se sustenta no ar por meio de hélices." },
+      { "palavra": "barbeiro", "descricao": "Profissional que corta cabelo e faz barba." },
+      { "palavra": "matemática", "descricao": "Ciência dos números e cálculos." },
+      { "palavra": "hospital", "descricao": "Lugar onde se tratam doenças." },
+      { "palavra": "cadeado", "descricao": "Fechadura portátil para trancar algo." },
+      { "palavra": "telhado", "descricao": "Parte superior de uma casa que a cobre." },
+      { "palavra": "máquina", "descricao": "Aparelho mecânico que executa uma função específica." },
+      { "palavra": "espelho", "descricao": "Superfície refletora usada para ver imagens." },
+      { "palavra": "telefone", "descricao": "Aparelho para comunicação à distância." },
+      { "palavra": "passaporte", "descricao": "Documento necessário para viajar entre países." }
+    ],
+    "dificil": [
+      { "palavra": "metamorfose", "descricao": "Mudança completa na forma ou estrutura de algo." },
+      { "palavra": "circunferência", "descricao": "Linha curva fechada cujos pontos estão à mesma distância do centro." },
+      { "palavra": "esquizofrenia", "descricao": "Doença mental caracterizada por perda de contato com a realidade." },
+      { "palavra": "filantropia", "descricao": "Ato de ajudar os outros sem interesse financeiro." },
+      { "palavra": "hierarquia", "descricao": "Organização de pessoas ou coisas em diferentes níveis de importância." },
+      { "palavra": "oxigenação", "descricao": "Processo de absorção de oxigênio pelo organismo." },
+      { "palavra": "anestesiologista", "descricao": "Médico especialista em anestesia." },
+      { "palavra": "paleontologia", "descricao": "Ciência que estuda fósseis e a vida pré-histórica." },
+      { "palavra": "burocracia", "descricao": "Conjunto de normas e processos administrativos." },
+      { "palavra": "quinquilharia", "descricao": "Objeto sem valor ou utilidade." }
+    ]
+  },
+    "4": {
+      "facil": [
+        { "palavra": "casa", "descricao": "Local onde as pessoas moram." },
+        { "palavra": "sol", "descricao": "Estrela que ilumina a Terra." },
+        { "palavra": "pato", "descricao": "Ave aquática com bico achatado." },
+        { "palavra": "bola", "descricao": "Objeto esférico usado em esportes." },
+        { "palavra": "gato", "descricao": "Animal doméstico de pequeno porte." },
+        { "palavra": "mesa", "descricao": "Móvel usado para refeições ou trabalho." },
+        { "palavra": "vento", "descricao": "Movimento do ar na atmosfera." },
+        { "palavra": "rio", "descricao": "Curso de água natural que corre para o mar." },
+        { "palavra": "luz", "descricao": "Radiação que torna os objetos visíveis." },
+        { "palavra": "janela", "descricao": "Abertura em uma parede para entrada de luz e ar." }
+      ],
+      "medio": [
+        { "palavra": "garrafa", "descricao": "Recipiente para armazenar líquidos." },
+        { "palavra": "telescópio", "descricao": "Instrumento óptico para observar objetos distantes." },
+        { "palavra": "bicicleta", "descricao": "Veículo de duas rodas movido por pedais." },
+        { "palavra": "elefante", "descricao": "O maior animal terrestre vivo." },
+        { "palavra": "escola", "descricao": "Local onde se aprende diversas matérias." },
+        { "palavra": "computador", "descricao": "Máquina eletrônica para processar dados." },
+        { "palavra": "oceano", "descricao": "Grande extensão de água salgada." },
+        { "palavra": "montanha", "descricao": "Grande elevação natural de terreno." },
+        { "palavra": "astronauta", "descricao": "Pessoa treinada para viajar no espaço." },
+        { "palavra": "biblioteca", "descricao": "Lugar onde se guardam muitos livros." }
+      ],
+      "dificil": [
+        { "palavra": "otorrinolaringologista", "descricao": "Médico especialista em ouvido, nariz e garganta." },
+        { "palavra": "paralelepípedo", "descricao": "Bloco de pedra usado em calçamentos." },
+        { "palavra": "anticonstitucionalissimamente", "descricao": "De maneira extremamente anticonstitucional." },
+        { "palavra": "pneumoultramicroscopicossilicovulcanoconiótico", "descricao": "Referente a uma doença pulmonar causada pela inalação de partículas de sílica." },
+        { "palavra": "inconstitucionalidade", "descricao": "Qualidade do que não está de acordo com a Constituição." },
+        { "palavra": "esternocleidomastoideo", "descricao": "Músculo do pescoço responsável pela rotação da cabeça." },
+        { "palavra": "aerodinâmica", "descricao": "Parte da física que estuda o movimento do ar e sua interação com objetos." },
+        { "palavra": "psicopedagogia", "descricao": "Área que estuda processos de aprendizagem e dificuldades educacionais." },
+        { "palavra": "radiotelescópio", "descricao": "Instrumento usado para detectar ondas de rádio do espaço." },
+        { "palavra": "proparoxítona", "descricao": "Palavra cuja sílaba tônica é a antepenúltima." }
+      ]
+    },
+    "5": {
+      "facil": [
+        { "palavra": "livro", "descricao": "Conjunto de folhas escritas ou impressas encadernadas." },
+        { "palavra": "carro", "descricao": "Veículo motorizado de quatro rodas." },
+        { "palavra": "chave", "descricao": "Objeto usado para abrir fechaduras." },
+        { "palavra": "banana", "descricao": "Fruta tropical alongada e amarela." },
+        { "palavra": "fogo", "descricao": "Combustão visível que gera calor e luz." },
+        { "palavra": "leite", "descricao": "Líquido branco produzido por mamíferos." },
+        { "palavra": "dente", "descricao": "Estrutura óssea na boca usada para mastigar." },
+        { "palavra": "festa", "descricao": "Evento de comemoração com música e comida." },
+        { "palavra": "praia", "descricao": "Faixa de areia à beira do mar." },
+        { "palavra": "céu", "descricao": "Espaço visível acima da Terra." }
+      ],
+      "medio": [
+        { "palavra": "helicóptero", "descricao": "Aeronave que se sustenta no ar por meio de hélices." },
+        { "palavra": "barbeiro", "descricao": "Profissional que corta cabelo e faz barba." },
+        { "palavra": "matemática", "descricao": "Ciência dos números e cálculos." },
+        { "palavra": "hospital", "descricao": "Lugar onde se tratam doenças." },
+        { "palavra": "cadeado", "descricao": "Fechadura portátil para trancar algo." },
+        { "palavra": "telhado", "descricao": "Parte superior de uma casa que a cobre." },
+        { "palavra": "máquina", "descricao": "Aparelho mecânico que executa uma função específica." },
+        { "palavra": "espelho", "descricao": "Superfície refletora usada para ver imagens." },
+        { "palavra": "telefone", "descricao": "Aparelho para comunicação à distância." },
+        { "palavra": "passaporte", "descricao": "Documento necessário para viajar entre países." }
+      ],
+      "dificil": [
+        { "palavra": "metamorfose", "descricao": "Mudança completa na forma ou estrutura de algo." },
+        { "palavra": "circunferência", "descricao": "Linha curva fechada cujos pontos estão à mesma distância do centro." },
+        { "palavra": "esquizofrenia", "descricao": "Doença mental caracterizada por perda de contato com a realidade." },
+        { "palavra": "filantropia", "descricao": "Ato de ajudar os outros sem interesse financeiro." },
+        { "palavra": "hierarquia", "descricao": "Organização de pessoas ou coisas em diferentes níveis de importância." },
+        { "palavra": "oxigenação", "descricao": "Processo de absorção de oxigênio pelo organismo." },
+        { "palavra": "anestesiologista", "descricao": "Médico especialista em anestesia." },
+        { "palavra": "paleontologia", "descricao": "Ciência que estuda fósseis e a vida pré-histórica." },
+        { "palavra": "burocracia", "descricao": "Conjunto de normas e processos administrativos." },
+        { "palavra": "quinquilharia", "descricao": "Objeto sem valor ou utilidade." }
+      ]
+    }
+}

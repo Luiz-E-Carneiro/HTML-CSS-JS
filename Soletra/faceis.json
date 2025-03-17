@@ -1,0 +1,546 @@
+[
+  {
+    "palavra": "abacaxi",
+    "definicao": "Fruto tropical de casca grossa e polpa doce e suculenta."
+  },
+  {
+    "palavra": "afago",
+    "definicao": "Ato de carinho ou afeto."
+  },
+  {
+    "palavra": "afável",
+    "definicao": "Pessoa amável, cortês e gentil."
+  },
+  {
+    "palavra": "afeição",
+    "definicao": "Sentimento de carinho ou estima por algo ou alguém."
+  },
+  {
+    "palavra": "agonia",
+    "definicao": "Grande sofrimento físico ou emocional."
+  },
+  {
+    "palavra": "agônico",
+    "definicao": "Que está em estado de agonia ou sofrimento intenso."
+  },
+  {
+    "palavra": "águia",
+    "definicao": "Ave de rapina de grande porte, conhecida por sua visão aguçada."
+  },
+  {
+    "palavra": "acúmulo",
+    "definicao": "Ato de reunir ou armazenar algo em grande quantidade."
+  },
+  {
+    "palavra": "adernar",
+    "definicao": "Inclinar-se para um dos lados, especialmente uma embarcação."
+  },
+  {
+    "palavra": "admitir",
+    "definicao": "Aceitar ou permitir a entrada de algo ou alguém."
+  },
+  {
+    "palavra": "adorável",
+    "definicao": "Extremamente encantador, cativante."
+  },
+  {
+    "palavra": "aduzir",
+    "definicao": "Apresentar argumentos ou razões."
+  },
+  {
+    "palavra": "aéreo",
+    "definicao": "Relacionado ao ar ou à aviação."
+  },
+  {
+    "palavra": "alegria",
+    "definicao": "Estado de contentamento e felicidade."
+  },
+  {
+    "palavra": "alguém",
+    "definicao": "Pessoa indeterminada ou desconhecida."
+  },
+  {
+    "palavra": "alívio",
+    "definicao": "Sensacão de diminuição de dor ou sofrimento."
+  },
+  {
+    "palavra": "alma",
+    "definicao": "Parte imaterial do ser humano, relacionada à essência e consciência."
+  },
+  {
+    "palavra": "almoço",
+    "definicao": "Refeição principal do dia, geralmente consumida ao meio-dia."
+  },
+  {
+    "palavra": "alquimia",
+    "definicao": "Prática antiga que buscava transformar metais em ouro e encontrar o elixir da vida."
+  },
+  {
+    "palavra": "agulha",
+    "definicao": "Objeto fino e pontiagudo usado para costura ou injeção."
+  },
+  {
+    "palavra": "alcançar",
+    "definicao": "Chegar a determinado ponto ou atingir um objetivo."
+  },
+  {
+    "palavra": "alcateia",
+    "definicao": "Grupo de lobos ou outros animais que caçam em conjunto."
+  },
+  {
+    "palavra": "alegação",
+    "definicao": "Declaração ou argumento apresentado como justificativa."
+  },
+  {
+    "palavra": "alegoria",
+    "definicao": "Representação simbólica de uma ideia ou conceito."
+  },
+  {
+    "palavra": "alegórico",
+    "definicao": "Que tem um significado simbólico ou metafórico."
+  },
+  {
+    "palavra": "alusão",
+    "definicao": "Referência indireta a algo ou alguém."
+  },
+  {
+    "palavra": "amanhã",
+    "definicao": "Dia seguinte ao presente."
+  },
+  {
+    "palavra": "amizade",
+    "definicao": "Relação de afeto, respeito e confiança entre pessoas."
+  },
+  {
+    "palavra": "amor",
+    "definicao": "Forte sentimento de carinho e apego por algo ou alguém."
+  },
+  {
+    "palavra": "análise",
+    "definicao": "Exame detalhado de algo para compreensão ou avaliação."
+  },
+  {
+    "palavra": "angústia",
+    "definicao": "Sensacão de sofrimento ou aflição emocional."
+  },
+  {
+    "palavra": "animosidade",
+    "definicao": "Sentimento de hostilidade ou antipatia."
+  },
+  {
+    "palavra": "anomia",
+    "definicao": "Ausência ou desrespeito às regras sociais."
+  },
+  {
+    "palavra": "ambígua",
+    "definicao": "Que pode ter mais de um significado ou interpretação."
+  },
+  {
+    "palavra": "ambiguidade",
+    "definicao": "Característica do que é ambíguo ou incerto."
+  },
+  {
+    "palavra": "âmbito",
+    "definicao": "Espaço ou campo de atuação."
+  },
+  {
+    "palavra": "ambivalência",
+    "definicao": "Coexistência de sentimentos ou ideias contraditórias."
+  },
+  {
+    "palavra": "após",
+    "definicao": "Indica posterioridade no tempo ou no espaço."
+  },
+  {
+    "palavra": "apóstolo",
+    "definicao": "Enviado ou missionário que difunde uma crença ou ideologia."
+  },
+  {
+    "palavra": "aprazado",
+    "definicao": "Fixado para uma data ou prazo determinado."
+  },
+  {
+    "palavra": "apreensivo",
+    "definicao": "Que sente preocupação ou receio."
+  },
+  {
+    "palavra": "aprendiz",
+    "definicao": "Pessoa que está em processo de aprendizado ou treinamento."
+  },
+  {
+    "palavra": "aquário",
+    "definicao": "Recipiente com água para peixes ou local para exibição de animais aquáticos."
+  },
+  {
+    "palavra": "ação",
+    "definicao": "Atividade que resulta em mudança ou efeito, movendo ou influenciando algo."
+  },
+  {
+    "palavra": "afável",
+    "definicao": "Pessoa de comportamento amigável e agradável."
+  },
+  {
+    "palavra": "agonia",
+    "definicao": "Estado de sofrimento extremo, físico ou mental."
+  },
+  {
+    "palavra": "alívio",
+    "definicao": "Sensação de alívio após um momento de tensão ou dor."
+  },
+  {
+    "palavra": "alma",
+    "definicao": "Parte imaterial do ser humano, considerada responsável pelas emoções e pensamentos."
+  },
+  {
+    "palavra": "amizade",
+    "definicao": "Relação de afeto e confiança entre pessoas."
+  },
+  {
+    "palavra": "aparência",
+    "definicao": "A forma ou aspecto externo de algo ou alguém."
+  },
+  {
+    "palavra": "após",
+    "definicao": "Indica algo que ocorre em seguida a outro evento."
+  },
+  {
+    "palavra": "biblioteca",
+    "definicao": "Local onde são armazenados livros e outros materiais de leitura."
+  },
+  {
+    "palavra": "cachorro",
+    "definicao": "Animal doméstico da família dos canídeos, comumente utilizado como pet."
+  },
+  {
+    "palavra": "caráter",
+    "definicao": "Conjunto de características pessoais que definem uma pessoa."
+  },
+  {
+    "palavra": "ciência",
+    "definicao": "Conhecimento sistemático baseado em métodos e evidências."
+  },
+  {
+    "palavra": "comunicação",
+    "definicao": "Troca de informações entre indivíduos, por meio de palavras, gestos ou sinais."
+  },
+  {
+    "palavra": "decisão",
+    "definicao": "Ato de escolher ou determinar uma solução para um problema."
+  },
+  {
+    "palavra": "educação",
+    "definicao": "Processo de transmissão de conhecimento e habilidades."
+  },
+  {
+    "palavra": "elogio",
+    "definicao": "Expressão de reconhecimento ou aprovação a algo ou alguém."
+  },
+  {
+    "palavra": "feliz",
+    "definicao": "Estado de contentamento e satisfação."
+  },
+  {
+    "palavra": "fórmula",
+    "definicao": "Equação ou regra utilizada para resolver problemas em diversas áreas."
+  },
+  {
+    "palavra": "generoso",
+    "definicao": "Pessoa disposta a compartilhar ou dar sem esperar algo em troca."
+  },
+  {
+    "palavra": "história",
+    "definicao": "Narrativa de eventos passados, reais ou imaginários."
+  },
+  {
+    "palavra": "ilusão",
+    "definicao": "Percepção distorcida da realidade."
+  },
+  {
+    "palavra": "inimigo",
+    "definicao": "Pessoa ou entidade com quem se está em conflito ou oposição."
+  },
+  {
+    "palavra": "justiça",
+    "definicao": "Princípio de tratar as pessoas com imparcialidade e respeito aos direitos."
+  },
+  {
+    "palavra": "lacuna",
+    "definicao": "Espaço vazio ou falha em algo."
+  },
+  {
+    "palavra": "memória",
+    "definicao": "Capacidade de armazenar e recordar informações e experiências passadas."
+  },
+  {
+    "palavra": "nuvem",
+    "definicao": "Agregados de vapor d'água suspensos na atmosfera."
+  },
+  {
+    "palavra": "opção",
+    "definicao": "Escolha disponível entre várias alternativas."
+  },
+  {
+    "palavra": "paciência",
+    "definicao": "Capacidade de esperar sem se irritar."
+  },
+  {
+    "palavra": "quase",
+    "definicao": "Indica algo que está muito próximo de acontecer ou ser alcançado."
+  },
+  {
+    "palavra": "reação",
+    "definicao": "Resposta a um estímulo ou evento."
+  },
+  {
+    "palavra": "sabedoria",
+    "definicao": "Conhecimento profundo adquirido ao longo do tempo."
+  },
+  {
+    "palavra": "satisfação",
+    "definicao": "Sentimento de prazer ou contentamento ao alcançar algo desejado."
+  },
+  {
+    "palavra": "tática",
+    "definicao": "Estratégia ou plano de ação para alcançar um objetivo."
+  },
+  {
+    "palavra": "universal",
+    "definicao": "Que se aplica a todos ou a todo o universo."
+  },
+  {
+    "palavra": "vazio",
+    "definicao": "Ausência de conteúdo ou de algo dentro de um espaço."
+  },
+  {
+    "palavra": "visível",
+    "definicao": "Que pode ser visto, perceptível pelos olhos."
+  },
+  {
+    "palavra": "abismo",
+    "definicao": "Grande precipício ou fenda profunda."
+  },
+  {
+    "palavra": "abreviação",
+    "definicao": "Forma reduzida de uma palavra ou expressão."
+  },
+  {
+    "palavra": "admiração",
+    "definicao": "Sentimento de respeito e apreço por algo ou alguém."
+  },
+  {
+    "palavra": "adversidade",
+    "definicao": "Situação difícil ou desfavorável."
+  },
+  {
+    "palavra": "ambição",
+    "definicao": "Desejo forte de alcançar algo, especialmente sucesso ou poder."
+  },
+  {
+    "palavra": "amor",
+    "definicao": "Sentimento profundo de afeto e carinho por alguém ou algo."
+  },
+  {
+    "palavra": "anatomia",
+    "definicao": "Estudo da estrutura dos organismos vivos."
+  },
+  {
+    "palavra": "antecedente",
+    "definicao": "Algo que ocorre antes de outro evento ou situação."
+  },
+  {
+    "palavra": "autenticidade",
+    "definicao": "Qualidade de ser genuíno e verdadeiro."
+  },
+  {
+    "palavra": "barreira",
+    "definicao": "Obstáculo ou impedimento a algo."
+  },
+  {
+    "palavra": "batalha",
+    "definicao": "Conflito, disputa ou luta entre dois ou mais lados."
+  },
+  {
+    "palavra": "biografia",
+    "definicao": "História da vida de uma pessoa, geralmente escrita por outra pessoa."
+  },
+  {
+    "palavra": "bravura",
+    "definicao": "Coragem e valentia, especialmente em situações difíceis."
+  },
+  {
+    "palavra": "brisa",
+    "definicao": "Vento suave e refrescante."
+  },
+  {
+    "palavra": "calor",
+    "definicao": "Sensação gerada pelo aumento da temperatura."
+  },
+  {
+    "palavra": "carreira",
+    "definicao": "Caminho profissional ou trajetória de trabalho ao longo da vida."
+  },
+  {
+    "palavra": "censura",
+    "definicao": "Ato de proibir ou controlar algo, como uma obra de arte ou opinião."
+  },
+  {
+    "palavra": "concorrência",
+    "definicao": "Competição entre indivíduos ou empresas pelo mesmo objetivo."
+  },
+  {
+    "palavra": "confiança",
+    "definicao": "Acreditar na capacidade ou sinceridade de algo ou alguém."
+  },
+  {
+    "palavra": "conhecimento",
+    "definicao": "Informação adquirida por meio de estudo, experiência ou aprendizado."
+  },
+  {
+    "palavra": "consequência",
+    "definicao": "Resultado ou efeito de uma ação ou evento."
+  },
+  {
+    "palavra": "contradição",
+    "definicao": "Situação em que duas afirmações ou ideias são opostas e incompatíveis."
+  },
+  {
+    "palavra": "culpa",
+    "definicao": "Responsabilidade por algo errado ou prejudicial."
+  },
+  {
+    "palavra": "decadência",
+    "definicao": "Processo de deterioração ou declínio de algo."
+  },
+  {
+    "palavra": "desafio",
+    "definicao": "Tarefa ou situação difícil que exige esforço ou habilidade."
+  },
+  {
+    "palavra": "desilusão",
+    "definicao": "Perda de uma crença ou expectativa idealizada."
+  },
+  {
+    "palavra": "detalhe",
+    "definicao": "Parte pequena e específica de algo maior."
+  },
+  {
+    "palavra": "diligência",
+    "definicao": "Atitude cuidadosa e atenta ao realizar uma tarefa."
+  },
+  {
+    "palavra": "educado",
+    "definicao": "Pessoa que demonstra boas maneiras e respeito aos outros."
+  },
+  {
+    "palavra": "empatia",
+    "definicao": "Capacidade de se colocar no lugar de outra pessoa e entender seus sentimentos."
+  },
+  {
+    "palavra": "equilíbrio",
+    "definicao": "Estado de estabilidade e harmonia entre elementos."
+  },
+  {
+    "palavra": "estreia",
+    "definicao": "Primeira apresentação ou exibição de algo, como um filme ou espetáculo."
+  },
+  {
+    "palavra": "fama",
+    "definicao": "Reconhecimento ou notoriedade de uma pessoa ou coisa."
+  },
+  {
+    "palavra": "fidelidade",
+    "definicao": "Lealdade ou compromisso com algo ou alguém."
+  },
+  {
+    "palavra": "gratidão",
+    "definicao": "Sentimento de apreço e reconhecimento por algo recebido."
+  },
+  {
+    "palavra": "honra",
+    "definicao": "Respeito e dignidade, especialmente no contexto de boas ações e virtudes."
+  },
+  {
+    "palavra": "incerteza",
+    "definicao": "Estado de dúvida ou falta de certeza sobre algo."
+  },
+  {
+    "palavra": "indivíduo",
+    "definicao": "Pessoa ou ser único e distinto de outros."
+  },
+  {
+    "palavra": "inovação",
+    "definicao": "Introdução de algo novo ou melhoria significativa de algo existente."
+  },
+  {
+    "palavra": "intuição",
+    "definicao": "Percepção ou conhecimento instantâneo, sem necessidade de raciocínio consciente."
+  },
+  {
+    "palavra": "juventude",
+    "definicao": "Período da vida que ocorre entre a adolescência e a idade adulta."
+  },
+  {
+    "palavra": "liberdade",
+    "definicao": "Condição de estar livre de restrições ou limitações."
+  },
+  {
+    "palavra": "motivação",
+    "definicao": "Razão ou impulso que leva alguém a agir em direção a um objetivo."
+  },
+  {
+    "palavra": "nobreza",
+    "definicao": "Qualidade de ser nobre, com atitudes de honra, respeito e bondade."
+  },
+  {
+    "palavra": "ocasião",
+    "definicao": "Momento ou evento específico para a realização de algo."
+  },
+  {
+    "palavra": "optimismo",
+    "definicao": "Atitude positiva em relação ao futuro e às situações da vida."
+  },
+  {
+    "palavra": "paz",
+    "definicao": "Estado de tranquilidade e harmonia, sem conflitos ou violência."
+  },
+  {
+    "palavra": "pensamento",
+    "definicao": "Ato ou processo de refletir e formar ideias."
+  },
+  {
+    "palavra": "perseverança",
+    "definicao": "Qualidade de continuar firme em uma ação ou objetivo, apesar das dificuldades."
+  },
+  {
+    "palavra": "reflexão",
+    "definicao": "Pensamento profundo e cuidadoso sobre algo."
+  },
+  {
+    "palavra": "resiliência",
+    "definicao": "Capacidade de se recuperar rapidamente de dificuldades ou adversidades."
+  },
+  {
+    "palavra": "sabedoria",
+    "definicao": "Conhecimento profundo e prudente, adquirido ao longo do tempo."
+  },
+  {
+    "palavra": "solidariedade",
+    "definicao": "Sentimento de união e apoio mútuo entre as pessoas."
+  },
+  {
+    "palavra": "tradição",
+    "definicao": "Conjunto de costumes, crenças e práticas transmitidas de geração em geração."
+  },
+  {
+    "palavra": "valor",
+    "definicao": "Qualidade ou princípio considerado importante e digno de ser respeitado."
+  },
+  {
+    "palavra": "virtude",
+    "definicao": "Qualidade moral positiva, como bondade, coragem ou honestidade."
+  },
+  {
+    "palavra": "voluntariedade",
+    "definicao": "Ato de agir de maneira espontânea, sem obrigação ou imposição."
+  }
+]

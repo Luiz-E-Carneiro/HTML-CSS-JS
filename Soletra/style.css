@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 4em;
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > button{
+    padding: 1em;
+    margin: 0 1em 1em 0;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    letter-spacing: .1em;
+    border: none;
+    border-radius: 7px;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wordArea{
+    background-color: burlywood;
+    min-height: 25em;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wordArea > div{
+    flex: 1;
+}
+
+.wordContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#word {
+    font-size: 5rem;
+    letter-spacing: .2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+#description{
+    font-size: 1.5rem;
+    text-align: center;
+}
