@@ -1,6 +1,7 @@
 let wordElement = document.getElementById('word');
 let descriptionElement = document.getElementById('description');
 let roundElement = document.getElementById('round');
+let level = document.getElementById('level');
 
 const btnShowDescription = document.getElementById('showDescription');
 const btnStart = document.getElementById('startButton');
@@ -61,7 +62,7 @@ const nextWord = () => {
         }
         wordsLoaded = 0;
     }
-    console.log(currentDifficulty);
+    level.textContent = currentDifficulty.charAt(0) + currentDifficulty.split(1);
     
     if (wordIndexes[currentDifficulty] >= wordsData[currentDifficulty].length) {
         alert('Sem mais palavras neste nível!');
