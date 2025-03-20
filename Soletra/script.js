@@ -62,7 +62,7 @@ const nextWord = () => {
         }
         wordsLoaded = 0;
     }
-    level.textContent = currentDifficulty.charAt(0) + currentDifficulty.split(1);
+    level.textContent = currentDifficulty.charAt(0).toUpperCase() + currentDifficulty.slice(1);
     
     if (wordIndexes[currentDifficulty] >= wordsData[currentDifficulty].length) {
         alert('Sem mais palavras neste nível!');
