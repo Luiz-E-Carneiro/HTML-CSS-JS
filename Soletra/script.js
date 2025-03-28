@@ -22,12 +22,12 @@ const loadWords = async () => {
         const mediumResponse = await fetch('medios.json');
         const hardResponse = await fetch('dificeis.json');
 
-        
-        
+
+
         wordsData.facil = await easyResponse.json();
         wordsData.medio = await mediumResponse.json();
         wordsData.dificil = await hardResponse.json();
-        
+
         btnStart.addEventListener('click', newGame);
         btnNextWord.addEventListener('click', nextWord);
         btnShowDescription.addEventListener('click', showDesc);
@@ -39,7 +39,7 @@ const loadWords = async () => {
 const newGame = () => {
     wordsLoaded = 0;
     currentDifficulty = 'facil';
-    currentRound ++;
+    currentRound++;
     roundElement.textContent = `${currentRound < 10 ? "0" + currentRound : currentRound}`;
 
 }
@@ -54,8 +54,6 @@ const nextWord = () => {
         let currentIndex = difficultyLevels.indexOf(currentDifficulty);
         if (currentIndex < difficultyLevels.length - 1) {
             currentDifficulty = difficultyLevels[currentIndex + 1];
-            console.log(currentDifficulty);
-            
         } else {
             alert('Fim da competição!');
             return;
@@ -63,23 +61,23 @@ const nextWord = () => {
         wordsLoaded = 0;
     }
     level.textContent = currentDifficulty.charAt(0).toUpperCase() + currentDifficulty.slice(1);
-    
     if (wordIndexes[currentDifficulty] >= wordsData[currentDifficulty].length) {
         alert('Sem mais palavras neste nível!');
         return;
     }
 
     let wordData = wordsData[currentDifficulty][wordIndexes[currentDifficulty]];
-    
+
     if (!wordData || !wordData.palavra) {
         alert('Erro ao carregar palavra.');
         return;
     }
-    
+
     wordElement.textContent = wordData.palavra;
     descriptionElement.textContent = wordData.definicao;
     descriptionElement.style.display = 'none';
-    
+    showDesc()
+
     wordIndexes[currentDifficulty]++;
     wordsLoaded++;
 };
