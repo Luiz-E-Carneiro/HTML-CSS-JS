@@ -3,14 +3,16 @@ const btnAction = document.querySelector('#btnAction')
 
 var interval;
 var isRunning = false;
-var intervalBreak
+var breakTime = false;
+var intervalBreak;
 
 document.addEventListener('keydown', (e) => {
-  if (e.code === 'Enter' || e.code === 'Space' ) {
+  if (e.code === 'Enter' || e.code === 'Space') {
     e.preventDefault();
   }
+
   if (e.code === 'ArrowDown') {
-    if (!isRunning) {
+    if (!isRunning && !breakTime) {
       var value = 0;
       span.innerHTML = value.toFixed(1);
       
@@ -22,13 +24,20 @@ document.addEventListener('keydown', (e) => {
       }, 100);
 
       btnAction.disabled = false;
-    } else {
+    } else if (isRunning) {
       clearInterval(interval);
       btnAction.disabled = true;
-
-      intervalBreak = setInterval(() => {
-        isRunning = false;  
-      }, 3000);
+      
+      if (!intervalBreak) {
+        breakTime = true;
+        
+        intervalBreak = setInterval(() => {
+          isRunning = false;
+          breakTime = false;
+          clearInterval(intervalBreak);
+          intervalBreak = null;
+        }, 3000);
+      }
     }
   }
 });
