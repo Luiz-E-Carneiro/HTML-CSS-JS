@@ -3,13 +3,17 @@ const btnAction = document.querySelector('#btnAction')
 
 var interval;
 var isRunning = false;
+var intervalBreak
 
 document.addEventListener('keydown', (e) => {
+  if (e.code === 'Enter' || e.code === 'Space' ) {
+    e.preventDefault();
+  }
   if (e.code === 'ArrowDown') {
     if (!isRunning) {
       var value = 0;
       span.innerHTML = value.toFixed(1);
-
+      
       isRunning = true;
 
       interval = setInterval(() => {
@@ -19,9 +23,12 @@ document.addEventListener('keydown', (e) => {
 
       btnAction.disabled = false;
     } else {
-      isRunning = false;
       clearInterval(interval);
       btnAction.disabled = true;
+
+      intervalBreak = setInterval(() => {
+        isRunning = false;  
+      }, 3000);
     }
   }
 });
