@@ -1,546 +1,577 @@
 [
-  {
-    "palavra": "abacaxi",
-    "definicao": "Fruto tropical de casca grossa e polpa doce e suculenta."
-  },
-  {
-    "palavra": "afago",
-    "definicao": "Ato de carinho ou afeto."
-  },
-  {
-    "palavra": "afável",
-    "definicao": "Pessoa amável, cortês e gentil."
-  },
-  {
-    "palavra": "afeição",
-    "definicao": "Sentimento de carinho ou estima por algo ou alguém."
-  },
-  {
-    "palavra": "agonia",
-    "definicao": "Grande sofrimento físico ou emocional."
-  },
-  {
-    "palavra": "agônico",
-    "definicao": "Que está em estado de agonia ou sofrimento intenso."
-  },
-  {
-    "palavra": "águia",
-    "definicao": "Ave de rapina de grande porte, conhecida por sua visão aguçada."
-  },
-  {
-    "palavra": "acúmulo",
-    "definicao": "Ato de reunir ou armazenar algo em grande quantidade."
-  },
-  {
-    "palavra": "adernar",
-    "definicao": "Inclinar-se para um dos lados, especialmente uma embarcação."
-  },
-  {
-    "palavra": "admitir",
-    "definicao": "Aceitar ou permitir a entrada de algo ou alguém."
-  },
-  {
-    "palavra": "adorável",
-    "definicao": "Extremamente encantador, cativante."
-  },
-  {
-    "palavra": "aduzir",
-    "definicao": "Apresentar argumentos ou razões."
-  },
-  {
-    "palavra": "aéreo",
-    "definicao": "Relacionado ao ar ou à aviação."
-  },
-  {
-    "palavra": "alegria",
-    "definicao": "Estado de contentamento e felicidade."
-  },
-  {
-    "palavra": "alguém",
-    "definicao": "Pessoa indeterminada ou desconhecida."
-  },
-  {
-    "palavra": "alívio",
-    "definicao": "Sensacão de diminuição de dor ou sofrimento."
-  },
-  {
-    "palavra": "alma",
-    "definicao": "Parte imaterial do ser humano, relacionada à essência e consciência."
-  },
-  {
-    "palavra": "almoço",
-    "definicao": "Refeição principal do dia, geralmente consumida ao meio-dia."
-  },
-  {
-    "palavra": "alquimia",
-    "definicao": "Prática antiga que buscava transformar metais em ouro e encontrar o elixir da vida."
-  },
-  {
-    "palavra": "agulha",
-    "definicao": "Objeto fino e pontiagudo usado para costura ou injeção."
-  },
-  {
-    "palavra": "alcançar",
-    "definicao": "Chegar a determinado ponto ou atingir um objetivo."
-  },
-  {
-    "palavra": "alcateia",
-    "definicao": "Grupo de lobos ou outros animais que caçam em conjunto."
-  },
-  {
-    "palavra": "alegação",
-    "definicao": "Declaração ou argumento apresentado como justificativa."
-  },
-  {
-    "palavra": "alegoria",
-    "definicao": "Representação simbólica de uma ideia ou conceito."
-  },
-  {
-    "palavra": "alegórico",
-    "definicao": "Que tem um significado simbólico ou metafórico."
-  },
-  {
-    "palavra": "alusão",
-    "definicao": "Referência indireta a algo ou alguém."
-  },
-  {
-    "palavra": "amanhã",
-    "definicao": "Dia seguinte ao presente."
-  },
-  {
-    "palavra": "amizade",
-    "definicao": "Relação de afeto, respeito e confiança entre pessoas."
-  },
-  {
-    "palavra": "amor",
-    "definicao": "Forte sentimento de carinho e apego por algo ou alguém."
-  },
-  {
-    "palavra": "análise",
-    "definicao": "Exame detalhado de algo para compreensão ou avaliação."
-  },
-  {
-    "palavra": "angústia",
-    "definicao": "Sensacão de sofrimento ou aflição emocional."
-  },
-  {
-    "palavra": "animosidade",
-    "definicao": "Sentimento de hostilidade ou antipatia."
-  },
-  {
-    "palavra": "anomia",
-    "definicao": "Ausência ou desrespeito às regras sociais."
-  },
-  {
-    "palavra": "ambígua",
-    "definicao": "Que pode ter mais de um significado ou interpretação."
-  },
-  {
-    "palavra": "ambiguidade",
-    "definicao": "Característica do que é ambíguo ou incerto."
-  },
-  {
-    "palavra": "âmbito",
-    "definicao": "Espaço ou campo de atuação."
-  },
-  {
-    "palavra": "ambivalência",
-    "definicao": "Coexistência de sentimentos ou ideias contraditórias."
-  },
-  {
-    "palavra": "após",
-    "definicao": "Indica posterioridade no tempo ou no espaço."
-  },
-  {
-    "palavra": "apóstolo",
-    "definicao": "Enviado ou missionário que difunde uma crença ou ideologia."
-  },
-  {
-    "palavra": "aprazado",
-    "definicao": "Fixado para uma data ou prazo determinado."
-  },
-  {
-    "palavra": "apreensivo",
-    "definicao": "Que sente preocupação ou receio."
-  },
-  {
-    "palavra": "aprendiz",
-    "definicao": "Pessoa que está em processo de aprendizado ou treinamento."
-  },
-  {
-    "palavra": "aquário",
-    "definicao": "Recipiente com água para peixes ou local para exibição de animais aquáticos."
-  },
-  {
-    "palavra": "ação",
-    "definicao": "Atividade que resulta em mudança ou efeito, movendo ou influenciando algo."
-  },
-  {
-    "palavra": "afável",
-    "definicao": "Pessoa de comportamento amigável e agradável."
-  },
-  {
-    "palavra": "agonia",
-    "definicao": "Estado de sofrimento extremo, físico ou mental."
-  },
-  {
-    "palavra": "alívio",
-    "definicao": "Sensação de alívio após um momento de tensão ou dor."
-  },
-  {
-    "palavra": "alma",
-    "definicao": "Parte imaterial do ser humano, considerada responsável pelas emoções e pensamentos."
-  },
-  {
-    "palavra": "amizade",
-    "definicao": "Relação de afeto e confiança entre pessoas."
-  },
-  {
-    "palavra": "aparência",
-    "definicao": "A forma ou aspecto externo de algo ou alguém."
-  },
-  {
-    "palavra": "após",
-    "definicao": "Indica algo que ocorre em seguida a outro evento."
-  },
-  {
-    "palavra": "biblioteca",
-    "definicao": "Local onde são armazenados livros e outros materiais de leitura."
-  },
-  {
-    "palavra": "cachorro",
-    "definicao": "Animal doméstico da família dos canídeos, comumente utilizado como pet."
-  },
-  {
-    "palavra": "caráter",
-    "definicao": "Conjunto de características pessoais que definem uma pessoa."
-  },
-  {
-    "palavra": "ciência",
-    "definicao": "Conhecimento sistemático baseado em métodos e evidências."
-  },
-  {
-    "palavra": "comunicação",
-    "definicao": "Troca de informações entre indivíduos, por meio de palavras, gestos ou sinais."
-  },
-  {
-    "palavra": "decisão",
-    "definicao": "Ato de escolher ou determinar uma solução para um problema."
-  },
-  {
-    "palavra": "educação",
-    "definicao": "Processo de transmissão de conhecimento e habilidades."
-  },
-  {
-    "palavra": "elogio",
-    "definicao": "Expressão de reconhecimento ou aprovação a algo ou alguém."
-  },
-  {
-    "palavra": "feliz",
-    "definicao": "Estado de contentamento e satisfação."
-  },
-  {
-    "palavra": "fórmula",
-    "definicao": "Equação ou regra utilizada para resolver problemas em diversas áreas."
-  },
-  {
-    "palavra": "generoso",
-    "definicao": "Pessoa disposta a compartilhar ou dar sem esperar algo em troca."
-  },
-  {
-    "palavra": "história",
-    "definicao": "Narrativa de eventos passados, reais ou imaginários."
-  },
-  {
-    "palavra": "ilusão",
-    "definicao": "Percepção distorcida da realidade."
-  },
-  {
-    "palavra": "inimigo",
-    "definicao": "Pessoa ou entidade com quem se está em conflito ou oposição."
-  },
-  {
-    "palavra": "justiça",
-    "definicao": "Princípio de tratar as pessoas com imparcialidade e respeito aos direitos."
-  },
-  {
-    "palavra": "lacuna",
-    "definicao": "Espaço vazio ou falha em algo."
-  },
-  {
-    "palavra": "memória",
-    "definicao": "Capacidade de armazenar e recordar informações e experiências passadas."
-  },
-  {
-    "palavra": "nuvem",
-    "definicao": "Agregados de vapor d'água suspensos na atmosfera."
-  },
-  {
-    "palavra": "opção",
-    "definicao": "Escolha disponível entre várias alternativas."
-  },
-  {
-    "palavra": "paciência",
-    "definicao": "Capacidade de esperar sem se irritar."
-  },
-  {
-    "palavra": "quase",
-    "definicao": "Indica algo que está muito próximo de acontecer ou ser alcançado."
-  },
-  {
-    "palavra": "reação",
-    "definicao": "Resposta a um estímulo ou evento."
-  },
-  {
-    "palavra": "sabedoria",
-    "definicao": "Conhecimento profundo adquirido ao longo do tempo."
-  },
-  {
-    "palavra": "satisfação",
-    "definicao": "Sentimento de prazer ou contentamento ao alcançar algo desejado."
-  },
-  {
-    "palavra": "tática",
-    "definicao": "Estratégia ou plano de ação para alcançar um objetivo."
-  },
-  {
-    "palavra": "universal",
-    "definicao": "Que se aplica a todos ou a todo o universo."
-  },
-  {
-    "palavra": "vazio",
-    "definicao": "Ausência de conteúdo ou de algo dentro de um espaço."
-  },
-  {
-    "palavra": "visível",
-    "definicao": "Que pode ser visto, perceptível pelos olhos."
-  },
-  {
-    "palavra": "abismo",
-    "definicao": "Grande precipício ou fenda profunda."
-  },
-  {
-    "palavra": "abreviação",
-    "definicao": "Forma reduzida de uma palavra ou expressão."
-  },
-  {
-    "palavra": "admiração",
-    "definicao": "Sentimento de respeito e apreço por algo ou alguém."
-  },
-  {
-    "palavra": "adversidade",
-    "definicao": "Situação difícil ou desfavorável."
-  },
-  {
-    "palavra": "ambição",
-    "definicao": "Desejo forte de alcançar algo, especialmente sucesso ou poder."
-  },
-  {
-    "palavra": "amor",
-    "definicao": "Sentimento profundo de afeto e carinho por alguém ou algo."
-  },
-  {
-    "palavra": "anatomia",
-    "definicao": "Estudo da estrutura dos organismos vivos."
-  },
-  {
-    "palavra": "antecedente",
-    "definicao": "Algo que ocorre antes de outro evento ou situação."
-  },
-  {
-    "palavra": "autenticidade",
-    "definicao": "Qualidade de ser genuíno e verdadeiro."
-  },
-  {
-    "palavra": "barreira",
-    "definicao": "Obstáculo ou impedimento a algo."
-  },
-  {
-    "palavra": "batalha",
-    "definicao": "Conflito, disputa ou luta entre dois ou mais lados."
-  },
-  {
-    "palavra": "biografia",
-    "definicao": "História da vida de uma pessoa, geralmente escrita por outra pessoa."
-  },
-  {
-    "palavra": "bravura",
-    "definicao": "Coragem e valentia, especialmente em situações difíceis."
-  },
-  {
-    "palavra": "brisa",
-    "definicao": "Vento suave e refrescante."
-  },
-  {
-    "palavra": "calor",
-    "definicao": "Sensação gerada pelo aumento da temperatura."
-  },
-  {
-    "palavra": "carreira",
-    "definicao": "Caminho profissional ou trajetória de trabalho ao longo da vida."
-  },
-  {
-    "palavra": "censura",
-    "definicao": "Ato de proibir ou controlar algo, como uma obra de arte ou opinião."
-  },
-  {
-    "palavra": "concorrência",
-    "definicao": "Competição entre indivíduos ou empresas pelo mesmo objetivo."
-  },
-  {
-    "palavra": "confiança",
-    "definicao": "Acreditar na capacidade ou sinceridade de algo ou alguém."
-  },
-  {
-    "palavra": "conhecimento",
-    "definicao": "Informação adquirida por meio de estudo, experiência ou aprendizado."
-  },
-  {
-    "palavra": "consequência",
-    "definicao": "Resultado ou efeito de uma ação ou evento."
-  },
-  {
-    "palavra": "contradição",
-    "definicao": "Situação em que duas afirmações ou ideias são opostas e incompatíveis."
-  },
-  {
-    "palavra": "culpa",
-    "definicao": "Responsabilidade por algo errado ou prejudicial."
-  },
-  {
-    "palavra": "decadência",
-    "definicao": "Processo de deterioração ou declínio de algo."
-  },
-  {
-    "palavra": "desafio",
-    "definicao": "Tarefa ou situação difícil que exige esforço ou habilidade."
-  },
-  {
-    "palavra": "desilusão",
-    "definicao": "Perda de uma crença ou expectativa idealizada."
-  },
-  {
-    "palavra": "detalhe",
-    "definicao": "Parte pequena e específica de algo maior."
-  },
-  {
-    "palavra": "diligência",
-    "definicao": "Atitude cuidadosa e atenta ao realizar uma tarefa."
-  },
-  {
-    "palavra": "educado",
-    "definicao": "Pessoa que demonstra boas maneiras e respeito aos outros."
-  },
-  {
-    "palavra": "empatia",
-    "definicao": "Capacidade de se colocar no lugar de outra pessoa e entender seus sentimentos."
-  },
-  {
-    "palavra": "equilíbrio",
-    "definicao": "Estado de estabilidade e harmonia entre elementos."
-  },
-  {
-    "palavra": "estreia",
-    "definicao": "Primeira apresentação ou exibição de algo, como um filme ou espetáculo."
-  },
-  {
-    "palavra": "fama",
-    "definicao": "Reconhecimento ou notoriedade de uma pessoa ou coisa."
-  },
-  {
-    "palavra": "fidelidade",
-    "definicao": "Lealdade ou compromisso com algo ou alguém."
-  },
-  {
-    "palavra": "gratidão",
-    "definicao": "Sentimento de apreço e reconhecimento por algo recebido."
-  },
-  {
-    "palavra": "honra",
-    "definicao": "Respeito e dignidade, especialmente no contexto de boas ações e virtudes."
-  },
-  {
-    "palavra": "incerteza",
-    "definicao": "Estado de dúvida ou falta de certeza sobre algo."
-  },
-  {
-    "palavra": "indivíduo",
-    "definicao": "Pessoa ou ser único e distinto de outros."
-  },
-  {
-    "palavra": "inovação",
-    "definicao": "Introdução de algo novo ou melhoria significativa de algo existente."
-  },
-  {
-    "palavra": "intuição",
-    "definicao": "Percepção ou conhecimento instantâneo, sem necessidade de raciocínio consciente."
-  },
-  {
-    "palavra": "juventude",
-    "definicao": "Período da vida que ocorre entre a adolescência e a idade adulta."
-  },
-  {
-    "palavra": "liberdade",
-    "definicao": "Condição de estar livre de restrições ou limitações."
-  },
-  {
-    "palavra": "motivação",
-    "definicao": "Razão ou impulso que leva alguém a agir em direção a um objetivo."
-  },
-  {
-    "palavra": "nobreza",
-    "definicao": "Qualidade de ser nobre, com atitudes de honra, respeito e bondade."
-  },
-  {
-    "palavra": "ocasião",
-    "definicao": "Momento ou evento específico para a realização de algo."
-  },
-  {
-    "palavra": "optimismo",
-    "definicao": "Atitude positiva em relação ao futuro e às situações da vida."
-  },
-  {
-    "palavra": "paz",
-    "definicao": "Estado de tranquilidade e harmonia, sem conflitos ou violência."
-  },
-  {
-    "palavra": "pensamento",
-    "definicao": "Ato ou processo de refletir e formar ideias."
-  },
-  {
-    "palavra": "perseverança",
-    "definicao": "Qualidade de continuar firme em uma ação ou objetivo, apesar das dificuldades."
-  },
-  {
-    "palavra": "reflexão",
-    "definicao": "Pensamento profundo e cuidadoso sobre algo."
-  },
-  {
-    "palavra": "resiliência",
-    "definicao": "Capacidade de se recuperar rapidamente de dificuldades ou adversidades."
-  },
-  {
-    "palavra": "sabedoria",
-    "definicao": "Conhecimento profundo e prudente, adquirido ao longo do tempo."
-  },
-  {
-    "palavra": "solidariedade",
-    "definicao": "Sentimento de união e apoio mútuo entre as pessoas."
-  },
-  {
-    "palavra": "tradição",
-    "definicao": "Conjunto de costumes, crenças e práticas transmitidas de geração em geração."
-  },
-  {
-    "palavra": "valor",
-    "definicao": "Qualidade ou princípio considerado importante e digno de ser respeitado."
-  },
-  {
-    "palavra": "virtude",
-    "definicao": "Qualidade moral positiva, como bondade, coragem ou honestidade."
-  },
-  {
-    "palavra": "voluntariedade",
-    "definicao": "Ato de agir de maneira espontânea, sem obrigação ou imposição."
-  }
+    {"palavra": "abacaxi", "definicao": "Fruto tropical de casca grossa e polpa doce e suculenta."},
+    {"palavra": "ação", "definicao": "Atividade que resulta em mudança ou efeito, movendo ou influenciando algo."},
+    {"palavra": "aceder", "definicao": "Conceder, permitir ou acessar algo."},
+    {"palavra": "acepção", "definicao": "Sentido ou significado de uma palavra em determinado contexto."},
+    {"palavra": "acertar", "definicao": "Fazer algo corretamente ou atingir um alvo com precisão."},
+    {"palavra": "acesso", "definicao": "Modo de alcançar ou entrar em algum lugar."},
+    {"palavra": "acréscimo", "definicao": "Aumento ou adição a algo."},
+    {"palavra": "acúmulo", "definicao": "Acumulação de coisas ou elementos."},
+    {"palavra": "adernar", "definicao": "Adornar ou enfeitar algo."},
+    {"palavra": "admitir", "definicao": "Aceitar ou reconhecer algo."},
+    {"palavra": "adorável", "definicao": "Algo ou alguém digno de muito carinho ou admiração."},
+    {"palavra": "aduzir", "definicao": "Argumentar ou apresentar razões."},
+    {"palavra": "aéreo", "definicao": "Relacionado ao ar ou à aviação."},
+    {"palavra": "afago", "definicao": "Ato de carinho ou afeto."},
+    {"palavra": "afável", "definicao": "Pessoa amável, cortês e gentil."},
+    {"palavra": "afeição", "definicao": "Sentimento de carinho ou estima por algo ou alguém."},
+    {"palavra": "agonia", "definicao": "Grande sofrimento físico ou emocional."},
+    {"palavra": "agônico", "definicao": "Que está em estado de agonia ou sofrimento intenso."},
+    {"palavra": "águia", "definicao": "Ave de rapina, conhecida por sua visão aguçada."},
+    {"palavra": "agulha", "definicao": "Instrumento fino e pontiagudo usado em costura ou medicina."},
+    {"palavra": "alcançar", "definicao": "Chegar a um determinado objetivo ou lugar."},
+    {"palavra": "alcateia", "definicao": "Grupo de lobos."},
+    {"palavra": "alegação", "definicao": "Declaração ou argumento apresentado como justificativa."},
+    {"palavra": "alegoria", "definicao": "Representação simbólica de uma ideia ou conceito."},
+    {"palavra": "alegórico", "definicao": "Que tem um significado simbólico ou metafórico."},
+    {"palavra": "alegria", "definicao": "Sentimento de felicidade ou prazer."},
+    {"palavra": "alguém", "definicao": "Pessoa indeterminada ou desconhecida."},
+    {"palavra": "alívio", "definicao": "Sensação de diminuição de dor ou sofrimento."},
+    {"palavra": "alma", "definicao": "Parte imaterial do ser humano, relacionada à essência e consciência."},
+    {"palavra": "almoço", "definicao": "Refeição principal do dia, geralmente consumida ao meio-dia."},
+    {"palavra": "alquimia", "definicao": "Prática antiga que buscava transformar metais em ouro e encontrar o elixir da vida."},
+    {"palavra": "alusão", "definicao": "Referência indireta a algo ou alguém."},
+    {"palavra": "amanhã", "definicao": "Dia seguinte ao presente."},
+    {"palavra": "ambígua", "definicao": "Que pode ter mais de um significado ou interpretação."},
+    {"palavra": "ambiguidade", "definicao": "Característica do que é ambíguo ou incerto."},
+    {"palavra": "âmbito", "definicao": "Espaço ou campo de atuação."},
+    {"palavra": "ambivalência", "definicao": "Coexistência de sentimentos ou ideias contraditórias."},
+    {"palavra": "amizade", "definicao": "Relação de afeto, respeito e confiança entre pessoas."},
+    {"palavra": "amor", "definicao": "Forte sentimento de carinho e apego por algo ou alguém."},
+    {"palavra": "análise", "definicao": "Exame detalhado de algo para compreensão ou avaliação."},
+    {"palavra": "angústia", "definicao": "Sensação de sofrimento ou aflição emocional."},
+    {"palavra": "animosidade", "definicao": "Sentimento de hostilidade ou antipatia."},
+    {"palavra": "anomia", "definicao": "Ausência ou desrespeito às regras sociais."},
+    {"palavra": "anônimo", "definicao": "Pessoa cuja identidade é desconhecida ou não revelada."},
+    {"palavra": "ânsia", "definicao": "Desejo intenso ou angústia."},
+    {"palavra": "antemão", "definicao": "Antes de algo acontecer."},
+    {"palavra": "apaixonar", "definicao": "Despertar um forte sentimento de amor."},
+    {"palavra": "aparência", "definicao": "A forma ou aspecto externo de algo ou alguém."},
+    {"palavra": "aparição", "definicao": "Ato de aparecer ou manifestação visível."},
+    {"palavra": "ápice", "definicao": "Ponto culminante ou máximo de algo."},
+    {"palavra": "após", "definicao": "Indica posterioridade no tempo ou no espaço."},
+    {"palavra": "apóstolo", "definicao": "Enviado ou missionário que difunde uma crença ou ideologia."},
+    {"palavra": "aprazado", "definicao": "Fixado para uma data ou prazo determinado."},
+    {"palavra": "apreensivo", "definicao": "Que sente preocupação ou receio."},
+    {"palavra": "aprendiz", "definicao": "Pessoa que está em processo de aprendizado ou treinamento."},
+    {"palavra": "aquário", "definicao": "Recipiente com água para peixes ou local para exibição de animais aquáticos."},
+    {"palavra": "aquém", "definicao": "Abaixo de algo, inferior em relação a um padrão."},
+    {"palavra": "árduo", "definicao": "Que exige grande esforço ou dedicação."},
+    {"palavra": "área", "definicao": "Espaço ou superfície de determinada extensão."},
+    {"palavra": "argumentação", "definicao": "Conjunto de argumentos ou razões apresentadas para defender uma ideia."},
+    {"palavra": "aridez", "definicao": "Qualidade do que é árido, seco ou estéril."},
+    {"palavra": "árido", "definicao": "Que é seco, estéril, sem vegetação."},
+    {"palavra": "armário", "definicao": "Móvel com prateleiras ou compartimentos, usado para guardar objetos."},
+    {"palavra": "asa", "definicao": "Extremidade das aves, insetos e outros animais que serve para o voo."},
+    {"palavra": "áspero", "definicao": "Que é rugoso ou duro ao tato."},
+    {"palavra": "assado", "definicao": "Alimento que foi cozido no forno ou churrasqueira."},
+    {"palavra": "assento", "definicao": "Objeto destinado a apoiar o corpo, como uma cadeira ou banco."},
+    {"palavra": "assistir", "definicao": "Ver ou acompanhar algo, como um filme ou evento."},
+    {"palavra": "assunto", "definicao": "Tema ou questão que é tratado em uma conversa ou discussão."},
+    {"palavra": "astronomia", "definicao": "Ciência que estuda os corpos celestes e os fenômenos do universo."},
+    {"palavra": "astuto", "definicao": "Pessoa que tem uma habilidade para enganar ou engendrar planos."},
+    {"palavra": "atrás", "definicao": "Em posição posterior ou inferior em relação a algo."},
+    {"palavra": "atrasar", "definicao": "Fazer com que algo aconteça mais tarde do que o previsto."},
+    {"palavra": "atraso", "definicao": "Ação ou efeito de atrasar, ou o estado de algo que está atrasado."},
+    {"palavra": "através", "definicao": "Indica o meio ou a forma por onde algo é feito ou acontece."},
+    {"palavra": "atuação", "definicao": "Ação ou comportamento de alguém em uma situação específica."},
+    {"palavra": "audição", "definicao": "Sentido responsável pela percepção de sons."},
+    {"palavra": "ausência", "definicao": "Falta ou não presença de algo ou alguém."},
+    {"palavra": "baiuca", "definicao": "Casa simples e precária, geralmente de morador de rua ou em áreas rurais."},
+    {"palavra": "bajular", "definicao": "Lisonjear alguém de maneira exagerada, com o intuito de agradar."},
+    {"palavra": "balbúrdia", "definicao": "Confusão ou algazarra, geralmente causada por um grande barulho."},
+    {"palavra": "bárbaro", "definicao": "Pessoa ou comportamento selvagem, cruel ou incivilizado."},
+    {"palavra": "barriga", "definicao": "Parte do corpo situada entre o tórax e a pelve, que contém o estômago e intestinos."},
+    {"palavra": "barro", "definicao": "Terra argilosa, macia, usada para fazer cerâmica."},
+    {"palavra": "básico", "definicao": "Essencial, fundamental, que serve de base."},
+    {"palavra": "bebê", "definicao": "Criança muito pequena, geralmente com menos de um ano."},
+    {"palavra": "beijo", "definicao": "Ato de tocar ou pressionar os lábios contra algo ou alguém como sinal de afeto."},
+    {"palavra": "beleza", "definicao": "Qualidade do que é bonito ou agradável aos sentidos."},
+    {"palavra": "bendize", "definicao": "Forma do verbo bendizer, que significa louvar ou abençoar."},
+    {"palavra": "benéfico", "definicao": "Que traz benefícios ou vantagens, algo positivo."},
+    {"palavra": "benévola", "definicao": "Pessoa que tem boa vontade e deseja o bem aos outros."},
+    {"palavra": "benevolente", "definicao": "Que age com bondade e generosidade."},
+    {"palavra": "benigno", "definicao": "Que é suave, amável, e que não causa danos."},
+    {"palavra": "bezerro", "definicao": "Filhote de boi ou vaca."},
+    {"palavra": "biblioteca", "definicao": "Local onde são armazenados livros e outros materiais de leitura."},
+    {"palavra": "biografia", "definicao": "Narrativa da vida de uma pessoa, geralmente escrita por outra pessoa."},
+    {"palavra": "biográfico", "definicao": "Relativo à biografia de alguém."},
+    {"palavra": "boia", "definicao": "Objeto flutuante usado para sinalizar ou apoiar na água."},
+    {"palavra": "bolsa", "definicao": "Objeto utilizado para carregar objetos pessoais, geralmente feito de tecido ou couro."},
+    {"palavra": "bônus", "definicao": "Prêmio ou recompensa extra recebida em reconhecimento a um esforço ou resultado."},
+    {"palavra": "brinquedo", "definicao": "Objeto usado por crianças para brincar, geralmente com finalidade recreativa."},
+    {"palavra": "cachorro", "definicao": "Animal doméstico, mamífero, geralmente companheiro do ser humano."},
+    {"palavra": "cajado", "definicao": "Bastão geralmente usado como apoio para caminhar ou como símbolo de autoridade."},
+    {"palavra": "cálida", "definicao": "Que é quente ou de temperatura elevada."},
+    {"palavra": "canônico", "definicao": "Relativo a um cânon ou regra estabelecida, especialmente na Igreja."},
+    {"palavra": "cansado", "definicao": "Estado de fadiga, quando uma pessoa está sem energia devido a esforço físico ou mental."},
+    {"palavra": "cântico", "definicao": "Composição musical ou poética que pode ser cantada, geralmente com caráter religioso ou lírico."},
+    {"palavra": "caótico", "definicao": "Que é caracterizado por caos ou desordem, sem organização ou controle."},
+    {"palavra": "captar", "definicao": "Perceber ou recolher algo, como uma informação ou sinal."},
+    {"palavra": "caráter", "definicao": "Conjunto de características e qualidades que definem o comportamento de uma pessoa."},
+    {"palavra": "carência", "definicao": "Falta de algo necessário, seja material ou emocional."},
+    {"palavra": "caricatura", "definicao": "Desenho ou imagem exagerada de alguém, geralmente com fins humorísticos."},
+    {"palavra": "carrasco", "definicao": "Pessoa encarregada de executar uma sentença de morte ou tortura."},
+    {"palavra": "carroça", "definicao": "Veículo de tração animal, usado principalmente para transporte de carga."},
+    {"palavra": "casto", "definicao": "Que se abstém de relações sexuais ou de comportamentos considerados imorais."},
+    {"palavra": "causar", "definicao": "Provocar ou gerar algum efeito ou acontecimento."},
+    {"palavra": "ceder", "definicao": "Dar ou entregar algo, geralmente depois de resistência ou negociação."},
+    {"palavra": "celular", "definicao": "Dispositivo eletrônico portátil que permite a comunicação à distância."},
+    {"palavra": "cena", "definicao": "Sequência de acontecimentos que acontecem em um espaço e tempo específicos, frequentemente usada em teatro e filmes."},
+    {"palavra": "cenoura", "definicao": "Raiz comestível, geralmente de cor alaranjada, bastante utilizada na alimentação."},
+    {"palavra": "censura", "definicao": "Ato de controlar, suprimir ou restringir informações, especialmente por autoridades."},
+    {"palavra": "certo", "definicao": "Que está correto, que é verdadeiro, ou que está de acordo com a norma estabelecida."},
+    {"palavra": "cético", "definicao": "Pessoa que tende a duvidar ou questionar a veracidade de informações ou crenças."},
+    {"palavra": "chanceler", "definicao": "Título dado ao ministro ou chefe de um governo, ou ao responsável por relações exteriores."},
+    {"palavra": "charmoso", "definicao": "Pessoa ou coisa que tem um atrativo ou apelo especial, geralmente relacionado ao charme pessoal."},
+    {"palavra": "chave", "definicao": "Objeto usado para abrir ou fechar fechaduras, ou como metáfora para solução de um problema."},
+    {"palavra": "chefe", "definicao": "Pessoa que lidera ou coordena um grupo de trabalho ou organização."},
+    {"palavra": "ciência", "definicao": "Conhecimento estruturado e sistemático que busca entender o mundo através da observação e experimentação."},
+    {"palavra": "clareza", "definicao": "Qualidade de ser claro, compreensível, sem ambiguidade."},
+    {"palavra": "clínica", "definicao": "Estabelecimento de saúde destinado ao tratamento de doenças e atendimento médico."},
+    {"palavra": "coceira", "definicao": "Sensação desconfortável na pele que leva ao desejo de coçar."},
+    {"palavra": "coelho", "definicao": "Mamífero roedor, geralmente de pequeno porte, com orelhas longas e cauda curta, criado como pet ou por sua carne."},
+    {"palavra": "coerência", "definicao": "Qualidade do que é lógico, consistente e harmonioso em seu conjunto."},
+    {"palavra": "coeso", "definicao": "Que está bem unido ou formado, sem elementos dispersos."},
+    {"palavra": "coexistir", "definicao": "Viver ou existir ao mesmo tempo ou no mesmo espaço."},
+    {"palavra": "cognição", "definicao": "Processo de aquisição e compreensão do conhecimento."},
+    {"palavra": "cognitivo", "definicao": "Relativo à cognição, ao entendimento e ao processo de aprender."},
+    {"palavra": "colégio", "definicao": "Instituição educacional que oferece ensino fundamental ou médio."},
+    {"palavra": "colmeia", "definicao": "Estrutura organizada das abelhas, onde elas constroem suas células e armazenam mel."},
+    {"palavra": "colóquio", "definicao": "Discussão ou conversa sobre um tema específico, muitas vezes acadêmica ou profissional."},
+    {"palavra": "complacência", "definicao": "Atitude de condescendência ou indulgência, muitas vezes de forma excessiva."},
+    {"palavra": "complexo", "definicao": "Conjunto de ideias ou elementos que são difíceis de entender ou que envolvem múltiplos aspectos."},
+    {"palavra": "compreensão", "definicao": "Capacidade de entender ou perceber o significado de algo."},
+    {"palavra": "comumente", "definicao": "De maneira comum, geralmente ou frequentemente."},
+    {"palavra": "comunicação", "definicao": "Ato de transmitir informações ou ideias entre indivíduos ou grupos."},
+    {"palavra": "conceber", "definicao": "Formar ou criar uma ideia, conceito ou projeto."},
+    {"palavra": "conceito", "definicao": "Ideia ou noção formada a partir do conhecimento ou das experiências."},
+    {"palavra": "concepção", "definicao": "Ato de conceber algo, ou o processo de formar uma ideia ou entendimento."},
+    {"palavra": "conciso", "definicao": "Que é expresso de maneira breve e direta, sem excesso de palavras."},
+    {"palavra": "concluído", "definicao": "Algo que foi terminado ou finalizado."},
+    {"palavra": "conclusão", "definicao": "Resultado ou decisão alcançada após reflexão ou análise."},
+    {"palavra": "concordância", "definicao": "Ato de estar de acordo, ou o alinhamento de ideias, opiniões ou sentimentos."},
+    {"palavra": "concórdia", "definicao": "Estado de harmonia, paz e acordo entre as partes."},
+    {"palavra": "concurso", "definicao": "Processo seletivo realizado para preencher vagas em uma instituição ou organização."},
+    {"palavra": "condição", "definicao": "Estado ou circunstância em que algo ocorre ou se desenvolve."},
+    {"palavra": "condizer", "definicao": "Estar de acordo com, ou ser apropriado a uma situação."},
+    {"palavra": "conectar", "definicao": "Estabelecer uma ligação entre duas ou mais coisas."},
+    {"palavra": "confiança", "definicao": "Sentimento de segurança e fé em algo ou alguém."},
+    {"palavra": "confiável", "definicao": "Que pode ser confiado, digno de confiança."},
+    {"palavra": "confissão", "definicao": "Ato de admitir ou revelar algo, especialmente um erro ou culpa."},
+    {"palavra": "conflito", "definicao": "Desentendimento ou disputa entre pessoas, grupos ou ideias."},
+    {"palavra": "conquistar", "definicao": "Obter algo através de esforço ou habilidade, ou alcançar um objetivo."},
+    {"palavra": "conselho", "definicao": "Recomendação ou orientação dada para ajudar alguém em uma situação."},
+    {"palavra": "conservador", "definicao": "Pessoa que defende a preservação de tradições ou que se opõe a mudanças radicais."},
+    {"palavra": "consideração", "definicao": "Ato de levar em conta ou dar importância a algo ou alguém."},
+    {"palavra": "consolação", "definicao": "Ato de oferecer conforto ou alívio em momentos de tristeza ou sofrimento."},
+    {"palavra": "constituição", "definicao": "Conjunto de leis fundamentais que estruturam um Estado ou organização."},
+    {"palavra": "construtivo", "definicao": "Que contribui para o progresso ou desenvolvimento de algo."},
+    {"palavra": "contexto", "definicao": "Conjunto de circunstâncias ou fatores que envolvem uma situação."},
+    {"palavra": "contínuo", "definicao": "Que não tem interrupção ou fim; que se estende sem pausa."},
+    {"palavra": "contrário", "definicao": "Que é oposto ou está em oposição a algo."},
+    {"palavra": "convém", "definicao": "Ser adequado ou conveniente para uma determinada situação."},
+    {"palavra": "conversível", "definicao": "Que pode ser convertido ou transformado em outra coisa."},
+    {"palavra": "convicção", "definicao": "Certeza ou firmeza em uma ideia ou crença."},
+    {"palavra": "convicto", "definicao": "Que possui uma forte crença ou certeza sobre algo."},
+    {"palavra": "coração", "definicao": "Órgão responsável pela circulação sanguínea, ou metaforicamente, o centro das emoções."},
+    {"palavra": "coragem", "definicao": "Qualidade de quem enfrenta situações difíceis com determinação."},
+    {"palavra": "corrigir", "definicao": "Ato de corrigir, de ajustar ou retificar algo que está errado."},
+    {"palavra": "cortês", "definicao": "Que é educado, respeitoso e trata os outros com consideração."},
+    {"palavra": "crânio", "definicao": "Parte da cabeça que envolve e protege o cérebro."},
+    {"palavra": "creme", "definicao": "Substância cremosa usada para cuidados com a pele ou alimentos."},
+    {"palavra": "crença", "definicao": "Convicção ou fé em algo, especialmente em algo espiritual ou religioso."},
+    {"palavra": "criança", "definicao": "Pessoa que ainda está na infância, período da vida que vai até a adolescência."},
+    {"palavra": "critério", "definicao": "Princípio ou padrão usado para avaliar ou julgar algo."},
+    {"palavra": "cronologia", "definicao": "Estudo ou organização dos eventos em ordem de tempo."},
+    {"palavra": "cubículo", "definicao": "Espaço pequeno e fechado, geralmente utilizado para trabalho ou estudo."},
+    {"palavra": "culinária", "definicao": "Arte ou prática de preparar alimentos."},
+    {"palavra": "curvatura", "definicao": "Qualidade ou estado de ser curvado ou ter uma curvatura."},
+    {"palavra": "custódia", "definicao": "Responsabilidade ou guarda de algo ou alguém, especialmente em contextos legais."},
+    {"palavra": "débil", "definicao": "Fraco, que possui pouca resistência física ou mental."},
+    {"palavra": "decadência", "definicao": "Processo de deterioração, degradação ou declínio de algo."},
+    {"palavra": "decisão", "definicao": "Ato de escolher entre alternativas, ou resultado de uma escolha."},
+    {"palavra": "declaração", "definicao": "Ato de declarar, afirmar ou expressar algo formalmente."},
+    {"palavra": "decorrer", "definicao": "Acontecer ou passar ao longo de um período de tempo."},
+    {"palavra": "definição", "definicao": "Explicação ou descrição clara e precisa de algo."},
+    {"palavra": "definível", "definicao": "Que pode ser definido ou explicado claramente."},
+    {"palavra": "delícia", "definicao": "Sensação de prazer intenso, especialmente relacionado ao gosto."},
+    {"palavra": "denúncia", "definicao": "Ato de informar ou acusar oficialmente algo errado ou ilegal."},
+    {"palavra": "dependência", "definicao": "Estado ou condição de precisar de algo ou alguém para funcionar ou sobreviver."},
+    {"palavra": "desafio", "definicao": "Situação ou tarefa difícil que exige esforço ou habilidade para ser superada."},
+    {"palavra": "desafio", "definicao": "Situação ou tarefa difícil que exige esforço ou habilidade para ser superada."},
+    {"palavra": "descontínuo", "definicao": "Que não é contínuo; que se interrompe de forma irregular."},
+    {"palavra": "desejo", "definicao": "Sentimento de querer ou almejar algo."},
+    {"palavra": "desenhar", "definicao": "Ato de representar graficamente algo, traçando linhas e formas."},
+    {"palavra": "deserto", "definicao": "Grande área de terra árida e sem vegetação devido à falta de chuva."},
+    {"palavra": "desfaz", "definicao": "Ato de reverter algo, desmanchar ou anular."},
+    {"palavra": "designado", "definicao": "Algo ou alguém que foi nomeado ou indicado para uma tarefa ou função."},
+    {"palavra": "educação", "definicao": "Processo de ensinar e aprender, visando ao desenvolvimento intelectual e moral."},
+    {"palavra": "eixo", "definicao": "Linha reta ou central sobre a qual algo gira ou se organiza."},
+    {"palavra": "elogio", "definicao": "Comentário positivo feito a respeito de algo ou alguém."},
+    {"palavra": "elucidar", "definicao": "Esclarecer, explicar de forma clara e precisa."},
+    {"palavra": "embaixo", "definicao": "Em posição inferior a algo, abaixo."},
+    {"palavra": "embarcação", "definicao": "Meio de transporte fluvial ou marítimo."},
+    {"palavra": "embriaguez", "definicao": "Estado causado pelo consumo excessivo de álcool."},
+    {"palavra": "empresa", "definicao": "Organização ou instituição voltada para a produção ou prestação de serviços."},
+    {"palavra": "encarnação", "definicao": "Ato de tomar forma ou corpo; em algumas religiões, o processo pelo qual uma divindade se manifesta na forma humana."},
+    {"palavra": "ênfase", "definicao": "Destaque ou ênfase dada a algo, com o objetivo de chamar a atenção para sua importância."},
+    {"palavra": "engenho", "definicao": "Máquina ou dispositivo utilizado para transformar ou processar matérias-primas."},
+    {"palavra": "enigma", "definicao": "Algo misterioso ou difícil de entender, como um enigma."},
+    {"palavra": "épica", "definicao": "Relativo a grandes feitos ou eventos heroicos, geralmente relatados em poesia."},
+    {"palavra": "época", "definicao": "Período histórico ou de tempo determinado."},
+    {"palavra": "equação", "definicao": "Igualdade matemática que contém uma ou mais incógnitas."},
+    {"palavra": "equivalência", "definicao": "Qualidade ou estado de ser equivalente ou igual a algo."},
+    {"palavra": "erudição", "definicao": "Conhecimento profundo e vasto em diversas áreas do saber."},
+    {"palavra": "factual", "definicao": "Relativo a fatos reais, baseados em dados concretos."},
+    {"palavra": "falsidade", "definicao": "Qualidade de ser falso, mentiroso ou enganoso."},
+    {"palavra": "fantasia", "definicao": "Imagens ou pensamentos criados pela imaginação, muitas vezes sem base na realidade."},
+    {"palavra": "farofa", "definicao": "Acompanhamento feito com farinha de mandioca, geralmente utilizado na culinária brasileira."},
+    {"palavra": "faxina", "definicao": "Ato de limpar de forma profunda, geralmente uma casa ou ambiente."},
+    {"palavra": "fazenda", "definicao": "Propriedade rural destinada à produção agrícola ou pecuária."},
+    {"palavra": "fazer", "definicao": "Ato de realizar, produzir ou executar algo."},
+    {"palavra": "feliz", "definicao": "Sentimento de satisfação ou alegria."},
+    {"palavra": "fenômeno", "definicao": "Evento ou ocorrência observada, que pode ser explicado por processos naturais ou científicos."},
+    {"palavra": "fiança", "definicao": "Garantia fornecida para assegurar o cumprimento de uma obrigação ou contrato."},
+    {"palavra": "ficha", "definicao": "Peça ou cartão utilizado para registrar informações, ou documento contendo dados."},
+    {"palavra": "fiéis", "definicao": "Aqueles que são leais e seguem com devoção uma crença ou causa."},
+    {"palavra": "filiação", "definicao": "Ato de ser filho ou filha de alguém; ligação familiar."},
+    {"palavra": "formação", "definicao": "Processo de desenvolvimento ou criação de algo; constituição."},
+    {"palavra": "fórmula", "definicao": "Representação simbólica de uma relação ou composição."},
+    {"palavra": "fósforo", "definicao": "Elemento químico, usado em processos de iluminação e para fazer fogo."},
+    {"palavra": "frágil", "definicao": "Que pode se quebrar, destruir ou danificar facilmente."},
+    {"palavra": "fragrância", "definicao": "Cheiro agradável, aroma suave."},
+    {"palavra": "ganância", "definicao": "Desejo excessivo e insaciável por bens materiais ou poder."},
+    {"palavra": "generoso", "definicao": "Pessoa que demonstra bondade, compaixão e disposição para dar sem esperar nada em troca."},
+    {"palavra": "genética", "definicao": "Área da biologia que estuda a hereditariedade e os genes."},
+    {"palavra": "gênio", "definicao": "Pessoa que possui grande habilidade ou inteligência em um campo específico."},
+    {"palavra": "genuíno", "definicao": "Autêntico, verdadeiro, que não é falso ou imitado."},
+    {"palavra": "globo", "definicao": "Representação esférica do planeta Terra ou de um corpo celeste."},
+    {"palavra": "glória", "definicao": "Grande honra, reconhecimento e fama resultantes de feitos extraordinários."},
+    {"palavra": "goiaba", "definicao": "Fruto da goiabeira, de casca fina e polpa doce."},
+    {"palavra": "gotejar", "definicao": "Liberação lenta e contínua de gotas de líquido."},
+    {"palavra": "graça", "definicao": "Ato de ser agradável ou de receber favor ou benção."},
+    {"palavra": "gracejar", "definicao": "Fazer piada ou comentário sarcástico de forma leve."},
+    {"palavra": "grama", "definicao": "Planta rasteira que forma a cobertura do solo em áreas abertas."},
+    {"palavra": "granizo", "definicao": "Precipitação de pequenas pedras de gelo durante tempestades."},
+    {"palavra": "grilhões", "definicao": "Correntes ou algemas usadas para prender alguém ou algo."},
+    {"palavra": "guardião", "definicao": "Aquele que guarda ou protege algo ou alguém."},
+    {"palavra": "harmonia", "definicao": "Concordância ou equilíbrio entre partes, resultando em algo agradável."},
+    {"palavra": "harpa", "definicao": "Instrumento musical de cordas tocado com os dedos ou palheta."},
+    {"palavra": "haver", "definicao": "Verbo que indica a existência ou ocorrência de algo."},
+    {"palavra": "hegemonia", "definicao": "Domínio ou supremacia de uma entidade sobre as outras."},
+    {"palavra": "hesitação", "definicao": "Dúvida ou incerteza sobre algo, caracterizada pela demora em tomar uma decisão."},
+    {"palavra": "histérico", "definicao": "Relativo à histeria, caracterizado por reações emocionais exageradas."},
+    {"palavra": "história", "definicao": "Narrativa dos acontecimentos passados, seja de um povo, nação ou indivíduo."},
+    {"palavra": "honestidade", "definicao": "Qualidade de ser honesto, transparente e verdadeiro."},
+    {"palavra": "honrado", "definicao": "Que foi digno de honra e respeito."},
+    {"palavra": "hora", "definicao": "Unidade de tempo, equivalente a 60 minutos."},
+    {"palavra": "horto", "definicao": "Área cultivada com plantas, especialmente comestíveis, como ervas ou hortaliças."},
+    {"palavra": "humano", "definicao": "Relativo ao ser humano ou à humanidade."},
+    {"palavra": "humildade", "definicao": "Qualidade de ser humilde, modesto e reconhecedor das próprias limitações."},
+    {"palavra": "ideal", "definicao": "Conceito ou modelo de perfeição que se busca alcançar."},
+    {"palavra": "ideia", "definicao": "Pensamento, conceito ou noção sobre algo."},
+    {"palavra": "identificar", "definicao": "Reconhecer, distinguir ou associar algo a sua identidade."},
+    {"palavra": "idolatrado", "definicao": "Que é objeto de adoração ou reverência exagerada."},
+    {"palavra": "ídolo", "definicao": "Figura ou objeto de culto e adoração, geralmente de forma exagerada."},
+    {"palavra": "idoso", "definicao": "Pessoa de idade avançada, geralmente com mais de 60 anos."},
+    {"palavra": "ilusão", "definicao": "Percepção distorcida da realidade, criação de uma falsa ideia ou imagem."},
+    {"palavra": "ilustração", "definicao": "Imagem ou representação visual usada para explicar ou complementar algo."},
+    {"palavra": "imanência", "definicao": "Qualidade de algo que é inerente ou permanece dentro de uma coisa."},
+    {"palavra": "imbuído", "definicao": "Que está profundamente influenciado ou impregnado por algo."},
+    {"palavra": "imitação", "definicao": "Ato de reproduzir ou copiar algo, geralmente com o intuito de se assemelhar."},
+    {"palavra": "imperturbável", "definicao": "Que não se perturba ou abala facilmente, calmo e sereno."},
+    {"palavra": "ímpio", "definicao": "Pessoa que não tem piedade ou respeito pelas crenças religiosas."},
+    {"palavra": "implícito", "definicao": "Que não é diretamente expresso, mas é subentendido ou sugerido."},
+    {"palavra": "júbilo", "definicao": "Grande alegria ou comemoração."},
+    {"palavra": "justiça", "definicao": "Princípio moral que visa garantir a equidade e a imparcialidade nas relações sociais."},
+    {"palavra": "lábios", "definicao": "Parte da face humana que cobre a boca."},
+    {"palavra": "laboratório", "definicao": "Local destinado à realização de experimentos, pesquisas e análises."},
+    {"palavra": "laborioso", "definicao": "Que exige grande esforço ou trabalho árduo."},
+    {"palavra": "laço", "definicao": "Vínculo, união ou vínculo que é feito com um nó."},
+    {"palavra": "lacônico", "definicao": "Pessoa que fala pouco, de maneira breve e concisa."},
+    {"palavra": "lacuna", "definicao": "Espaço vazio ou falha, especialmente em um conjunto ou sistema."},
+    {"palavra": "lágrima", "definicao": "Gota de água que se forma nos olhos, geralmente como expressão de emoção."},
+    {"palavra": "lâmpada", "definicao": "Dispositivo utilizado para produzir luz."},
+    {"palavra": "léguas", "definicao": "Antiga unidade de medida de distância, equivalente a cerca de 6 km."},
+    {"palavra": "leitura", "definicao": "Ato de interpretar e compreender o conteúdo escrito."},
+    {"palavra": "léxico", "definicao": "Conjunto de palavras e expressões que formam um idioma ou linguagem."},
+    {"palavra": "libertação", "definicao": "Ato de tornar algo livre ou solto, geralmente de opressões ou restrições."},
+    {"palavra": "ligeiro", "definicao": "Que é rápido, ágil ou leve."},
+    {"palavra": "lixo", "definicao": "Resíduos ou detritos descartados, geralmente sem valor ou uso."},
+    {"palavra": "lucidez", "definicao": "Qualidade de ser claro, racional e compreensível."},
+    {"palavra": "luxo", "definicao": "Excesso de bens ou confortos, geralmente desnecessários."},
+    {"palavra": "luzeiro", "definicao": "Fonte de luz, especialmente uma luz que orienta ou guia."},
+    {"palavra": "ladeira", "definicao": "Terreno inclinado, geralmente em uma rua ou caminho."},
+    {"palavra": "ladrilho", "definicao": "Peça usada para revestir pisos e paredes, geralmente cerâmica."},
+    {"palavra": "lagarta", "definicao": "Larva de borboleta ou mariposa, geralmente com corpo alongado e segmentado."},
+    {"palavra": "laje", "definicao": "Placa de concreto usada na construção civil como piso ou teto."},
+    {"palavra": "lama", "definicao": "Mistura de terra e água, geralmente encontrada após chuvas."},
+    {"palavra": "lanterna", "definicao": "Dispositivo portátil que emite luz, usado para iluminar ambientes escuros."},
+    {"palavra": "lapso", "definicao": "Erro ou falha momentânea de memória ou atenção."},
+    {"palavra": "largura", "definicao": "Medida da dimensão horizontal de algo."},
+    {"palavra": "laringe", "definicao": "Parte do corpo localizada na garganta, responsável pela produção da voz."},
+    {"palavra": "latente", "definicao": "Que existe, mas não está aparente ou manifesto."},
+    {"palavra": "latido", "definicao": "Som característico emitido por cães."},
+    {"palavra": "lavoura", "definicao": "Área cultivada com plantas agrícolas."},
+    {"palavra": "lazer", "definicao": "Tempo livre utilizado para descanso ou atividades prazerosas."},
+    {"palavra": "lealdade", "definicao": "Qualidade de quem é fiel e digno de confiança."},
+    {"palavra": "legado", "definicao": "Aquilo que é deixado como herança, seja material ou simbólico."},
+    {"palavra": "legume", "definicao": "Fruto ou vegetal comestível usado na alimentação."},
+    {"palavra": "lendário", "definicao": "Que pertence ou é digno de lenda, muitas vezes admirado ou heroico."},
+    {"palavra": "lenha", "definicao": "Madeira seca usada como combustível para fogo."},
+    {"palavra": "lençol", "definicao": "Peça de tecido usada para cobrir colchões ou se cobrir ao dormir."},
+    {"palavra": "maçã", "definicao": "Fruto comestível de uma árvore do gênero Malus, geralmente redonda e doce."},
+    {"palavra": "macete", "definicao": "Truque ou artifício utilizado para resolver algo de maneira mais fácil."},
+    {"palavra": "machucado", "definicao": "Ferimento ou lesão na pele ou em algum órgão do corpo."},
+    {"palavra": "mácula", "definicao": "Mancha, defeito ou imperfeição que compromete algo."},
+    {"palavra": "madrasta", "definicao": "Mulher que se casa com o pai de alguém, após a separação dos pais da pessoa."},
+    {"palavra": "mágoa", "definicao": "Sentimento de tristeza e dor emocional resultante de uma decepção ou ofensa."},
+    {"palavra": "majestade", "definicao": "Título usado para se referir a monarcas ou soberanos."},
+    {"palavra": "maldade", "definicao": "Ação ou intenção de prejudicar ou fazer o mal a alguém."},
+    {"palavra": "malfeitor", "definicao": "Pessoa que comete malfeitos, ou seja, alguém que pratica ações negativas ou criminosas."},
+    {"palavra": "maligno", "definicao": "Que possui características de maldade ou prejudica os outros."},
+    {"palavra": "mamão", "definicao": "Fruto da planta Carica papaya, de casca fina e polpa doce e suculenta."},
+    {"palavra": "mancha", "definicao": "Sinal ou marca de cor diferente na superfície de algo, geralmente indicativo de sujeira ou dano."},
+    {"palavra": "mansão", "definicao": "Casa grande e luxuosa, geralmente com muitos cômodos."},
+    {"palavra": "maquiagem", "definicao": "Produtos e técnicas usadas para melhorar ou alterar a aparência do rosto."},
+    {"palavra": "máquina", "definicao": "Instrumento ou dispositivo mecânico, eletrônico ou automatizado, que realiza uma tarefa específica."},
+    {"palavra": "martírio", "definicao": "Sofrimento físico ou psicológico extremo, geralmente em nome de uma causa."},
+    {"palavra": "matemática", "definicao": "Ciência que estuda os números, formas e relações, por meio de operações lógicas."},
+    {"palavra": "matéria", "definicao": "Substância da qual tudo no universo é feito ou conteúdo de estudo em diversas disciplinas."},
+    {"palavra": "média", "definicao": "Valor calculado somando um conjunto de números e dividindo o total pelo número de elementos."},
+    {"palavra": "medrosa", "definicao": "Pessoa ou característica que sente medo com facilidade."},
+    {"palavra": "memória", "definicao": "Capacidade de recordar fatos, experiências ou informações."},
+    {"palavra": "nação", "definicao": "Grande comunidade política, composta por habitantes de uma mesma região, com um governo e identidade própria."},
+    {"palavra": "nasceu", "definicao": "Forma do verbo nascer, no pretérito perfeito do indicativo, significa ter vindo à vida."},
+    {"palavra": "natureza", "definicao": "Conjunto de elementos do mundo natural, incluindo seres vivos, climas, paisagens e processos naturais."},
+    {"palavra": "necessidade", "definicao": "Algo de que se precisa ou deseja para o bem-estar ou sobrevivência."},
+    {"palavra": "negócio", "definicao": "Atividade de compra e venda de bens ou serviços, ou transações comerciais."},
+    {"palavra": "neve", "definicao": "Precipitação de cristais de gelo que caem da atmosfera quando as condições são frias."},
+    {"palavra": "ninguém", "definicao": "Pronomes indefinido que se refere a nenhuma pessoa."},
+    {"palavra": "nível", "definicao": "Posição ou grau de algo em uma escala ou hierarquia."},
+    {"palavra": "nobreza", "definicao": "Classe social de pessoas que possuem títulos de nobreza ou pertencem a famílias aristocráticas."},
+    {"palavra": "noção", "definicao": "Ideia ou conceito geral sobre algo."},
+    {"palavra": "nocivo", "definicao": "Que causa danos ou prejudica algo ou alguém."},
+    {"palavra": "noite", "definicao": "Período do dia entre o pôr do sol e o nascer do sol."},
+    {"palavra": "notável", "definicao": "Algo ou alguém digno de ser notado, admirado ou lembrado por sua importância ou qualidade."},
+    {"palavra": "notícia", "definicao": "Informação ou relato sobre um fato recente ou relevante."},
+    {"palavra": "novela", "definicao": "Gênero de ficção que narra uma história longa e com capítulos sucessivos, comum na televisão."},
+    {"palavra": "nuance", "definicao": "Leve variação ou diferença sutil em algo."},
+    {"palavra": "número", "definicao": "Símbolo ou conceito que representa uma quantidade ou ordem."},
+    {"palavra": "nuvem", "definicao": "Conjunto de partículas de água ou cristais de gelo suspensos na atmosfera."},
+    {"palavra": "objetar", "definicao": "Apresentar objeção ou argumento contra algo."},
+    {"palavra": "oblíquo", "definicao": "Que não segue uma linha reta ou direta; inclinado."},
+    {"palavra": "ocupação", "definicao": "Ação de ocupar um espaço ou o tempo com alguma atividade."},
+    {"palavra": "odioso", "definicao": "Que causa ódio, repulsa ou aversão."},
+    {"palavra": "odor", "definicao": "Percepção olfativa de um cheiro, geralmente usado para descrever o cheiro de algo."},
+    {"palavra": "ofício", "definicao": "Trabalho, ocupação ou profissão exercida por uma pessoa."},
+    {"palavra": "oito", "definicao": "Número que representa a quantidade de 8."},
+    {"palavra": "ontem", "definicao": "Dia imediatamente anterior ao dia de hoje."},
+    {"palavra": "opção", "definicao": "Escolha ou possibilidade entre alternativas."},
+    {"palavra": "oposição", "definicao": "Ato de se opor, resistência ou contestação a algo."},
+    {"palavra": "oposto", "definicao": "Que está em oposição, ou seja, em sentido contrário."},
+    {"palavra": "oração", "definicao": "Conjunto de palavras com sentido completo, ou forma de comunicação com o divino."},
+    {"palavra": "ordinário", "definicao": "Comum, vulgar, que não é extraordinário."},
+    {"palavra": "outrem", "definicao": "Outro, pessoa diferente de quem se fala."},
+    {"palavra": "ouvir", "definicao": "Perceber sons através do sentido da audição."},
+    {"palavra": "ovelha", "definicao": "Animal de estimação ou criação, conhecido por sua lã e carne."},
+    {"palavra": "paciente", "definicao": "Pessoa que recebe tratamento médico ou demonstra paciência."},
+    {"palavra": "pacífico", "definicao": "Que preza pela paz e evita conflitos."},
+    {"palavra": "padrasto", "definicao": "Homem casado com a mãe de uma pessoa, mas que não é seu pai biológico."},
+    {"palavra": "paixão", "definicao": "Sentimento intenso de afeto, desejo ou entusiasmo por algo ou alguém."},
+    {"palavra": "palácio", "definicao": "Residência de um monarca ou pessoa importante."},
+    {"palavra": "palidez", "definicao": "Estado de aparência pálida ou descolorida na pele."},
+    {"palavra": "pálpebra", "definicao": "Cada uma das partes móveis que cobrem e protegem os olhos."},
+    {"palavra": "pânico", "definicao": "Medo intenso e repentino, que provoca grande agitação."},
+    {"palavra": "pântano", "definicao": "Terreno úmido, alagado ou com vegetação aquática."},
+    {"palavra": "parábola", "definicao": "História ou narrativa curta usada para ilustrar uma lição moral ou religiosa."},
+    {"palavra": "paradigma", "definicao": "Modelo ou padrão de referência."},
+    {"palavra": "paradoxo", "definicao": "Afirmação aparentemente contraditória, mas que contém um fundo de verdade."},
+    {"palavra": "paraíso", "definicao": "Lugar ou estado de felicidade plena e imperturbável, muitas vezes associado a um lugar celestial."},
+    {"palavra": "passado", "definicao": "Tempo que já passou, evento ou situação anterior ao presente."},
+    {"palavra": "passivo", "definicao": "Que está em estado de recepção, que não reage ou age."},
+    {"palavra": "passo", "definicao": "Movimento do pé ao andar, ou uma etapa no processo de algo."},
+    {"palavra": "pasto", "definicao": "Terreno coberto de vegetação, geralmente para o gado se alimentar."},
+    {"palavra": "periquito", "definicao": "Tipo de ave, geralmente colorida e pequena, popular como animal de estimação."},
+    {"palavra": "perniciosa", "definicao": "Que causa grande dano ou prejuízo, prejudicial."},
+    {"palavra": "perseverança", "definicao": "Qualidade de quem insiste ou continua firme em um objetivo, apesar das dificuldades."},
+    {"palavra": "perspicaz", "definicao": "Que percebe ou compreende com facilidade; sagaz."},
+    {"palavra": "perturbação", "definicao": "Ato ou efeito de perturbar, causar desordem ou confusão."},
+    {"palavra": "perverso", "definicao": "Que tem comportamento cruel ou maldoso."},
+    {"palavra": "pesadelo", "definicao": "Sonho angustiante que provoca medo ou ansiedade."},
+    {"palavra": "pestana", "definicao": "Cílio; fio que cresce na borda das pálpebras."},
+    {"palavra": "petróleo", "definicao": "Substância oleosa encontrada no subsolo, usada para produzir combustíveis."},
+    {"palavra": "piedade", "definicao": "Sentimento de compaixão e solidariedade com o sofrimento alheio."},
+    {"palavra": "pilastra", "definicao": "Coluna ou suporte vertical usado na arquitetura."},
+    {"palavra": "pilhagem", "definicao": "Ato de saquear ou roubar bens, especialmente em guerras."},
+    {"palavra": "pincel", "definicao": "Instrumento de pintura feito com cerdas presas a um cabo."},
+    {"palavra": "pioneiro", "definicao": "Aquele que realiza algo pela primeira vez ou desbrava novos caminhos."},
+    {"palavra": "pirâmide", "definicao": "Construção com base poligonal e faces triangulares que se encontram no topo."},
+    {"palavra": "placidez", "definicao": "Estado de tranquilidade, calma ou serenidade."},
+    {"palavra": "planície", "definicao": "Extensa área de terra com pouca variação de relevo."},
+    {"palavra": "plano", "definicao": "Conjunto de ações organizadas com objetivo definido."},
+    {"palavra": "plágio", "definicao": "Ato de copiar obra intelectual sem dar os devidos créditos."},
+    {"palavra": "plebeu", "definicao": "Indivíduo pertencente à classe comum do povo."},
+    {"palavra": "plenitude", "definicao": "Estado de totalidade ou de completa realização."},
+    {"palavra": "pluralidade", "definicao": "Qualidade do que é múltiplo ou diverso."},
+    {"palavra": "poente", "definicao": "Direção onde o Sol se põe; oeste."},
+    {"palavra": "poético", "definicao": "Relacionado à poesia; que possui beleza e sensibilidade."},
+    {"palavra": "polidez", "definicao": "Qualidade de quem é educado, cortês e respeitoso."},
+    {"palavra": "poluição", "definicao": "Contaminação do meio ambiente por substâncias nocivas."},
+    {"palavra": "pomar", "definicao": "Terreno plantado com árvores frutíferas."},
+    {"palavra": "ponderar", "definicao": "Analisar com cuidado antes de decidir ou agir."},
+    {"palavra": "pontual", "definicao": "Que chega ou ocorre no tempo previsto."},
+    {"palavra": "população", "definicao": "Conjunto de indivíduos que habitam determinada área."},
+    {"palavra": "porcelana", "definicao": "Material cerâmico fino e resistente, usado para fabricar louças."},
+    {"palavra": "portador", "definicao": "Pessoa que leva ou possui algo consigo."},
+    {"palavra": "postura", "definicao": "Modo como alguém se posiciona ou comporta."},
+    {"palavra": "potência", "definicao": "Capacidade de produzir um efeito; força."},
+    {"palavra": "precário", "definicao": "Que é instável, inseguro ou insuficiente."},
+    {"palavra": "precipício", "definicao": "Despenhadeiro; lugar muito alto e íngreme."},
+    {"palavra": "preciso", "definicao": "Exato; que apresenta clareza e exatidão."},
+    {"palavra": "prelúdio", "definicao": "Introdução ou começo de algo, especialmente em obras musicais ou literárias."},
+    {"palavra": "prematuro", "definicao": "Que acontece antes do tempo esperado."},
+    {"palavra": "prepotente", "definicao": "Que abusa do poder ou autoridade; autoritário."},
+    {"palavra": "preservar", "definicao": "Manter algo seguro ou intacto."},
+    {"palavra": "presságio", "definicao": "Sinal ou indício de algo que vai acontecer; pressentimento."},
+    {"palavra": "prestígio", "definicao": "Reconhecimento ou respeito conquistado por mérito."},
+    {"palavra": "pretexto", "definicao": "Motivo aparente usado para justificar uma ação."},
+    {"palavra": "prevalecer", "definicao": "Permanecer ou dominar sobre outras possibilidades."},
+    {"palavra": "primazia", "definicao": "Condição de ser o primeiro ou mais importante."},
+    {"palavra": "prisma", "definicao": "Objeto geométrico com duas bases paralelas e faces laterais retangulares."},
+    {"palavra": "privação", "definicao": "Falta de algo necessário ou desejado."},
+    {"palavra": "procedência", "definicao": "Origem ou lugar de onde algo provém."},
+    {"palavra": "prodígio", "definicao": "Pessoa de habilidades extraordinárias ou evento surpreendente."},
+    {"palavra": "profano", "definicao": "Que não é sagrado; mundano ou secular."},
+    {"palavra": "profundidade", "definicao": "Medida do que é fundo; grau de complexidade ou intensidade."},
+    {"palavra": "provisório", "definicao": "Que é temporário e não definitivo."},
+    {"palavra": "quase", "definicao": "Algo que está por pouco de acontecer, mas ainda não se realizou."},
+    {"palavra": "questão", "definicao": "Assunto ou problema a ser discutido ou resolvido."},
+    {"palavra": "rapidez", "definicao": "Qualidade de ser rápido, velocidade."},
+    {"palavra": "razoável", "definicao": "Que é justo ou equilibrado, moderado."},
+    {"palavra": "reação", "definicao": "Resposta ou efeito causado por uma ação ou estímulo."},
+    {"palavra": "realizar", "definicao": "Fazer acontecer, concretizar algo."},
+    {"palavra": "recompensa", "definicao": "Premiação ou benefício recebido por algum feito ou atitude."},
+    {"palavra": "recôndito", "definicao": "Algo que é oculto, escondido ou difícil de acessar."},
+    {"palavra": "referência", "definicao": "Ponto de comparação ou exemplo para algo ou alguém."},
+    {"palavra": "refrigério", "definicao": "Alívio, descanso ou recuperação após esforço."},
+    {"palavra": "refúgio", "definicao": "Abrigo ou lugar seguro para proteção."},
+    {"palavra": "reluzir", "definicao": "Brilhar intensamente, refletir luz."},
+    {"palavra": "requisito", "definicao": "Condição ou exigência necessária para algo."},
+    {"palavra": "sabão", "definicao": "Produto usado para limpeza, geralmente feito de gordura ou óleo e álcalis."},
+    {"palavra": "sabedoria", "definicao": "Capacidade de tomar decisões sensatas, baseada em experiência e conhecimento."},
+    {"palavra": "saciar", "definicao": "Satisfazer completamente uma necessidade, especialmente fome."},
+    {"palavra": "saciedade", "definicao": "Estado de plenitude ou satisfação total, especialmente após comer."},
+    {"palavra": "salteado", "definicao": "Movido de maneira aleatória ou desordenada."},
+    {"palavra": "sátira", "definicao": "Gênero literário ou artístico que faz uma crítica humorística ou irônica."},
+    {"palavra": "satisfação", "definicao": "Sentimento de prazer ou contentamento devido a algo que foi alcançado ou realizado."},
+    {"palavra": "satisfazer", "definicao": "Cumprir uma exigência ou desejo, trazer contentamento."},
+    {"palavra": "seção", "definicao": "Parte ou divisão de algo maior, como uma seção de um livro ou uma seção de uma empresa."},
+    {"palavra": "século", "definicao": "Período de 100 anos."},
+    {"palavra": "secundário", "definicao": "Que vem após o principal, de importância ou prioridade menor."},
+    {"palavra": "semáforo", "definicao": "Dispositivo sinalizador de trânsito, geralmente com luzes coloridas para indicar ações."},
+    {"palavra": "semelhança", "definicao": "Qualidade do que é semelhante ou parecido com algo."},
+    {"palavra": "senão", "definicao": "Caso contrário, exceto."},
+    {"palavra": "sentir", "definicao": "Perceber algo por meio dos sentidos ou por emoções."},
+    {"palavra": "silogismo", "definicao": "Raciocínio lógico composto por duas premissas e uma conclusão."},  
+    {"palavra": "sinal", "definicao": "Indicação ou marca que transmite uma informação ou alerta."},
+    {"palavra": "simplicidade", "definicao": "Qualidade do que é simples, sem complexidade ou excessos."},
+    {"palavra": "sincero", "definicao": "Que expressa com verdade o que sente ou pensa."},
+    {"palavra": "singular", "definicao": "Único, fora do comum ou estranho."},
+    {"palavra": "sintaxe", "definicao": "Parte da gramática que estuda a organização das palavras nas frases."},
+    {"palavra": "sintoma", "definicao": "Sinal que indica a presença de uma doença ou condição."},
+    {"palavra": "sinuoso", "definicao": "Que tem curvas ou voltas frequentes."},
+    {"palavra": "sistema", "definicao": "Conjunto de elementos interligados que funcionam como um todo."},
+    {"palavra": "soar", "definicao": "Produzir som ou ruído."},
+    {"palavra": "soberania", "definicao": "Autoridade suprema de um estado ou nação sobre seu território."},
+    {"palavra": "sobressair", "definicao": "Destacar-se entre os demais."},
+    {"palavra": "sociável", "definicao": "Pessoa que gosta e tem facilidade para se relacionar com os outros."},
+    {"palavra": "sociologia", "definicao": "Ciência que estuda as relações sociais e a estrutura da sociedade."},
+    {"palavra": "sofisticado", "definicao": "Complexo, refinado ou elegante."},
+    {"palavra": "solene", "definicao": "Que é formal, sério ou cerimonial."},
+    {"palavra": "solidariedade", "definicao": "Ato de apoio e ajuda mútua entre as pessoas."},
+    {"palavra": "solicitar", "definicao": "Pedir formalmente algo."},
+    {"palavra": "solstício", "definicao": "Momento do ano em que o Sol atinge seu ponto mais distante do equador celeste."},
+    {"palavra": "sombrio", "definicao": "Com pouca luz; melancólico ou ameaçador."},
+    {"palavra": "sonhar", "definicao": "Experimentar imagens ou pensamentos durante o sono; desejar intensamente algo."},
+    {"palavra": "soprano", "definicao": "Voz feminina mais aguda no canto lírico."},
+    {"palavra": "soterrar", "definicao": "Cobrir completamente com terra ou algo semelhante."},
+    {"palavra": "sublime", "definicao": "De beleza ou valor moral extraordinário."},
+    {"palavra": "submeter", "definicao": "Colocar sob o controle ou autoridade de algo ou alguém."},
+    {"palavra": "substituir", "definicao": "Trocar uma coisa por outra."},
+    {"palavra": "subversão", "definicao": "Ato de desafiar ou derrubar a ordem estabelecida."},
+    {"palavra": "sucinto", "definicao": "Breve e direto ao ponto, sem rodeios."},
+    {"palavra": "suficiente", "definicao": "Que basta ou é adequado para atender a uma necessidade."},
+    {"palavra": "sujeito", "definicao": "Pessoa ou ser que pratica a ação na frase; indivíduo."},
+    {"palavra": "sujeição", "definicao": "Estado de submissão ou dependência."},
+    {"palavra": "suma", "definicao": "Resumo ou síntese de algo."},
+    {"palavra": "sumário", "definicao": "Lista organizada dos tópicos de um texto ou obra."},
+    {"palavra": "superação", "definicao": "Ato de vencer dificuldades ou limites."},
+    {"palavra": "superfície", "definicao": "Parte externa ou visível de um corpo ou objeto."},
+    {"palavra": "superior", "definicao": "Que está acima ou em posição mais elevada."},
+    {"palavra": "superstição", "definicao": "Crença irracional baseada em práticas populares ou mitos."},
+    {"palavra": "suportar", "definicao": "Aguentar algo difícil ou incômodo."},
+    {"palavra": "suscetível", "definicao": "Propenso a ser afetado ou ofendido com facilidade."},
+    {"palavra": "suspense", "definicao": "Sensação de expectativa ou tensão causada por algo desconhecido ou incerto."},
+    {"palavra": "sustentar", "definicao": "Manter algo firme ou apoiar uma ideia."},
+    {"palavra": "síntese", "definicao": "Reunião das partes principais de um conteúdo em uma forma resumida."},
+    {"palavra": "súplica", "definicao": "Pedido insistente e humilde; rogo."},
+    {"palavra": "tácito", "definicao": "Que não é expresso diretamente, implícito."},
+    {"palavra": "talheres", "definicao": "Utensílios de mesa, como faca, garfo e colher."},
+    {"palavra": "talvez", "definicao": "Indica possibilidade ou dúvida."},
+    {"palavra": "também", "definicao": "Palavra usada para adicionar ou concordar com algo."},
+    {"palavra": "tateável", "definicao": "Que pode ser tocado ou sentido."},
+    {"palavra": "tática", "definicao": "Estratégia ou método para alcançar um objetivo."},
+    {"palavra": "taverna", "definicao": "Estabelecimento onde se servem bebidas e alimentos."},
+    {"palavra": "teia", "definicao": "Estrutura feita por aranhas, formada por fios de seda."},
+    {"palavra": "teorização", "definicao": "Processo de criar teorias ou explicações baseadas em ideias ou conceitos."},
+    {"palavra": "tese", "definicao": "Afirmação ou proposição defendida em um argumento ou trabalho acadêmico."},
+    {"palavra": "textura", "definicao": "Qualidade de uma superfície ou material, dependendo de seu toque ou aparência."},
+    {"palavra": "tibieza", "definicao": "Falta de vigor ou energia, especialmente em relação a atitudes ou sentimentos."},
+    {"palavra": "tíbio", "definicao": "Que é fraco ou sem força, em especial no sentido de saúde ou caráter."},
+    {"palavra": "timidez", "definicao": "Sentimento de vergonha ou desconforto em situações sociais."},
+    {"palavra": "típico", "definicao": "Que é característico ou comum em um determinado grupo ou situação."},
+    {"palavra": "todavia", "definicao": "Entretanto, mas, no entanto."},
+    {"palavra": "tópico", "definicao": "Assunto ou tema principal de uma discussão ou texto."},
+    {"palavra": "tradição", "definicao": "Conjunto de práticas ou costumes transmitidos de geração em geração."},
+    {"palavra": "umbigo", "definicao": "Cicatriz no centro do abdômen, marcada pelo cordão umbilical."},
+    {"palavra": "único", "definicao": "Que não tem igual, singular, exclusivo."},
+    {"palavra": "universo", "definicao": "Tudo o que existe, incluindo todas as galáxias, estrelas, planetas e matéria."},
+    {"palavra": "unívoco", "definicao": "Que tem um único significado, não ambíguo."},
+    {"palavra": "útil", "definicao": "Que tem utilidade, que serve para um propósito."},
+    {"palavra": "utópico", "definicao": "Que se refere a uma utopia, algo ideal e muitas vezes irrealizável."},
+    {"palavra": "vaidoso", "definicao": "Pessoa que tem orgulho excessivo da própria aparência ou qualidades."},
+    {"palavra": "valioso", "definicao": "Que tem grande valor, seja em termos de dinheiro, qualidade ou importância."},
+    {"palavra": "varejo", "definicao": "Venda de produtos em pequenas quantidades, diretamente ao consumidor."},
+    {"palavra": "varrer", "definicao": "Limpar ou mover algo com vassoura ou ferramenta similar."},
+    {"palavra": "vaso", "definicao": "Recipiente usado para plantar, armazenar líquidos ou para decoração."},
+    {"palavra": "vazio", "definicao": "Que não contém nada, sem conteúdo ou ocupação."},
+    {"palavra": "veemente", "definicao": "Com grande intensidade, força ou emoção."},
+    {"palavra": "veia", "definicao": "Vaso sanguíneo por onde o sangue retorna ao coração."},
+    {"palavra": "veloz", "definicao": "Que se move rapidamente, rápido."},
+    {"palavra": "veneração", "definicao": "Sentimento de respeito profundo e reverência por algo ou alguém."},
+    {"palavra": "verniz", "definicao": "Camada de proteção brilhante aplicada a superfícies, especialmente madeira."},
+    {"palavra": "vexatório", "definicao": "Que causa vexame, constrangimento ou humilhação."},
+    {"palavra": "vício", "definicao": "Hábito prejudicial ou comportamento compulsivo, muitas vezes relacionado a substâncias ou atividades."},
+    {"palavra": "visão", "definicao": "Sentido que permite perceber objetos e cores através da luz."},
+    {"palavra": "visível", "definicao": "Que pode ser visto, perceptível à visão."},
+    {"palavra": "vocabulário", "definicao": "Conjunto de palavras utilizadas por uma língua, grupo ou indivíduo."},
+    {"palavra": "vocação", "definicao": "Inclinação ou aptidão natural para uma determinada profissão ou atividade."},
+    {"palavra": "voluntário", "definicao": "Pessoa que realiza uma atividade sem receber pagamento, por livre escolha."},
+    {"palavra": "vontade", "definicao": "Desejo ou intenção de realizar algo."},
+    {"palavra": "vulnerável", "definicao": "Que pode ser ferido ou afetado com facilidade."},
+    {"palavra": "vulto", "definicao": "Forma pouco nítida ou sombra de algo ou alguém."},
+    {"palavra": "vanguarda", "definicao": "Grupo ou posição que lidera ou inova em determinada área."},
+    {"palavra": "veracidade", "definicao": "Qualidade do que é verdadeiro ou autêntico."},
+    {"palavra": "verbo", "definicao": "Palavra que indica ação, estado ou fenômeno."},
+    {"palavra": "versátil", "definicao": "Que se adapta facilmente a diferentes funções ou situações."},
+    {"palavra": "vincular", "definicao": "Estabelecer ligação ou relação entre coisas ou pessoas."},
+    {"palavra": "vintage", "definicao": "Estilo que remete a épocas passadas, geralmente valorizado por seu charme retrô."},
+    {"palavra": "vigor", "definicao": "Força, energia ou intensidade."},
+    {"palavra": "visceral", "definicao": "Que vem do fundo do ser, profundo e intenso."},
+    {"palavra": "vivência", "definicao": "Experiência adquirida ao longo da vida ou em determinada situação."},
+    {"palavra": "xarope", "definicao": "Líquido espesso e doce, geralmente usado como medicamento ou saborizante."},
+    {"palavra": "xícara", "definicao": "Recipiente pequeno, com alça, usado para beber líquidos, especialmente chá ou café."}
 ]
+  
