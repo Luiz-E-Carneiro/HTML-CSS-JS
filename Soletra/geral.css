@@ -62,6 +62,10 @@ main {
     animation: fadeIn 0.8s ease-in-out;
 }
 
+.wordArea > div {
+    flex: 1;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -104,7 +108,7 @@ main {
 }
 
 #description {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
     color: #555;
     margin-top: 20px;
