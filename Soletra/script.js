@@ -83,3 +83,21 @@ const nextWord = () => {
 };
 
 loadWords();
+
+
+function salvarDados() {
+    const dados = {
+      wordIndexes,
+      currentRound,
+      currentDifficulty,
+      wordsLoaded
+    };
+
+    const jsonString = JSON.stringify(dados, null, 2);
+
+    const blob = new Blob([jsonString], { type: "application/json" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "dados.json";
+    link.click();
+}
