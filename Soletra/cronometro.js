@@ -36,7 +36,7 @@ document.addEventListener('keydown', (e) => {
           breakTime = false;
           clearInterval(intervalBreak);
           intervalBreak = null;
-        }, 3000);
+        }, 2000);
       }
     }
   }
